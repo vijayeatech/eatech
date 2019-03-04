@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <event-block sid="269995528873470">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="816242871731152" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set CSS style" sid="771658838183660" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;20px&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="252896696734299">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="143853610286383" type="fade">
+                            <param id="0" name="Unique ID">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="407988983309011" type="fade">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="993431639618978">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="690044926748989" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="220819150519768" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="625865473793115" type="Sprite">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="302522770140954" type="TextBox">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="248086140973294" type="SpriteFont">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="687732877195648" type="TextBox">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="731595250894715">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="606621573324420" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set CSS style" sid="692141218057102" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;3vw&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="115350249748978">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="200400810163339" type="SpriteFont" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="870106757075184" type="SpriteFont">
+                    <param id="0" name="Text">&quot;your Gaming id not found in data base!&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

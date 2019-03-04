@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="657297751364091">
+            <conditions>
+                <condition id="3" name="On touched object" sid="939252872865589" type="Touch">
+                    <param id="0" name="Object">play</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="221139820605325" type="play">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="414995466506667" type="play">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="512589397026536" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="487030810616750" type="play">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="730320894167622" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="553801776570173">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="947374380793735" type="simulator">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">99</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="960954172970502">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="629818218420959" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Rotate clockwise" sid="546638089227947" type="simulator">
+                            <param id="0" name="Degrees">20</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="591225892910111">
+            <conditions>
+                <condition behavior="LiteTween2" id="4" name="On tween end" sid="291381644300772" type="simulator" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="173391960960643">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="980756710326225" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween3" id="10" name="Start" sid="847210004267608" type="simulator">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="166451414304959">
+            <conditions>
+                <condition behavior="LiteTween3" id="4" name="On tween end" sid="691733682571174" type="simulator" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="746204829533266">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="225781959574297" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween2" id="10" name="Start" sid="304657880810453" type="simulator">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="821517458041515">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="731831238087704" type="fade" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="964484507508600" type="opacity">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
