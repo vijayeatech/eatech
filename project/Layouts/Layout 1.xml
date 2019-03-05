@@ -82,11 +82,11 @@
                         <behavior-instance type="LiteTween">
                             <properties>
                                 <active-on-start>No</active-on-start>
-                                <tweened-property>Opacity</tweened-property>
-                                <function>Linear</function>
-                                <target>100</target>
+                                <tweened-property>Position</tweened-property>
+                                <function>EaseInOutBack</function>
+                                <target>1373, 852</target>
                                 <target-mode>Absolute</target-mode>
-                                <duration>0.5</duration>
+                                <duration>1</duration>
                                 <enforce-mode>Enforce</enforce-mode>
                             </properties>
                         </behavior-instance>
@@ -94,8 +94,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1403</x>
-                        <y>842</y>
+                        <x>1373</x>
+                        <y>1422</y>
                         <z>0</z>
                         <width>363</width>
                         <height>123</height>
@@ -103,42 +103,7 @@
                         <hotspotX>0.501377404</hotspotX>
                         <hotspotY>0.504065037</hotspotY>
                         <angle>0</angle>
-                        <opacity>0</opacity>
-                    </world>
-                </instance>
-                <instance type="standSimulator" uid="9">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Opacity</tweened-property>
-                                <function>Linear</function>
-                                <target>100</target>
-                                <target-mode>Absolute</target-mode>
-                                <duration>0.5</duration>
-                                <enforce-mode>Enforce</enforce-mode>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>585</x>
-                        <y>899</y>
-                        <z>0</z>
-                        <width>88</width>
-                        <height>367</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501362383</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0</opacity>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
                 <instance type="simulator" uid="13">
@@ -149,25 +114,14 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="LiteTween">
-                            <properties>
-                                <active-on-start>No</active-on-start>
-                                <tweened-property>Opacity</tweened-property>
-                                <function>Linear</function>
-                                <target>100</target>
-                                <target-mode>Absolute</target-mode>
-                                <duration>0.5</duration>
-                                <enforce-mode>Enforce</enforce-mode>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="LiteTween2">
                             <properties>
                                 <active-on-start>No</active-on-start>
                                 <tweened-property>Angle</tweened-property>
-                                <function>Linear</function>
-                                <target>15</target>
+                                <function>EaseInOutBack</function>
+                                <target>0</target>
                                 <target-mode>Absolute</target-mode>
-                                <duration>0.2</duration>
+                                <duration>1.2</duration>
                                 <enforce-mode>Enforce</enforce-mode>
                             </properties>
                         </behavior-instance>
@@ -186,16 +140,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>589</x>
-                        <y>724</y>
+                        <x>799.000061035</x>
+                        <y>1154.00012207</y>
                         <z>0</z>
-                        <width>1132</width>
-                        <height>224</height>
+                        <width>1126</width>
+                        <height>651</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>1.013392806</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0</opacity>
+                        <hotspotY>1.01382494</hotspotY>
+                        <angle>-3.127996683</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>

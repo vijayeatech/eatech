@@ -2,5 +2,217 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 4</name>
-    <events />
+    <events>
+        <variable constant="0" name="opacity" sid="404834286409908" static="0" type="number">0</variable>
+        <variable constant="0" name="part" sid="682924210147635" static="0" type="number">0</variable>
+        <variable constant="0" name="roundGame" sid="451527613271921" static="0" type="number">1</variable>
+        <variable constant="0" name="insuranceGame" sid="793255300219526" static="0" type="number">0</variable>
+        <variable constant="0" name="schoolGame" sid="382149619320804" static="0" type="number">0</variable>
+        <variable constant="0" name="cropGame" sid="895610885061286" static="0" type="number">0</variable>
+        <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">25000</variable>
+        <event-block sid="744056152540823">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="474816452004134" type="TiledBackground" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="278456396998930">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="995749778841798" type="spRound">
+                            <param id="0" name="Unique ID">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="781208914908830" type="spRound">
+                            <param id="0" name="Text">roundGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="254984940384187">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="772058759402166" type="spRound">
+                            <param id="0" name="Unique ID">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="498955638107464" type="spRound">
+                            <param id="0" name="Text">insuranceGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="438931295643474">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="943463765502540" type="spRound">
+                            <param id="0" name="Unique ID">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="984079085030540" type="spRound">
+                            <param id="0" name="Text">schoolGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388355204921792">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="418714860255430" type="spRound">
+                            <param id="0" name="Unique ID">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="498282952197925" type="spRound">
+                            <param id="0" name="Text">cropGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="138155540055076">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="267935553628442" type="spRound">
+                            <param id="0" name="Unique ID">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="499558286958563" type="spRound">
+                            <param id="0" name="Text">walletGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="365450208079077">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="700696380685733" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="828397692091818" type="Sprite4">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="545776764401480" type="rain">
+                    <param id="0" name="Angle">random(125,100)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="897589442124836" type="rain">
+                    <param id="0" name="Speed">random(700,900)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="972556424995821">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="300806312127987" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="272379507612694" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(400,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="390136654008179" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(300,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="439240286966486" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(200,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="581943346591916" type="rain" />
+                        <action id="-16" name="Wait" sid="628363823762130" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="391402755769448" type="System">
+                            <param id="0" name="Variable">opacity</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="403391554490774">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="810256020721912" type="rain">
+                    <param id="0" name="Object">collider</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="146030403804342" type="rain" />
+            </actions>
+        </event-block>
+        <event-block sid="217217368606616">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="742348639954856" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="910329117863009" type="black_clouds">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="883759611842831">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="264186618551968" type="black_clouds" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="703707893362433" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="175736418387591" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538323418711056">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="518723496023857" type="Sprite4" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="475464098435258" type="Sprite4">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="310585459821568" type="New">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440628674322532">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="955583298152366" type="rain">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="358178554174304" type="Sprite4">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">30</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="684572401217307">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="625533546147759" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="340707773121425" type="rain">
+                            <param id="0" name="Object">New</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="595362278629976" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="177746680794200" type="New" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
 </c2eventsheet>

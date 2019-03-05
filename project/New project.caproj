@@ -11,6 +11,7 @@
     <saved-with-version>25900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
@@ -18,6 +19,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
@@ -40,7 +42,7 @@
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -52,7 +54,7 @@
     <object-folder>
         <object-type name="TiledBackground" sid="383103568264766">
             <plugin id="TiledBg" />
-            <texture original-source="G:\NewGame\png\mainBg.png" />
+            <texture original-source="G:\eatech\png\mainBg.png" />
         </object-type>
         <object-type name="fade" sid="364628337743161">
             <plugin id="TiledBg" />
@@ -71,7 +73,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="586635943446947" speed="0">
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="586635943446947" speed="0">
                     <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="G:\NewGame\png\button1.png">
                         <collision-poly>
                             <point x="0.0031746" y="0.0030303" />
@@ -88,7 +90,19 @@
                             <point x="0.0015873" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501062" original-source="G:\NewGame\png\inputBg.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501062" original-source="G:\eatech\png\inputBg.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\OR.png">
+                        <collision-poly>
+                            <point x="0.702128" y="0.4" />
+                            <point x="0.5" y="0.469697" />
+                            <point x="0.297872" y="0.4" />
+                            <point x="0.771277" y="0.5" />
+                            <point x="0.5" y="0.533333" />
+                            <point x="0.755319" y="0.569697" />
+                            <point x="0.191489" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500262" hotspotY="0.5" original-source="G:\eatech\png\wallet-board.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -134,6 +148,11 @@
         </object-type>
         <object-type name="play" sid="493564273178020">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="573525928624239">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="330923850329352" speed="0">
                     <frame duration="1" hotspotX="0.501377" hotspotY="0.504065" original-source="G:\NewGame\png\play.png">
@@ -155,23 +174,23 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692118544812415" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501362" original-source="G:\NewGame\png\simulatorStand.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.500813" original-source="G:\eatech\png\simulatorStand.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="simulator" sid="928116676068782">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="LiteTween2" sid="628395947506249">
+                <behavior-type name="LiteTween2" sid="378967984983937">
                     <behavior id="lunarray_LiteTween" />
                 </behavior-type>
-                <behavior-type name="LiteTween3" sid="127265993554429">
+                <behavior-type name="LiteTween3" sid="822044815328984">
                     <behavior id="lunarray_LiteTween" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="191724871061343" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.01339" original-source="G:\NewGame\png\simulator.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1.01382" original-source="G:\eatech\png\game_vectors_0.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -186,14 +205,172 @@
         <object-type global="1" name="Array" sid="941720638512760">
             <plugin id="Arr" />
         </object-type>
-        <object-type name="SpriteFont" sid="476632032397437">
+        <object-type name="spRound" sid="202063057714910">
             <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="Button" sid="395201888789449">
+            <plugin id="Button" />
             <behaviors>
-                <behavior-type name="Pin" sid="233932255541866">
+                <behavior-type name="Pin" sid="637121917282923">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
-            <texture />
+        </object-type>
+        <object-type name="login" sid="284115030622656">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="448604503081119">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="415266337882294" speed="5">
+                    <frame duration="1" hotspotX="0.501326" hotspotY="0.504951" original-source="G:\eatech\png\loginBUtton.png">
+                        <collision-poly>
+                            <point x="0.00795756" y="0.029703" />
+                            <point x="0.994695" y="0.019802" />
+                            <point x="0.994695" y="0.980198" />
+                            <point x="0.00795756" y="0.970297" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="error" sid="169398501890192">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="208580516427107">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595118256755236" speed="5">
+                    <frame duration="1" hotspotX="0.50081" hotspotY="0.5" original-source="G:\eatech\png\error.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="black_clouds" sid="821165936163973">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="609113273837858">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423266846855512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Farmer\eatech\Crop insurance Game\imgs\black_clouds.png">
+                        <collision-poly>
+                            <point x="0.056183" y="0.311897" />
+                            <point x="0.5" y="0.231511" />
+                            <point x="0.938459" y="0.34164" />
+                            <point x="0.998842" y="0.5" />
+                            <point x="0.945699" y="0.698553" />
+                            <point x="0.5" y="0.980707" />
+                            <point x="0.0641471" y="0.643891" />
+                            <point x="0.00217202" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rain" sid="767268835582573">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="394070750574195">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995096613841075" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.521739" original-source="E:\Freak X Apps\frog-jump\squirrel\rain4.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.347826" />
+                            <point x="0.5" y="0.304348" />
+                            <point x="0.875" y="0.0869565" />
+                            <point x="0.625" y="0.478261" />
+                            <point x="0.5" y="0.652174" />
+                            <point x="0.5" y="0.652174" />
+                            <point x="0.125" y="0.913043" />
+                            <point x="0.375" y="0.478261" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="New" sid="418883374536067">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578576992586041" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Gitfolder\jio\FPnew\dino_jump\project-files\Animations\waterspread\Default\000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Gitfolder\jio\FPnew\dino_jump\project-files\Animations\waterspread\Default\001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Gitfolder\jio\FPnew\dino_jump\project-files\Animations\waterspread\Default\002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Gitfolder\jio\FPnew\dino_jump\project-files\Animations\waterspread\Default\003.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="728792003826555">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479227894368752" speed="10">
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="C:\Users\Saurabh\Desktop\game_vectors_events.png">
+                        <collision-poly>
+                            <point x="0.0993789" y="0.492132" />
+                            <point x="0.88707" y="0.515022" />
+                            <point x="0.963862" y="1" />
+                            <point x="0.0361378" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.135517" y="0.434907" />
+                            <point x="0.846415" y="0.400572" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.130999" y="0.400573" />
+                            <point x="0.900621" y="0.412018" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.0999434" y="0.515022" />
+                            <point x="0.905139" y="0.526467" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.108413" y="0.640916" />
+                            <point x="0.896104" y="0.675251" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="collider" sid="587261466310526">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503380838047794" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>
@@ -202,18 +379,6 @@
                 <member>Sprite</member>
                 <member>Sprite2</member>
             </members>
-        </family>
-        <family name="opacity" plugin-id="Sprite" sid="243483684357847">
-            <members>
-                <member>play</member>
-                <member>simulator</member>
-                <member>standSimulator</member>
-            </members>
-            <behaviors>
-                <behavior-type name="LiteTween" sid="220716011267028">
-                    <behavior id="lunarray_LiteTween" />
-                </behavior-type>
-            </behaviors>
         </family>
     </families>
     <layout-folder>

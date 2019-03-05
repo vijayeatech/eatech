@@ -112,7 +112,7 @@
                                 <active-on-start>No</active-on-start>
                                 <tweened-property>Position</tweened-property>
                                 <function>EaseInOutBack</function>
-                                <target>960, 765</target>
+                                <target>960,540</target>
                                 <target-mode>Absolute</target-mode>
                                 <duration>1</duration>
                                 <enforce-mode>Enforce</enforce-mode>
@@ -174,7 +174,7 @@
                         <enabled>Yes</enabled>
                         <read-only>No</read-only>
                         <spell-check>No</spell-check>
-                        <type>Text</type>
+                        <type>Number</type>
                         <auto-font-size>Yes</auto-font-size>
                         <id-optional></id-optional>
                     </properties>
@@ -194,20 +194,12 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="SpriteFont" uid="14">
+                <instance type="login" uid="29">
                     <properties>
-                        <character-width>16</character-width>
-                        <character-height>16</character-height>
-                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text></text>
-                        <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
-                        <horizontal-alignment>Right</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <character-spacing>0</character-spacing>
-                        <line-height>0</line-height>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -215,14 +207,39 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>758</x>
-                        <y>1490</y>
+                        <x>1208</x>
+                        <y>1587</y>
                         <z>0</z>
-                        <width>638</width>
-                        <height>30</height>
+                        <width>377</width>
+                        <height>101</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.501326263</hotspotX>
+                        <hotspotY>0.504950523</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="error" uid="14">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Disabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1095</x>
+                        <y>1518</y>
+                        <z>0</z>
+                        <width>617</width>
+                        <height>42</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500810385</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

@@ -44,6 +44,22 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="420828510903931">
+                            <conditions>
+                                <condition id="-14" name="Pick by unique ID" sid="863831193772958" type="Sprite">
+                                    <param id="0" name="Unique ID">18</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="743992124165260" type="System">
+                                    <param id="0" name="Seconds">0.75</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="613894173978459" type="Sprite">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="875450902507722">
                             <conditions>
                                 <condition id="-14" name="Pick by unique ID" sid="817732023245874" type="Sprite">
