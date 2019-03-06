@@ -312,43 +312,51 @@
         <object-type name="Sprite4" sid="728792003826555">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479227894368752" speed="10">
-                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="C:\Users\Saurabh\Desktop\game_vectors_events.png">
+                <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479227894368752" speed="10">
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="G:\eatech\png\rain-feild.png">
                         <collision-poly>
-                            <point x="0.0993789" y="0.492132" />
-                            <point x="0.88707" y="0.515022" />
-                            <point x="0.963862" y="1" />
-                            <point x="0.0361378" y="1" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
-                        <collision-poly>
-                            <point x="0.135517" y="0.434907" />
-                            <point x="0.846415" y="0.400572" />
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.130999" y="0.400573" />
-                            <point x="0.900621" y="0.412018" />
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0999434" y="0.515022" />
-                            <point x="0.905139" y="0.526467" />
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.108413" y="0.640916" />
-                            <point x="0.896104" y="0.675251" />
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
+                        <collision-poly>
+                            <point x="0.0858272" y="0.801145" />
+                            <point x="0.914173" y="0.7897" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
@@ -372,6 +380,27 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite5" sid="837024916045158">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.504274" original-source="G:\eatech\png\next.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\select-option.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\new2.png">
+                        <collision-poly>
+                            <point x="0.0958333" y="0.114815" />
+                            <point x="0.9" y="0.111111" />
+                            <point x="0.90625" y="0.87037" />
+                            <point x="0.09375" y="0.866667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="First" plugin-id="Sprite" sid="460516161280621">
@@ -379,6 +408,16 @@
                 <member>Sprite</member>
                 <member>Sprite2</member>
             </members>
+        </family>
+        <family name="move" plugin-id="Sprite" sid="290973074610799">
+            <members>
+                <member>Sprite5</member>
+            </members>
+            <behaviors>
+                <behavior-type name="LiteTween" sid="409096058299742">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
         </family>
     </families>
     <layout-folder>
