@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <include>connect</include>
         <event-block sid="657297751364091">
             <conditions>
                 <condition id="3" name="On touched object" sid="939252872865589" type="Touch">

@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -54,7 +55,7 @@
     <object-folder>
         <object-type name="TiledBackground" sid="383103568264766">
             <plugin id="TiledBg" />
-            <texture original-source="G:\eatech\png\mainBg.png" />
+            <texture original-source="G:\eatech\png\BgTop.png" />
         </object-type>
         <object-type name="fade" sid="364628337743161">
             <plugin id="TiledBg" />
@@ -250,30 +251,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="black_clouds" sid="821165936163973">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="LiteTween" sid="609113273837858">
-                    <behavior id="lunarray_LiteTween" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423266846855512" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Farmer\eatech\Crop insurance Game\imgs\black_clouds.png">
-                        <collision-poly>
-                            <point x="0.056183" y="0.311897" />
-                            <point x="0.5" y="0.231511" />
-                            <point x="0.938459" y="0.34164" />
-                            <point x="0.998842" y="0.5" />
-                            <point x="0.945699" y="0.698553" />
-                            <point x="0.5" y="0.980707" />
-                            <point x="0.0641471" y="0.643891" />
-                            <point x="0.00217202" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="rain" sid="767268835582573">
             <plugin id="Sprite" />
             <behaviors>
@@ -315,56 +292,56 @@
                 <animation framecount="7" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479227894368752" speed="10">
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="G:\eatech\png\rain-feild.png">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.0451722" y="0.738198" />
+                            <point x="0.957086" y="0.738198" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.167137" y="0.331903" />
+                            <point x="0.859966" y="0.297568" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.153586" y="0.423463" />
+                            <point x="0.832863" y="0.446352" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.135517" y="0.595136" />
+                            <point x="0.810277" y="0.549357" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.185206" y="0.183119" />
+                            <point x="0.778656" y="0.160229" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.293619" y="0.652361" />
+                            <point x="0.774139" y="0.457797" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715">
                         <collision-poly>
-                            <point x="0.0858272" y="0.801145" />
-                            <point x="0.914173" y="0.7897" />
+                            <point x="0.108413" y="0.892704" />
+                            <point x="0.932242" y="0.892704" />
                             <point x="1" y="1" />
                             <point x="0" y="1" />
                         </collision-poly>
@@ -401,6 +378,60 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text" sid="227879000381718">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="492833175749104">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="539664739896877">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="709559605966638">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="G:\NewGame\Crop insurance Game\imgs\black_clouds.png" />
+        </object-type>
+        <object-type name="destroyCloud" sid="364735309593222">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="660077584972713" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spRound2" sid="698698330788877">
+            <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="spRound3" sid="292041517906728">
+            <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="spRound4" sid="900706098236634">
+            <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="spRound5" sid="908489159861823">
+            <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="land" sid="518334224630037">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878215734692132" speed="5">
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="G:\eatech\png\bgBottom1.png">
+                        <collision-poly>
+                            <point x="0.160926" y="0.00572246" />
+                            <point x="0.861095" y="0.0457797" />
+                            <point x="0.999435" y="0.998569" />
+                            <point x="0.000564653" y="0.998569" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="First" plugin-id="Sprite" sid="460516161280621">
@@ -425,12 +456,15 @@
         <layout>Layout 2.xml</layout>
         <layout>Layout 3.xml</layout>
         <layout>Layout 4.xml</layout>
+        <layout>Layout 5.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 5.xml</event-sheet>
+        <event-sheet>connect.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="32">
