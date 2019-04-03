@@ -9,7 +9,40 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="816242871731152" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="7" name="Set CSS style" sid="907632698173359" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="234999702563408" type="TextBox">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="619548012630193" type="TextBox3">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="587208685849293" type="TextBox3">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="872100498638036" type="TextBox4">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="158496631927792" type="TextBox4">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="996384105108882" type="TextBox5">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="310565666000959" type="TextBox5">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="252896696734299">
                     <conditions>
@@ -53,46 +86,93 @@
                             <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
                         </action>
                         <action id="1" name="Set placeholder" sid="781237082832104" type="TextBox">
-                            <param id="0" name="Placeholder">&quot;Please Enter Any Ten Digit Number &quot;</param>
+                            <param id="0" name="Placeholder">&quot;Please Enter Your Mobile No.&quot;</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="930706886923756" type="error">
-                            <param id="0" name="Pin to">Sprite</param>
-                            <param id="1" name="Mode">0</param>
+                        <action id="7" name="Set CSS style" sid="222854710620862" type="TextBox">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="318787084626863" type="TextBox3">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="981183137036159" type="TextBox3">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="814683040608696" type="TextBox4">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="812546979498968" type="TextBox4">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="524971577251517" type="TextBox5">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="433013080240515" type="TextBox5">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="830545438221582" type="List">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="789562579163240" type="List">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="731595250894715">
+        <event-block sid="205768809646947">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="606621573324420" type="TextBox" />
+                <condition id="-3" name="Is on-screen" sid="892118532163892" type="List" />
             </conditions>
             <actions>
-                <action id="7" name="Set CSS style" sid="692141218057102" type="TextBox">
+                <action id="6" name="Set CSS style" sid="291443586069690" type="List">
                     <param id="0" name="Property name">&quot;font-size&quot;</param>
                     <param id="1" name="Value">&quot;2vw&quot;</param>
                 </action>
-                <action id="7" name="Set CSS style" sid="752969628819265" type="TextBox">
+                <action id="6" name="Set CSS style" sid="557688673847728" type="List">
                     <param id="0" name="Property name">&quot;text-align&quot;</param>
                     <param id="1" name="Value">&quot;center&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="481485916069291">
+        <event-block sid="758806213698125">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="960757448721790" type="System">
+                <condition id="-8" name="Compare two values" sid="724808418519719" type="System">
                     <param id="0" name="First value">len(TextBox.Text)</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Second value">10</param>
                 </condition>
+                <condition id="-8" name="Compare two values" sid="842879807452753" type="System">
+                    <param id="0" name="First value">len(TextBox3.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="292661895940610" type="System">
+                    <param id="0" name="First value">len(TextBox4.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="189465781008342" type="System">
+                    <param id="0" name="First value">len(TextBox5.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">1</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="680717224829853" type="System">
+                <action id="0" name="Set text" sid="676560998222533" type="TextBox">
+                    <param id="0" name="Text">left(TextBox.Text,10)</param>
+                </action>
+                <action id="-9" name="Set value" sid="243970364940082" type="System">
                     <param id="0" name="Variable">login</param>
                     <param id="1" name="Value">1</param>
-                </action>
-                <action id="0" name="Set text" sid="813486946935651" type="TextBox">
-                    <param id="0" name="Text">left(TextBox.Text,10)</param>
                 </action>
             </actions>
         </event-block>
@@ -128,14 +208,15 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="980390455492394" type="error">
-                            <param id="0" name="Visibility">1</param>
+                        <action behavior="LiteTween" id="10" name="Start" sid="296026262131276" type="error">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="581762121511938" type="System">
-                            <param id="0" name="Seconds">1</param>
+                        <action id="-16" name="Wait" sid="798662114455157" type="System">
+                            <param id="0" name="Seconds">2</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="316753750436985" type="error">
-                            <param id="0" name="Visibility">0</param>
+                        <action behavior="LiteTween" id="11" name="Reverse" sid="271003321171947" type="error">
+                            <param id="0" name="Reverse mode">0</param>
                         </action>
                     </actions>
                 </event-block>

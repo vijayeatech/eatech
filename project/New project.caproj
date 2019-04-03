@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -75,7 +76,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="586635943446947" speed="0">
-                    <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="G:\NewGame\png\button1.png">
+                    <frame duration="1" hotspotX="0.500795" hotspotY="0.5" original-source="G:\eatech\png\ragister.png">
                         <collision-poly>
                             <point x="0.0031746" y="0.0030303" />
                             <point x="0.998413" y="0.0030303" />
@@ -83,56 +84,17 @@
                             <point x="0.0031746" y="0.99697" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="G:\NewGame\png\button2.png">
-                        <collision-poly>
-                            <point x="0.0015873" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0.0015873" y="1" />
-                        </collision-poly>
-                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.501062" original-source="G:\eatech\png\inputBg.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\OR.png">
+                    <frame duration="1" hotspotX="0.500262" hotspotY="0.5" original-source="G:\eatech\png\wallet-board.png">
                         <collision-poly>
-                            <point x="0.702128" y="0.4" />
-                            <point x="0.5" y="0.469697" />
-                            <point x="0.297872" y="0.4" />
-                            <point x="0.771277" y="0.5" />
-                            <point x="0.5" y="0.533333" />
-                            <point x="0.755319" y="0.569697" />
-                            <point x="0.191489" y="0.5" />
+                            <point x="0.000523286" y="0.0113636" />
+                            <point x="0.999477" y="0.0113636" />
+                            <point x="0.999477" y="0.988636" />
+                            <point x="0.000523286" y="0.988636" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.500262" hotspotY="0.5" original-source="G:\eatech\png\wallet-board.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite2" sid="481766171028996">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="559971389976954" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.503311" original-source="G:\NewGame\png\1.png">
-                        <collision-poly>
-                            <point x="0.00225734" y="0.013245" />
-                            <point x="0.5" y="0.165563" />
-                            <point x="0.981941" y="0.10596" />
-                            <point x="0.853273" y="0.139073" />
-                            <point x="0.5" y="0.960265" />
-                            <point x="0.111738" y="0.344371" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="G:\NewGame\png\2.png">
-                        <collision-poly>
-                            <point x="0.00471698" y="0.0235294" />
-                            <point x="0.5" y="0.258824" />
-                            <point x="0.959906" y="0.2" />
-                            <point x="0.988208" y="0.494118" />
-                            <point x="0.92217" y="0.611765" />
-                            <point x="0.5" y="0.752941" />
-                            <point x="0.0518868" y="0.741176" />
-                            <point x="0.00235849" y="0.494118" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502703" original-source="G:\eatech\png\welocme-Message.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\toplay.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -156,18 +118,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="330923850329352" speed="0">
-                    <frame duration="1" hotspotX="0.501377" hotspotY="0.504065" original-source="G:\NewGame\png\play.png">
-                        <collision-poly>
-                            <point x="0.046832" y="0.138211" />
-                            <point x="0.498623" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.495935" />
-                            <point x="0.944904" y="0.837398" />
-                            <point x="0.498623" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0.495935" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.501377" hotspotY="0.504065" original-source="G:\NewGame\png\play.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -235,19 +186,6 @@
                             <point x="0.00795756" y="0.970297" />
                         </collision-poly>
                     </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="error" sid="169398501890192">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Pin" sid="208580516427107">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595118256755236" speed="5">
-                    <frame duration="1" hotspotX="0.50081" hotspotY="0.5" original-source="G:\eatech\png\error.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -359,8 +297,13 @@
         </object-type>
         <object-type name="Sprite5" sid="837024916045158">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="340522595528158">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
-                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
                     <frame duration="1" hotspotX="0.501767" hotspotY="0.504274" original-source="G:\eatech\png\next.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\select-option.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling2.png" />
@@ -373,6 +316,22 @@
                             <point x="0.9" y="0.111111" />
                             <point x="0.90625" y="0.87037" />
                             <point x="0.09375" y="0.866667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500795" hotspotY="0.5" original-source="G:\eatech\png\MANUAL.png">
+                        <collision-poly>
+                            <point x="0.00158983" y="0.00471698" />
+                            <point x="0.99841" y="0.00471698" />
+                            <point x="0.99841" y="0.995283" />
+                            <point x="0.00158983" y="0.995283" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500795" hotspotY="0.5" original-source="G:\eatech\png\MACHINE.png">
+                        <collision-poly>
+                            <point x="0.00158983" y="0.00471698" />
+                            <point x="0.99841" y="0.00471698" />
+                            <point x="0.99841" y="0.995283" />
+                            <point x="0.00158983" y="0.995283" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -420,13 +379,196 @@
         <object-type name="land" sid="518334224630037">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878215734692132" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="878215734692132" speed="0">
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="G:\eatech\png\bgBottom1.png">
                         <collision-poly>
                             <point x="0.160926" y="0.00572246" />
                             <point x="0.861095" y="0.0457797" />
                             <point x="0.999435" y="0.998569" />
                             <point x="0.000564653" y="0.998569" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="C:\Users\vijay\Desktop\1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="367525820962239">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="575296938269149">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="876384413798951" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502703" original-source="G:\eatech\png\welocme-Message.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\toplay.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="G:\eatech\png\land.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="729744723810454">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848429105788832" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501062" original-source="G:\eatech\png\inputBg2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox2" sid="122254589908556">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="230635717945633">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="List" sid="363978630421466">
+            <plugin id="List" />
+        </object-type>
+        <object-type name="TextBox3" sid="609647916871487">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="791317050633189">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox4" sid="115614330861229">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="400371412990456">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TextBox5" sid="478313612507461">
+            <plugin id="TextBox" />
+            <behaviors>
+                <behavior-type name="Pin" sid="519551025991131">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="error" sid="983911950252336">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="524502236561052">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527733425162895" speed="5">
+                    <frame duration="1" hotspotX="0.501241" hotspotY="0.514286" original-source="G:\eatech\png\error2.png">
+                        <collision-poly>
+                            <point x="0.00496278" y="0.0571429" />
+                            <point x="0.498759" y="0.171429" />
+                            <point x="0.98263" y="0.2" />
+                            <point x="0.980149" y="0.485714" />
+                            <point x="0.962779" y="0.571429" />
+                            <point x="0.498759" y="0.285714" />
+                            <point x="0.0521092" y="0.4" />
+                            <point x="0.00496278" y="0.485714" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fade2" sid="233075579771682">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Fade" sid="618139716101012">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="G:\NewGame\png\new.png" />
+        </object-type>
+        <object-type name="CropCollider" sid="752588522920542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="461483299448420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Crop" sid="588069273095524">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="585120191965679">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845493032265428" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="E:\farmer\eatech\png\new.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Crop2Spawning" sid="916076487450778">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488274124865689" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507692" original-source="E:\farmer\eatech\png\tractor.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tractor" sid="654507152972661">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="997276071086523">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="861639088996924" speed="0">
+                    <frame duration="1" hotspotX="0.933333" hotspotY="0.502513" original-source="E:\farmer\eatech\png\hal.png">
+                        <image-point name="Imagepoint 1" x="0.0846154" y="0.9799" />
+                        <image-point name="Imagepoint 2" x="0.138462" y="0.98995" />
+                        <image-point name="Imagepoint 3" x="0.207692" y="0.9799" />
+                        <image-point name="Imagepoint 4" x="0.261538" y="0.984925" />
+                        <collision-poly>
+                            <point x="0.251282" y="0.854272" />
+                            <point x="0.287179" y="1" />
+                            <point x="0.025641" y="0.994975" />
+                            <point x="0.023077" y="0.859297" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.0666667" hotspotY="0.502513" original-source="E:\farmer\eatech\png\hal.png">
+                        <image-point name="Imagepoint 1" x="0.915385" y="0.9799" />
+                        <image-point name="Imagepoint 2" x="0.861538" y="0.98995" />
+                        <image-point name="Imagepoint 3" x="0.792308" y="0.9799" />
+                        <image-point name="Imagepoint 4" x="0.738462" y="0.984925" />
+                        <collision-poly>
+                            <point x="0.976923" y="0.859297" />
+                            <point x="0.974359" y="0.994975" />
+                            <point x="0.712821" y="1" />
+                            <point x="0.748718" y="0.854272" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Animation2" pingpong="0" repeatcount="0" repeatto="0" sid="517656071193366" speed="0">
+                    <frame duration="1" hotspotX="1.06021" hotspotY="0.518182" original-source="E:\farmer\eatech\png\hal.png">
+                        <image-point name="Imagepoint 1" x="0.916129" y="0.981818" />
+                        <image-point name="Imagepoint 2" x="0.862366" y="0.990909" />
+                        <image-point name="Imagepoint 3" x="0.791398" y="0.981818" />
+                        <image-point name="Imagepoint 4" x="0.737634" y="0.986364" />
+                        <collision-poly>
+                            <point x="0.976923" y="0.859297" />
+                            <point x="0.974359" y="0.994975" />
+                            <point x="0.712821" y="1" />
+                            <point x="0.748718" y="0.854272" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="-0.0430108" hotspotY="0.504545" original-source="E:\farmer\eatech\png\hal.png">
+                        <image-point name="Imagepoint 1" x="0.916129" y="0.981818" />
+                        <image-point name="Imagepoint 2" x="0.862366" y="0.990909" />
+                        <image-point name="Imagepoint 3" x="0.791398" y="0.981818" />
+                        <image-point name="Imagepoint 4" x="0.737634" y="0.986364" />
+                        <collision-poly>
+                            <point x="0.976923" y="0.859297" />
+                            <point x="0.974359" y="0.994975" />
+                            <point x="0.712821" y="1" />
+                            <point x="0.748718" y="0.854272" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -437,7 +579,6 @@
         <family name="First" plugin-id="Sprite" sid="460516161280621">
             <members>
                 <member>Sprite</member>
-                <member>Sprite2</member>
             </members>
         </family>
         <family name="move" plugin-id="Sprite" sid="290973074610799">
@@ -450,6 +591,21 @@
                 </behavior-type>
             </behaviors>
         </family>
+        <family name="pop" plugin-id="Sprite" sid="306649588496076">
+            <members>
+                <member>Sprite2</member>
+                <member>Sprite5</member>
+                <member>Sprite6</member>
+            </members>
+            <behaviors>
+                <behavior-type name="LiteTween2" sid="258807511010665">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="971186238351080">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </family>
     </families>
     <layout-folder>
         <layout>Layout 1.xml</layout>
@@ -457,6 +613,7 @@
         <layout>Layout 3.xml</layout>
         <layout>Layout 4.xml</layout>
         <layout>Layout 5.xml</layout>
+        <layout>Layout 6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
@@ -465,6 +622,7 @@
         <event-sheet>Event sheet 4.xml</event-sheet>
         <event-sheet>Event sheet 5.xml</event-sheet>
         <event-sheet>connect.xml</event-sheet>
+        <event-sheet>Event sheet 6.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="32">

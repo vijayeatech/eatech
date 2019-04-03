@@ -90,6 +90,37 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="fade" uid="58">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>1</fade-out-time>
+                                <destroy>After fade out</destroy>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1920</width>
+                        <height>1080</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -109,23 +140,32 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="19">
+                <instance type="Sprite6" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>2</initial-frame>
+                        <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="LiteTween">
+                        <behavior-instance type="LiteTween2">
                             <properties>
                                 <active-on-start>No</active-on-start>
-                                <tweened-property>Position</tweened-property>
-                                <function>EaseInOutBack</function>
-                                <target>960,540</target>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>100</target>
                                 <target-mode>Absolute</target-mode>
-                                <duration>1</duration>
+                                <duration>0.3</duration>
                                 <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Fade">
+                            <properties>
+                                <active-at-start>No</active-at-start>
+                                <fade-in-time>0</fade-in-time>
+                                <wait-time>0</wait-time>
+                                <fade-out-time>0.5</fade-out-time>
+                                <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -133,15 +173,39 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
-                        <y>1507</y>
+                        <y>508</y>
                         <z>0</z>
-                        <width>1062</width>
-                        <height>471</height>
+                        <width>1229</width>
+                        <height>697</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501061559</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="List" uid="55">
+                    <properties>
+                        <items>Select District ; Angul; Balasore; Bargarh; Bhadrak; Balangir; Boudh; Cuttack; Deogarh; Dhenkanal; Gajapati; Ganjam; Jagatsinghpur; Jajpur; Jharsuguda; Kalahandi; Kandhmal; Kendrapura; Keonjhar; Khordha; Koraput; Malkangiri; Mayurbhanj; Nawarngpur, Nayagarh; Nuapada; Puri; Rayagada; Sambalpur; Subrnapur; Sundargarh</items>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <type>Dropdown list</type>
+                        <multi-select>No</multi-select>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>976</x>
+                        <y>369</y>
+                        <z>0</z>
+                        <width>435</width>
+                        <height>94</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                     </world>
                 </instance>
                 <instance type="TextBox" uid="7">
@@ -163,10 +227,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>518</x>
-                        <y>1384</y>
+                        <x>510</x>
+                        <y>241</y>
                         <z>0</z>
-                        <width>879</width>
+                        <width>900</width>
                         <height>94</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -186,8 +250,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1208</x>
-                        <y>1587</y>
+                        <x>954</x>
+                        <y>705</y>
                         <z>0</z>
                         <width>377</width>
                         <height>101</height>
@@ -198,12 +262,18 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="error" uid="14">
+                <instance type="TextBox3" uid="14">
                     <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Disabled</collisions>
+                        <text></text>
+                        <placeholder>Enter Your Name*</placeholder>
+                        <tooltip>requared</tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Pin" />
@@ -211,16 +281,107 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1095</x>
-                        <y>1518</y>
+                        <x>508</x>
+                        <y>369</y>
                         <z>0</z>
-                        <width>617</width>
-                        <height>42</height>
+                        <width>435</width>
+                        <height>94</height>
                         <depth>0</depth>
-                        <hotspotX>0.500810385</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="TextBox4" uid="54">
+                    <properties>
+                        <text></text>
+                        <placeholder>Enter Your Block*</placeholder>
+                        <tooltip>requared</tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>508</x>
+                        <y>499</y>
+                        <z>0</z>
+                        <width>435</width>
+                        <height>94</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="TextBox5" uid="56">
+                    <properties>
+                        <text></text>
+                        <placeholder>Enter Your GP*</placeholder>
+                        <tooltip>requared</tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Text</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>976</x>
+                        <y>499</y>
+                        <z>0</z>
+                        <width>435</width>
+                        <height>94</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="error" uid="59">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>No</active-on-start>
+                                <tweened-property>Opacity</tweened-property>
+                                <function>Linear</function>
+                                <target>100</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>0.3</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1226</x>
+                        <y>636</y>
+                        <z>0</z>
+                        <width>403</width>
+                        <height>35</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501240671</hotspotX>
+                        <hotspotY>0.514285743</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0</opacity>
                     </world>
                 </instance>
             </instances>

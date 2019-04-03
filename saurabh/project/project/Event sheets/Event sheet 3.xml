@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <include>connect</include>
+        <variable constant="0" name="login" sid="578079121126181" static="0" type="number">0</variable>
+        <event-block sid="269995528873470">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="816242871731152" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="252896696734299">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="143853610286383" type="fade">
+                            <param id="0" name="Unique ID">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="407988983309011" type="fade">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="993431639618978">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="690044926748989" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="220819150519768" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="625865473793115" type="Sprite">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="302522770140954" type="TextBox">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="363301055384072" type="Button">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="810780623582016" type="login">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="687732877195648" type="TextBox">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="1" name="Set placeholder" sid="781237082832104" type="TextBox">
+                            <param id="0" name="Placeholder">&quot;Please Enter Any Ten Digit Number &quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="930706886923756" type="error">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="731595250894715">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="606621573324420" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set CSS style" sid="692141218057102" type="TextBox">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="752969628819265" type="TextBox">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="481485916069291">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="960757448721790" type="System">
+                    <param id="0" name="First value">len(TextBox.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="680717224829853" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="813486946935651" type="TextBox">
+                    <param id="0" name="Text">left(TextBox.Text,10)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="152302523877966">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="225548197766464" type="System">
+                    <param id="0" name="First value">len(TextBox.Text)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="578800658852005" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492174766265180">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="382714271112109" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="753234692484567">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="977871743803027" type="Touch">
+                            <param id="0" name="Object">login</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="980390455492394" type="error">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="581762121511938" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="316753750436985" type="error">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="521987062945661">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="593120784453546" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="799867040910601">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="879657177915026" type="Touch">
+                            <param id="0" name="Object">login</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="904808348910281" type="System">
+                            <param id="0" name="Layout">Layout 4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

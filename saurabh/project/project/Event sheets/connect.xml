@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>connect</name>
+    <events>
+        <event-block sid="909207592051119">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="367976525330920" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="450029986315922" type="spRound">
+                    <param id="0" name="Text">roundGame</param>
+                </action>
+                <action id="0" name="Set text" sid="760093656842194" type="spRound2">
+                    <param id="0" name="Text">insuranceGame</param>
+                </action>
+                <action id="0" name="Set text" sid="699864131516011" type="spRound3">
+                    <param id="0" name="Text">schoolGame</param>
+                </action>
+                <action id="0" name="Set text" sid="716320768592434" type="spRound4">
+                    <param id="0" name="Text">cropGame</param>
+                </action>
+                <action id="0" name="Set text" sid="116533356726390" type="spRound5">
+                    <param id="0" name="Text">walletGame</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="197379945607668">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="238669334191044" type="spRound">
+                            <param id="0" name="Unique ID">20</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="520656557415142">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="737912041671425" type="spRound">
+                            <param id="0" name="Unique ID">21</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="251258311808992">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="857979228120660" type="spRound">
+                            <param id="0" name="Unique ID">22</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="207588546537570">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="795167226091727" type="spRound">
+                            <param id="0" name="Unique ID">28</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="893024399389024">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="135886964213264" type="spRound">
+                            <param id="0" name="Unique ID">26</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

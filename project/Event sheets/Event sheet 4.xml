@@ -5,12 +5,11 @@
     <events>
         <include>connect</include>
         <variable constant="0" name="opacity" sid="404834286409908" static="0" type="number">0</variable>
-        <variable constant="0" name="part" sid="682924210147635" static="0" type="number">0</variable>
         <variable constant="0" name="roundGame" sid="451527613271921" static="0" type="number">1</variable>
         <variable constant="0" name="insuranceGame" sid="793255300219526" static="0" type="number">0</variable>
         <variable constant="0" name="schoolGame" sid="382149619320804" static="0" type="number">0</variable>
         <variable constant="0" name="cropGame" sid="895610885061286" static="0" type="number">0</variable>
-        <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">25000</variable>
+        <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">20000</variable>
         <event-block sid="365450208079077">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="700696380685733" type="System">
@@ -79,24 +78,6 @@
                 <action id="-9" name="Destroy" sid="146030403804342" type="rain" />
             </actions>
         </event-block>
-        <event-block sid="217217368606616">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="742348639954856" type="System" />
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block disabled="1" sid="883759611842831">
-            <conditions />
-            <actions>
-                <action id="-16" name="Wait" sid="703707893362433" type="System">
-                    <param id="0" name="Seconds">2</param>
-                </action>
-                <action id="-9" name="Set value" sid="175736418387591" type="System">
-                    <param id="0" name="Variable">part</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="538323418711056">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="518723496023857" type="Sprite4" />
@@ -151,7 +132,7 @@
                 <event-block sid="979993934778768">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="231646250386586" type="Sprite5">
-                            <param id="0" name="Unique ID">9</param>
+                            <param id="0" name="Unique ID">43</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -165,6 +146,11 @@
                                     <param id="0" name="Start Mode">0</param>
                                     <param id="1" name="Force use current">1</param>
                                 </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="322414500341590" type="Sprite5">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">1</param>
+                                </action>
+                                <action behavior="Fade" id="1" name="Start fade" sid="400481747285315" type="fade" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -182,7 +168,7 @@
                 <event-block sid="824174528523738">
                     <conditions>
                         <condition id="-14" name="Pick by unique ID" sid="822105205123135" type="Sprite5">
-                            <param id="0" name="Unique ID">43</param>
+                            <param id="0" name="Unique ID">9</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -304,7 +290,7 @@
                                     <param id="0" name="Frame number">5</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="661908179301135" type="System">
-                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="0" name="Variable">schoolGame</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="696384232182805" type="System">
@@ -340,7 +326,7 @@
                                     <param id="1" name="Value">2000</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="421790767196324" type="System">
-                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="0" name="Variable">schoolGame</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                             </actions>

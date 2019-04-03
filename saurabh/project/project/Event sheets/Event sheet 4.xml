@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 4</name>
+    <events>
+        <include>connect</include>
+        <variable constant="0" name="opacity" sid="404834286409908" static="0" type="number">0</variable>
+        <variable constant="0" name="part" sid="682924210147635" static="0" type="number">0</variable>
+        <variable constant="0" name="roundGame" sid="451527613271921" static="0" type="number">1</variable>
+        <variable constant="0" name="insuranceGame" sid="793255300219526" static="0" type="number">0</variable>
+        <variable constant="0" name="schoolGame" sid="382149619320804" static="0" type="number">0</variable>
+        <variable constant="0" name="cropGame" sid="895610885061286" static="0" type="number">0</variable>
+        <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">25000</variable>
+        <event-block sid="365450208079077">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="700696380685733" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="828397692091818" type="Sprite4">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="545776764401480" type="rain">
+                    <param id="0" name="Angle">random(125,100)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="897589442124836" type="rain">
+                    <param id="0" name="Speed">random(700,900)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="972556424995821">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="300806312127987" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="272379507612694" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(400,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="390136654008179" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(300,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="439240286966486" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(200,2000)</param>
+                            <param id="3" name="Y">-300</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="581943346591916" type="rain" />
+                        <action id="-16" name="Wait" sid="628363823762130" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="391402755769448" type="System">
+                            <param id="0" name="Variable">opacity</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="403391554490774">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="810256020721912" type="rain">
+                    <param id="0" name="Object">collider</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="146030403804342" type="rain" />
+            </actions>
+        </event-block>
+        <event-block sid="217217368606616">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="742348639954856" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block disabled="1" sid="883759611842831">
+            <conditions />
+            <actions>
+                <action id="-16" name="Wait" sid="703707893362433" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="175736418387591" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="538323418711056">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="518723496023857" type="Sprite4" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="475464098435258" type="Sprite4">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="310585459821568" type="New">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="440628674322532">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="955583298152366" type="rain">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="358178554174304" type="Sprite4">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">30</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="684572401217307">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="625533546147759" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="340707773121425" type="rain">
+                            <param id="0" name="Object">New</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="595362278629976" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="177746680794200" type="New" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="901062032396602">
+            <conditions>
+                <condition id="3" name="On touched object" sid="118802508911252" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="979993934778768">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="231646250386586" type="Sprite5">
+                            <param id="0" name="Unique ID">9</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="636532431378410">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="257057002267624" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="343061166828984" type="move">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="832031753235291">
+            <conditions>
+                <condition id="3" name="On touched object" sid="557410251301942" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="824174528523738">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="822105205123135" type="Sprite5">
+                            <param id="0" name="Unique ID">43</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="703387379685636">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="225554834478370" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="910410139855778" type="System">
+                                    <param id="0" name="Layout">Layout 5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="740111541995998">
+            <conditions>
+                <condition id="3" name="On touched object" sid="703860969102076" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="770076035779731">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="366719910331077" type="Sprite5">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="199111401435144">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="500743917323141" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="287969903215349" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="433492269213737" type="Sprite5">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="746475235178366" type="System">
+                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="258502964193927" type="System">
+                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="403611972660032">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="386353957225888" type="Sprite5">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="566715439376201">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="664751086084647" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="638542072220961" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="951571564233595" type="Sprite5">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="914169611950032" type="System">
+                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="467783849144510" type="System">
+                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="883796856323371">
+            <conditions>
+                <condition id="3" name="On touched object" sid="334605147195877" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="485624838438946">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="873257961202736" type="Sprite5">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="449086979466966">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="822292436483714" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="916017261114804" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="927641694414595" type="Sprite5">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="661908179301135" type="System">
+                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="1" name="Value">2000</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="696384232182805" type="System">
+                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="1" name="Value">2000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="174101128239667">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="778944431958642" type="Sprite5">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="893639001147130">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="794596871206470" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="246229876922274" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="717174018074894" type="Sprite5">
+                                    <param id="0" name="Frame number">4</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="219128686717115" type="System">
+                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="1" name="Value">2000</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="421790767196324" type="System">
+                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="1" name="Value">2000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="474497659148891">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="904866890530151" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="554830553106295" type="Text">
+                    <param id="0" name="Text">walletGame</param>
+                </action>
+                <action id="0" name="Set text" sid="627286636971713" type="Text2">
+                    <param id="0" name="Text">insuranceGame</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

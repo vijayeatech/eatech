@@ -3,6 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>connect</name>
     <events>
+        <variable constant="0" name="prepration" sid="493887395161782" static="0" type="number">0</variable>
+        <variable constant="0" name="Crop" sid="628398055956865" static="0" type="number">0</variable>
+        <variable constant="0" name="bulletValue" sid="855642969655295" static="0" type="number">0</variable>
+        <variable constant="0" name="bulletCloud" sid="823321228188522" static="0" type="number">0</variable>
+        <variable constant="0" name="part" sid="964833985304940" static="0" type="number">0</variable>
         <event-block sid="909207592051119">
             <conditions>
                 <condition id="-1" name="Every tick" sid="367976525330920" type="System" />
@@ -24,48 +29,78 @@
                     <param id="0" name="Text">walletGame</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="921649005255825">
+            <conditions>
+                <condition id="3" name="On touched object" sid="699540886691206" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions />
             <sub-events>
-                <event-block sid="197379945607668">
+                <event-block sid="850395465244548">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="238669334191044" type="spRound">
-                            <param id="0" name="Unique ID">20</param>
+                        <condition id="-14" name="Pick by unique ID" sid="237321746588266" type="Sprite5">
+                            <param id="0" name="Unique ID">69</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="127743579656991" type="System">
+                            <param id="0" name="Variable">prepration</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="140366478734487" type="System">
+                            <param id="0" name="Layout">Layout 6</param>
+                        </action>
+                    </actions>
                 </event-block>
-                <event-block sid="520656557415142">
+                <event-block sid="451339052623105">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="737912041671425" type="spRound">
-                            <param id="0" name="Unique ID">21</param>
+                        <condition id="-14" name="Pick by unique ID" sid="846079956622240" type="Sprite5">
+                            <param id="0" name="Unique ID">68</param>
                         </condition>
                     </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="251258311808992">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="857979228120660" type="spRound">
-                            <param id="0" name="Unique ID">22</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="207588546537570">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="795167226091727" type="spRound">
-                            <param id="0" name="Unique ID">28</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                </event-block>
-                <event-block sid="893024399389024">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="135886964213264" type="spRound">
-                            <param id="0" name="Unique ID">26</param>
-                        </condition>
-                    </conditions>
-                    <actions />
+                    <actions>
+                        <action id="-9" name="Set value" sid="443037301603174" type="System">
+                            <param id="0" name="Variable">prepration</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="570590585809141" type="System">
+                            <param id="0" name="Layout">Layout 6</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="863628261012177">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="931931310266828" type="System">
+                    <param id="0" name="Variable">prepration</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="113101159916628" type="tractor">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="358296773360860">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="218493437314843" type="System">
+                    <param id="0" name="Variable">prepration</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="386452488008148" type="tractor">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

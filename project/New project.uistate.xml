@@ -10,16 +10,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Layout 1</layout>
-        <layout order="2">Layout 2</layout>
-        <layout order="3">Layout 3</layout>
-        <layout order="4">Layout 4</layout>
-        <layout active="1" order="6">Layout 5</layout>
-        <event-sheet order="0">Event sheet 1</event-sheet>
-        <event-sheet order="5">Event sheet 4</event-sheet>
-        <event-sheet order="7">Event sheet 5</event-sheet>
-        <event-sheet order="8">connect</event-sheet>
-        <event-sheet order="9">Event sheet 2</event-sheet>
+        <layout order="0">Layout 3</layout>
+        <layout order="1">Layout 4</layout>
+        <layout order="4">Layout 5</layout>
+        <layout order="7">Layout 1</layout>
+        <layout order="8">Layout 2</layout>
+        <layout active="1" order="9">Layout 6</layout>
+        <event-sheet order="2">Event sheet 4</event-sheet>
+        <event-sheet order="3">Event sheet 3</event-sheet>
+        <event-sheet order="5">connect</event-sheet>
+        <event-sheet order="6">Event sheet 5</event-sheet>
+        <event-sheet order="10">Event sheet 6</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,6 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1">
         <family expanded="0" name="First" />
         <family expanded="0" name="move" />
+        <family expanded="0" name="pop" />
     </families-expanded>
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
@@ -40,13 +42,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/play/" />
         <folder expanded="1" path="animation-folder/standSimulator/" />
         <folder expanded="1" path="animation-folder/simulator/" />
         <folder expanded="1" path="animation-folder/login/" />
-        <folder expanded="1" path="animation-folder/error/" />
         <folder expanded="1" path="animation-folder/rain/" />
         <folder expanded="1" path="animation-folder/New/" />
         <folder expanded="1" path="animation-folder/Sprite4/" />
@@ -54,5 +54,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite5/" />
         <folder expanded="1" path="animation-folder/destroyCloud/" />
         <folder expanded="1" path="animation-folder/land/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/error/" />
+        <folder expanded="1" path="animation-folder/CropCollider/" />
+        <folder expanded="1" path="animation-folder/Crop/" />
+        <folder expanded="1" path="animation-folder/Crop2Spawning/" />
+        <folder expanded="1" path="animation-folder/tractor/" />
     </folders-expanded>
 </c2uistate>
