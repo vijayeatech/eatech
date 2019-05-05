@@ -3,65 +3,60 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 6</name>
     <events>
+        <variable constant="0" name="TractorOrBull" sid="229817928074811" static="0" type="number">0</variable>
+        <variable constant="0" name="Calander" sid="660550481302499" static="0" type="number">0</variable>
         <variable constant="0" name="checkWeather" sid="302219252344978" static="0" type="number">0</variable>
         <include>connect</include>
-        <event-block sid="796081246008840">
+        <event-block sid="485674188272771">
             <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="466320314538738" type="tractor">
-                    <param id="0" name="Unique ID">93</param>
-                </condition>
+                <condition id="-2" name="On start of layout" sid="139435427373079" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="917102267732392" type="tractor">
-                    <param id="0" name="Frame number">0</param>
+                <action id="-3" name="Set position" sid="763764486396866" type="fade">
+                    <param id="0" name="X">0</param>
+                    <param id="1" name="Y">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="355855688674899">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="738881689566670" type="tractor">
-                    <param id="0" name="Unique ID">94</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="122912530897000" type="tractor">
-                    <param id="0" name="Frame number">0</param>
+                <action id="-16" name="Set opacity" sid="245611976046507" type="TiledBackground2">
+                    <param id="0" name="Opacity">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="247343812190354">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="940194007939289" type="tractor">
-                    <param id="0" name="Unique ID">95</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="193618179192667" type="tractor">
-                    <param id="0" name="Frame number">0</param>
+                <action id="-9" name="Set value" sid="200278336837204" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="369160421869407">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="348408041694520" type="tractor">
-                    <param id="0" name="Unique ID">96</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="687201062426647" type="tractor">
-                    <param id="0" name="Frame number">1</param>
+                <action id="-9" name="Set value" sid="835048768754046" type="System">
+                    <param id="0" name="Variable">bulletValue</param>
+                    <param id="1" name="Value">1</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="781494518540038">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="282434512277999" type="tractor">
-                    <param id="0" name="Unique ID">97</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="308657501296189" type="tractor">
-                    <param id="0" name="Frame number">1</param>
+                <action id="-16" name="Wait" sid="150806041558076" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="382300738533073" type="System">
+                    <param id="0" name="Variable">Crop</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="709940034275386" type="Sprite2">
+                    <param id="0" name="Pin to">Sprite6</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="522824823234060" type="Sprite5">
+                    <param id="0" name="Pin to">Sprite6</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="817338952419068" type="Sprite8">
+                    <param id="0" name="Pin to">Sprite6</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="846490227045156" type="System">
+                    <param id="0" name="Variable">TractorOrBull</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="468482856115456" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="345425443710953" type="System">
+                    <param id="0" name="Variable">checkWeather</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -72,7 +67,7 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
-                <condition id="-10" name="Compare opacity" sid="522279718317062" type="Sprite4">
+                <condition id="-10" name="Compare opacity" sid="522279718317062" type="water">
                     <param id="0" name="Comparison">2</param>
                     <param id="1" name="Opacity">100</param>
                 </condition>
@@ -146,16 +141,16 @@
         </event-block>
         <event-block sid="214223561719421">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="691049684249437" type="Sprite4" />
+                <condition id="-3" name="Is on-screen" sid="691049684249437" type="water" />
             </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="577784404838823" type="Sprite4">
+                <action id="-16" name="Set opacity" sid="577784404838823" type="water">
                     <param id="0" name="Opacity">opacity</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="964426212709055" type="New">
+                <action disabled="1" id="-16" name="Set opacity" sid="964426212709055" type="New">
                     <param id="0" name="Opacity">opacity</param>
                 </action>
-                <action behavior="Bullet" id="0" name="Set speed" sid="926773514115828" type="TiledBackground2">
+                <action behavior="Bullet" disabled="1" id="0" name="Set speed" sid="926773514115828" type="TiledBackground2">
                     <param id="0" name="Speed">bulletCloud</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="275169464125925" type="TiledBackground2">
@@ -173,9 +168,9 @@
         <event-block sid="980018833859701">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="961021670468531" type="rain">
-                    <param id="0" name="Object">Sprite4</param>
+                    <param id="0" name="Object">water</param>
                 </condition>
-                <condition id="-10" name="Compare opacity" sid="682750843657708" type="Sprite4">
+                <condition id="-10" name="Compare opacity" sid="682750843657708" type="water">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Opacity">30</param>
                 </condition>
@@ -242,431 +237,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="554259893891768">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="649962969218937" type="TiledBackground2">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="X co-ordinate">-500</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="395182163238586" type="TiledBackground2" />
-            </actions>
-        </event-block>
-        <event-block sid="485674188272771">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="139435427373079" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="382300738533073" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-3" name="Set position" sid="763764486396866" type="fade">
-                    <param id="0" name="X">0</param>
-                    <param id="1" name="Y">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="580749852790217" type="tractor">
-                    <param id="0" name="Animation">&quot;Default&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="630384270053178">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="853710535062969" type="Crop">
-                    <param id="0" name="Unique ID">75</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="820988202715269" type="Crop">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="X co-ordinate">2000</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="720358906039208" type="Crop">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="178466772783168" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="349565257947798">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="171252058755940" type="Crop">
-                    <param id="0" name="Unique ID">76</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="795783534006200" type="Crop">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="X co-ordinate">-50</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="360508186444642" type="Crop">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="849474370527625" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">3</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="241026698872602">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="966754462182803" type="Crop">
-                    <param id="0" name="Unique ID">78</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="867718177862278" type="Crop">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="X co-ordinate">2000</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="128591886839047" type="Crop">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="741690849596665" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">4</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="348134748821799">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="363777786772759" type="Crop">
-                    <param id="0" name="Unique ID">77</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="869939081804737" type="Crop">
-                    <param id="0" name="Comparison">3</param>
-                    <param id="1" name="X co-ordinate">-50</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="592208908508347" type="Crop">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="812560574948749" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">5</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="817139453595264">
-            <conditions>
-                <condition id="-14" name="Pick by unique ID" sid="416310395672673" type="Crop">
-                    <param id="0" name="Unique ID">79</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="617436198733592" type="Crop">
-                    <param id="0" name="Comparison">5</param>
-                    <param id="1" name="X co-ordinate">2000</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="157569719521082" type="Crop">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="197764174779788" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Value">6</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="992348257014899">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="306079874755134" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="407293425389964">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="205084233207306" type="Crop">
-                            <param id="0" name="Unique ID">75</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="197216332232853" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="319976317406755" type="Crop">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="240577705851090" type="Crop">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="846645997955396" type="Crop">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="523915190776134" type="Crop">
-                            <param id="0" name="Object">Crop2Spawning</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="562992802791300">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="748625664896754" type="tractor">
-                            <param id="0" name="Unique ID">94</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="731245057192883" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="848532311637669" type="tractor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="831191013888819" type="tractor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="718749980523308" type="tractor">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="874606085484283">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="967237143368172" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="450054676722150">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="694733433731529" type="Crop">
-                            <param id="0" name="Unique ID">76</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="792327136211643" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="788805747100877" type="Crop">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="436914009800528" type="Crop">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="140154285435692" type="Crop">
-                            <param id="0" name="Angle">180</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="592882914834841" type="Crop">
-                            <param id="0" name="Object">Crop2Spawning</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="105232933044964">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="252042982076168" type="tractor">
-                            <param id="0" name="Unique ID">97</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="581600269572374" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="696719270017745" type="tractor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="359418027866251" type="tractor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="910718247920549" type="tractor">
-                            <param id="0" name="Angle">180</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="935426783809070">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="296773063452849" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">3</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="512954486568196">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="230142087250442" type="Crop">
-                            <param id="0" name="Unique ID">78</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="996605760129065" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="822255772483482" type="Crop">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="672813303557407" type="Crop">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="814179267219593" type="Crop">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="353084702021063" type="Crop">
-                            <param id="0" name="Object">Crop2Spawning</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="425448563132634">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="986326235034399" type="tractor">
-                            <param id="0" name="Unique ID">93</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="894707505528731" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="906017468978564" type="tractor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="323726487212002" type="tractor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="917729652407785" type="tractor">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="440270662149105">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="369797389993522" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">4</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="514088882996284">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="149424724544153" type="Crop">
-                            <param id="0" name="Unique ID">77</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="798735160632490" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="724716532643870" type="Crop">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="180428144036668" type="Crop">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="126872141800661" type="Crop">
-                            <param id="0" name="Angle">180</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="895734192072157" type="Crop">
-                            <param id="0" name="Object">Crop2Spawning</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="246026391219916">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="887739084340765" type="tractor">
-                            <param id="0" name="Unique ID">96</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="330343922957815" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="680312190025590" type="tractor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="145172487995832" type="tractor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="528695974229725" type="tractor">
-                            <param id="0" name="Angle">180</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="955494650810686">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="530100565296854" type="System">
-                    <param id="0" name="Variable">Crop</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="826392560912426">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="205424239625808" type="Crop">
-                            <param id="0" name="Unique ID">79</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="436955896524880" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action disabled="1" id="-15" name="Set visible" sid="246165797668466" type="Crop">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="163578051323488" type="Crop">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="227541781864304" type="Crop">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="718890697486255" type="Crop">
-                            <param id="0" name="Object">Crop2Spawning</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="283700071130050">
-                    <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="712327865413880" type="tractor">
-                            <param id="0" name="Unique ID">95</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="696846387103806" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="634620860763766" type="tractor">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="608426764394868" type="tractor">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="974078207630791" type="tractor">
-                            <param id="0" name="Angle">360</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-block sid="717834935935839">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="435475279259397" type="System">
@@ -687,44 +257,10 @@
                         </action>
                         <action id="-9" name="Destroy" sid="567159741410415" type="Crop2Spawning" />
                         <action id="-9" name="Destroy" sid="517400587667041" type="Crop" />
-                        <action id="-9" name="Destroy" sid="684347111569737" type="tractor" />
                         <action id="-16" name="Wait" sid="546548705187186" type="System">
                             <param id="0" name="Seconds">1.0</param>
                         </action>
-                        <action id="-9" name="Set value" sid="919864775914351" type="System">
-                            <param id="0" name="Variable">checkWeather</param>
-                            <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10)</param>
-                        </action>
                     </actions>
-                </event-block>
-                <event-block sid="623195222189814">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="316947230603546" type="System">
-                            <param id="0" name="Variable">checkWeather</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="817383795531978" type="System">
-                            <param id="0" name="Variable">checkWeather</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="341023796308385" type="TiledBackground2">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="956433695331807">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="669234512115479" type="System">
-                            <param id="0" name="Variable">checkWeather</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">10</param>
-                        </condition>
-                    </conditions>
-                    <actions />
                 </event-block>
             </sub-events>
         </event-block>
@@ -745,6 +281,733 @@
                         <action id="-9" name="Set value" sid="117741336257096" type="System">
                             <param id="0" name="Variable">part</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="883641122638974" type="System">
+                            <param id="0" name="Variable">walletGame</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="338552270056888" type="spRound5">
+                            <param id="0" name="Text">walletGame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="715371486647723">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="880465671702013" type="water">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="536294801877541">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="268753705175962" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="945065036114022" type="System">
+                            <param id="0" name="Variable">part</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="384412008617808" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action behavior="LiteTween2" id="10" name="Start" sid="719846412528087" type="Sprite6">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="876590828414719" type="Sprite2">
+                            <param id="0" name="Pin to">Sprite6</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="461142363828538" type="Sprite2">
+                            <param id="0" name="Frame number">5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="962309967927215" type="Sprite5">
+                            <param id="0" name="Frame number">11</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="997424464063870" type="Sprite8">
+                            <param id="0" name="Frame number">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="151281253319558" title="Tractor">
+            <sub-events>
+                <event-block sid="934347098945271">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="473412609886771" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="968953652455530" type="tractor3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="263012546810483" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="820490114826565" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="979073736753861" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="959513565030739" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="163329400554408" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="573645593925335" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">6</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="647435799511791" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">7</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="512255333400949">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="497422455102619" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="864666568772787" type="System">
+                                    <param id="0" name="Object to create">Particles2</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="X">tractor3.ImagePointX(2)-10</param>
+                                    <param id="3" name="Y">tractor3.ImagePointY(2)-20</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="590874617068822" type="Particles2">
+                                    <param id="0" name="Pin to">tractor3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="298433559061110" type="System">
+                                    <param id="0" name="Object to create">Particles2</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="X">tractor3.ImagePointX(4)-10</param>
+                                    <param id="3" name="Y">tractor3.ImagePointY(4)-20</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="984256972407455" type="Particles2">
+                                    <param id="0" name="Pin to">tractor3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                                <action id="-3" name="Create object" sid="606717099596609" type="System">
+                                    <param id="0" name="Object to create">Particles2</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="X">tractor3.ImagePointX(7)</param>
+                                    <param id="3" name="Y">tractor3.ImagePointY(7)-20</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="127137524274763" type="Particles2">
+                                    <param id="0" name="Pin to">tractor3</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="990776189186358">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="368669176669282" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="722450477405021">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="960471601636956" type="tractor3">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="512730857578748" type="tractor3">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="849486094566399" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="360013417200094" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="742249677329703" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="906863064371564" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">4</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="600445612143538" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">5</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="533007755407695" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">6</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="443797256489325" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">7</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="611520288700032" type="System">
+                                    <param id="0" name="Variable">TractorAngle</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="586489850071992">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="281554338289520" type="tractor3">
+                                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Bullet" id="5" name="Set enabled" sid="776097434257021" type="tractor3">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="310318095630542" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="454535006321622" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="695758764836612" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="800588844726696" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">4</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="771902759166080" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">5</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="511353888152318" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">6</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="242597602658441" type="tractor3">
+                                    <param id="0" name="Object">Crop2Spawning</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">7</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="944665263328294" type="System">
+                                    <param id="0" name="Variable">TractorAngle</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="318800640272820">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="812370027571053" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="993110472546261" type="tractor3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="109126514981010" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Value">2.7</param>
+                        </action>
+                        <action behavior="Bullet" disabled="1" id="3" name="Set angle of motion" sid="490401628307782" type="tractor3">
+                            <param id="0" name="Angle">90</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="176097719006509" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="763992255103198" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">2</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="148955709608680" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">3</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="566801201655746" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="147487502844820" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="565409178847719" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">6</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="496719762410355" type="tractor3">
+                            <param id="0" name="Object">Crop2Spawning</param>
+                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                            <param id="2" name="Image point">7</param>
+                        </action>
+                        <action disabled="1" id="-16" name="Wait" sid="414778814959700" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action disabled="1" id="-9" name="Set value" sid="376426905235757" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="385939880926807">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="166345255644691" type="tractor3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">120</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="961450124094881" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="288966568191346" type="tractor3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">700</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="390692169845058" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="799719385418430">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="563517647070184" type="tractor3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">120</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="425013351999369" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="312309126791314" type="tractor3">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">700</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="295031269230305" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="522560623118360">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="720112589554392" type="tractor3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">80</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="218652603639228" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="267933389024690" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="155181650878693">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="627106598734151" type="tractor3">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="X co-ordinate">80</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="845623531680061" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="142908089925719" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="501502893880744">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="323487574131586" type="tractor3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1850</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="173041296284491" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="965662639602596" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="867836483642369" type="tractor3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">700</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="986021325274039" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action disabled="1" id="5" name="Set frame" sid="149086990815278" type="tractor3">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="685778856880355">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="514187185922807" type="tractor3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1780</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="774198028947419" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="292933915211395" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="921726462612632" type="tractor3">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">700</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="269943528032999" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action disabled="1" id="5" name="Set frame" sid="524001651096413" type="tractor3">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="795378905212974">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="968833477482335" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">360</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="474362634192631" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Value">360</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="200036181732569">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="837259521038770" type="tractor3">
+                            <param id="0" name="Object">Crop</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="245873006673091" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="993912438914554" type="System">
+                            <param id="0" name="Variable">Crop</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="380306787003510" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="290739212086203">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="397029575647423" type="System">
+                                    <param id="0" name="Variable">drawout</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="243588934019123" type="System">
+                                    <param id="0" name="Variable">checkWeather</param>
+                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="753594951769371">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="929228820344837" type="System">
+                                    <param id="0" name="Variable">drawout</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="382063021704247" type="System">
+                                    <param id="0" name="Variable">checkWeather</param>
+                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="457702354319009">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="257054784660105" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="165632843897618" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Value">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="504202529840426">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="411258916389324" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="692047397584789" type="System">
+                            <param id="0" name="Variable">TractorAngle</param>
+                            <param id="1" name="Value">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="495259557750252">
+            <conditions>
+                <condition id="3" name="On touched object" sid="544425283998458" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="259313432810880" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="149540622688287" type="Function">
+                    <param id="0" name="Name">&quot;planting&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="400286495438753">
+            <conditions>
+                <condition id="3" name="On touched object" sid="848563147755990" type="Touch">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="486532835041699" type="Sprite8">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="146144245002975" type="Function">
+                    <param id="0" name="Name">&quot;planting&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="938244342744192">
+            <conditions>
+                <condition id="3" name="On touched object" sid="154791925001172" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="891265267779224" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="192773297880874" type="System">
+                    <param id="0" name="Variable">Farming</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="520321080551966" type="System">
+                    <param id="0" name="Layout">Layout 7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966574523252679">
+            <conditions>
+                <condition id="3" name="On touched object" sid="347913494619245" type="Touch">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="890430207933612" type="Sprite8">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="549286701874656" type="System">
+                    <param id="0" name="Variable">Farming</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="438517618378745" type="System">
+                    <param id="0" name="Layout">Layout 7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="703258040797442">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="609576060899570" type="System">
+                    <param id="0" name="Variable">checkWeather</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="306667158500479" type="System">
+                    <param id="0" name="Variable">checkWeather</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="681741707859863" type="TiledBackground2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="225791168860736">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="264458783129745" type="System">
+                    <param id="0" name="Variable">checkWeather</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="136827888598417" type="drt">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="218476527082793">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="638626376888011" type="Sprite6" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="352145188491206" type="TiledBackground2" />
+            </actions>
+        </event-block>
+        <event-block sid="339107076728520">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="927544771003637" type="System">
+                    <param id="0" name="Variable">Crop</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="952114517838972" type="tractor3" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="300690373926027" type="tractor3" />
+            </actions>
+        </event-block>
+        <event-block sid="322063923185458">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="357437938791090" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="739033533375382" type="Text">
+                    <param id="0" name="Text">Crop</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="396303401987291">
+            <conditions>
+                <condition id="0" name="On function" sid="250423448852035" type="Function">
+                    <param id="0" name="Name">&quot;planting&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="857300694331950">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="777232666510816" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="257096526125998" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="892216965083201" type="Sprite5">
+                            <param id="0" name="Frame number">9</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="663403502704055" type="Sprite2">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="415782262650687" type="Sprite8">
+                            <param id="0" name="Frame number">10</param>
                         </action>
                     </actions>
                 </event-block>

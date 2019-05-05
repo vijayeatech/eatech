@@ -82,7 +82,7 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.600000024</opacity>
                     </world>
                 </instance>
                 <instance type="land" uid="25">
@@ -107,24 +107,37 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="48">
+                <instance type="water" uid="48">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="LiteTween">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <tweened-property>Position</tweened-property>
+                                <function>EaseOutBounce</function>
+                                <target>100,100</target>
+                                <target-mode>Absolute</target-mode>
+                                <duration>2.5</duration>
+                                <enforce-mode>Enforce</enforce-mode>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>937</x>
                         <y>652</y>
                         <z>0</z>
-                        <width>1767</width>
-                        <height>631</height>
+                        <width>1915.663452148</width>
+                        <height>766.407714844</height>
                         <depth>0</depth>
-                        <hotspotX>0.500282347</hotspotX>
-                        <hotspotY>0.500715315</hotspotY>
+                        <hotspotX>0.500520825</hotspotX>
+                        <hotspotY>0.500588953</hotspotY>
                         <angle>0</angle>
                         <opacity>0</opacity>
                     </world>
@@ -514,7 +527,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>4</initial-frame>
+                        <initial-frame>2</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>

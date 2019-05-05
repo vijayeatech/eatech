@@ -10,6 +10,54 @@
         <variable constant="0" name="schoolGame" sid="382149619320804" static="0" type="number">0</variable>
         <variable constant="0" name="cropGame" sid="895610885061286" static="0" type="number">0</variable>
         <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">20000</variable>
+        <event-block sid="235818093481089">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="332644422905014" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="531103901955530" type="System">
+                    <param id="0" name="Variable">opacity</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="312288338113705" type="System">
+                    <param id="0" name="Variable">insuranceGame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="366478249532082" type="System">
+                    <param id="0" name="Variable">schoolGame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="413023873423880" type="System">
+                    <param id="0" name="Variable">cropGame</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="820736899321775">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="481244371495596" type="System">
+                            <param id="0" name="Variable">schoolGame</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="632810972120702">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="821744885604692" type="System" />
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="691419318003508" type="move">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="365450208079077">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="700696380685733" type="System">
@@ -17,7 +65,7 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
-                <condition id="-10" name="Compare opacity" sid="828397692091818" type="Sprite4">
+                <condition id="-10" name="Compare opacity" sid="828397692091818" type="water">
                     <param id="0" name="Comparison">2</param>
                     <param id="1" name="Opacity">100</param>
                 </condition>
@@ -80,10 +128,10 @@
         </event-block>
         <event-block sid="538323418711056">
             <conditions>
-                <condition id="-3" name="Is on-screen" sid="518723496023857" type="Sprite4" />
+                <condition id="-3" name="Is on-screen" sid="518723496023857" type="water" />
             </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="475464098435258" type="Sprite4">
+                <action id="-16" name="Set opacity" sid="475464098435258" type="water">
                     <param id="0" name="Opacity">opacity</param>
                 </action>
                 <action id="-16" name="Set opacity" sid="310585459821568" type="New">
@@ -94,9 +142,9 @@
         <event-block sid="440628674322532">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="955583298152366" type="rain">
-                    <param id="0" name="Object">Sprite4</param>
+                    <param id="0" name="Object">water</param>
                 </condition>
-                <condition id="-10" name="Compare opacity" sid="358178554174304" type="Sprite4">
+                <condition id="-10" name="Compare opacity" sid="358178554174304" type="water">
                     <param id="0" name="Comparison">4</param>
                     <param id="1" name="Opacity">30</param>
                 </condition>
@@ -334,19 +382,6 @@
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="474497659148891">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="904866890530151" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="554830553106295" type="Text">
-                    <param id="0" name="Text">walletGame</param>
-                </action>
-                <action id="0" name="Set text" sid="627286636971713" type="Text2">
-                    <param id="0" name="Text">insuranceGame</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

@@ -29,61 +29,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="311142113770282">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="801247676365143" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-5" name="Set width" sid="190370517592140" type="TiledBackground2">
-                    <param id="0" name="Width">Self.Width+200</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="650238813235676">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="754106298663298" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">70</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="885888546659619" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">70</param>
-                </action>
-            </actions>
-            <sub-events>
-                <event-block sid="465221803278027">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="361141010879879" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="629992596921708" type="System">
-                            <param id="0" name="Variable">part</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="982858231041844">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="228811559158024" type="System">
-                    <param id="0" name="Variable">bulletValue</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="770782766635026" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="962500518475659">
             <conditions>
                 <condition behavior="Fade" id="0" name="On fade-out finished" sid="234119028019886" type="fade" />

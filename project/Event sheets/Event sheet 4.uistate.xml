@@ -5,22 +5,29 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
     <scroll-pos>0</scroll-pos>
-    <conditions-column>266</conditions-column>
-    <actions-namecolumn>109</actions-namecolumn>
+    <conditions-column>295</conditions-column>
+    <actions-namecolumn>108</actions-namecolumn>
     <condition-namecolumns>
-        <nest>121</nest>
-        <nest>80</nest>
-        <nest>80</nest>
-        <nest>80</nest>
-        <nest>68</nest>
-        <nest>50</nest>
-        <nest>32</nest>
-        <nest>26</nest>
+        <nest>93</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>24</nest>
+        <nest>23</nest>
     </condition-namecolumns>
     <events>
         <event collapsed="1" sid="365450208079077" />
         <event collapsed="1" sid="440628674322532" />
+        <event collapsed="1" sid="979993934778768" />
+        <event collapsed="1" sid="832031753235291" />
+        <event collapsed="1" sid="740111541995998" />
         <event collapsed="1" sid="770076035779731" />
         <event collapsed="1" sid="403611972660032" />
+        <event collapsed="1" sid="883796856323371" />
     </events>
 </c2uistate>

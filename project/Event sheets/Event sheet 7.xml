@@ -1,0 +1,2142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 7</name>
+    <events>
+        <variable constant="0" name="planting" sid="184043898345621" static="0" type="number">0</variable>
+        <variable constant="0" name="yeldProfit" sid="905737829635216" static="0" type="number">21000</variable>
+        <variable constant="0" name="uriaFert" sid="898011359462485" static="0" type="number">3500</variable>
+        <variable constant="0" name="otherExp" sid="744930414570900" static="0" type="number">2000</variable>
+        <include>connect</include>
+        <variable constant="0" name="HarvestingMAchine" sid="586101537563185" static="0" type="number">0</variable>
+        <variable constant="0" name="HarvestingManual" sid="785106155935425" static="0" type="number">0</variable>
+        <variable constant="0" name="landPre" sid="583898673148464" static="0" type="number">2000</variable>
+        <variable constant="0" name="harvestingCost" sid="685651060333085" static="0" type="number">2000</variable>
+        <variable constant="0" name="Farming" sid="854981100166278" static="0" type="number">0</variable>
+        <variable constant="0" name="ByMan" sid="199430169679607" static="0" type="number">0</variable>
+        <variable constant="0" name="BySeeds" sid="251061244069915" static="0" type="number">0</variable>
+        <variable constant="0" name="Byuria" sid="202816156039714" static="0" type="number">0</variable>
+        <variable constant="0" name="TractorAngle" sid="326669601083688" static="0" type="number">180</variable>
+        <event-block sid="303706947148360">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="300032751635165" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="643066229142148" type="Crop">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="753010006160027">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="218142471344839" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" disabled="1" id="3" name="Set angle of motion" sid="108856223461550" type="ManualPlantation">
+                    <param id="0" name="Angle">360</param>
+                </action>
+                <action id="-12" name="Set group active" sid="104458729681638" type="System">
+                    <param id="0" name="Group name">&quot;By Man&apos;&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="812040322612873" type="System">
+                    <param id="0" name="Group name">&quot;By Seeds&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="308905329233622" type="System">
+                    <param id="0" name="Group name">&quot;Harvesting&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="327034380513664" type="Sprite2">
+                    <param id="0" name="Pin to">Sprite6</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="516701513196329" type="Sprite5">
+                    <param id="0" name="Pin to">Sprite6</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="408149117528321" type="Sprite2">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="748699577931378" type="System">
+                    <param id="0" name="Variable">Crop</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="699266813131241" type="System">
+                    <param id="0" name="Variable">yeldProfit</param>
+                    <param id="1" name="Value">21000</param>
+                </action>
+                <action id="-9" name="Set value" sid="634723840553707" type="System">
+                    <param id="0" name="Variable">uriaFert</param>
+                    <param id="1" name="Value">3500</param>
+                </action>
+                <action id="-9" name="Set value" sid="147666056902024" type="System">
+                    <param id="0" name="Variable">otherExp</param>
+                    <param id="1" name="Value">2000</param>
+                </action>
+                <action id="-9" name="Set value" sid="283803540328235" type="System">
+                    <param id="0" name="Variable">HarvestingMAchine</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="266711879526579" type="System">
+                    <param id="0" name="Variable">HarvestingManual</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="246536808203190" type="System">
+                    <param id="0" name="Variable">landPre</param>
+                    <param id="1" name="Value">2000</param>
+                </action>
+                <action id="-9" name="Set value" sid="246138043805748" type="System">
+                    <param id="0" name="Variable">harvestingCost</param>
+                    <param id="1" name="Value">2000</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="590404179571433" type="System">
+                    <param id="0" name="Variable">Farming</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="712003924984752" type="System">
+                    <param id="0" name="Variable">ByMan</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action disabled="1" id="-9" name="Set value" sid="637213768094620" type="System">
+                    <param id="0" name="Variable">BySeeds</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="791600124347689" type="System">
+                    <param id="0" name="Variable">Byuria</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="478710523150355" type="System">
+                    <param id="0" name="Variable">TractorAngle</param>
+                    <param id="1" name="Value">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="137941924078121" title="Drought">
+            <sub-events>
+                <event-block sid="776710215744270">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="446459659153928" type="System">
+                            <param id="0" name="Variable">checkWeather</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="278224817863942" type="System">
+                            <param id="0" name="Variable">checkWeather</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="158525163860528" type="TiledBackground2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="575559966535808">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="829130842716272" type="System">
+                            <param id="0" name="Variable">checkWeather</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="771004722920063" type="drt">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="906548226126437" title="Planting">
+            <sub-events>
+                <event-group description="" sid="115605049114389" title="By Man&apos;">
+                    <sub-events>
+                        <event-block sid="728643118294202">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="687286201421052" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="898221017180344" type="ManualPlantation">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="209761963531110">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="772217045320036" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="135601227114342" type="ManualPlantation">
+                                            <param id="0" name="Angle">360</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="782534069935972">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="458923642753246" type="System">
+                                    <param id="0" name="Interval (seconds)">0.25</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="170215844110727" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="653376013386851" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="532251686288359" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="643545615867811" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">4</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="556394292074119" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">5</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="821931223791742" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">6</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="273534348919939" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">7</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="336648905953586" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">8</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="956916095793115" type="ManualPlantation">
+                                    <param id="0" name="Object">Plant</param>
+                                    <param id="1" name="Layer">&quot;bgBottom&quot;</param>
+                                    <param id="2" name="Image point">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="750134039403087">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="759104494882126" type="ManualPlantation">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">1800</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="812732057233701" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="628230623462970" type="ManualPlantation">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="653105578123460" type="ManualPlantation">
+                                    <param id="0" name="X">1700</param>
+                                    <param id="1" name="Y">Self.Y-122</param>
+                                </action>
+                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="661380675089286" type="ManualPlantation">
+                                    <param id="0" name="Angle">180</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="626285182228561" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="327306924881803" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="402392315213603">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="515531181791941" type="ManualPlantation">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">140</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="905288276453705" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="460837278036552">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="951058074390504" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="617263621951971" type="ManualPlantation">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="634349723583917" type="ManualPlantation">
+                                            <param id="0" name="X">120</param>
+                                            <param id="1" name="Y">Self.Y-122</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="873707263266177" type="ManualPlantation">
+                                            <param id="0" name="Angle">360</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="902495103443480" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="272683695288989" type="System">
+                                            <param id="0" name="Variable">ByMan</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="867783129916413">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="658294406710243" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="708035391744125" type="ManualPlantation">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">1750</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="622014741939301">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="354568370496440" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="595495640161903" type="ManualPlantation">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="134955311997569" type="ManualPlantation">
+                                            <param id="0" name="X">1750</param>
+                                            <param id="1" name="Y">Self.Y-122</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="961157271177583" type="ManualPlantation">
+                                            <param id="0" name="Angle">180</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="838737997835864" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="251057519964719" type="System">
+                                            <param id="0" name="Variable">ByMan</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="933009318570045">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="967944696514451" type="ManualPlantation">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">150</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="573178175197864" type="System">
+                                    <param id="0" name="Variable">ByMan</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="150993355213870">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="291081964191003" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="5" name="Set frame" sid="110260521007794" type="ManualPlantation">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action behavior="Bullet" id="3" name="Set angle of motion" sid="241855947916915" type="ManualPlantation">
+                                            <param id="0" name="Angle">360</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="397107161077271" type="ManualPlantation">
+                                            <param id="0" name="X">170</param>
+                                            <param id="1" name="Y">Self.Y-122</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="278386108761869" type="System">
+                                            <param id="0" name="Variable">ByMan</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="868400226417139" type="System">
+                                            <param id="0" name="Seconds">6</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="655377736699382" type="System">
+                                            <param id="0" name="Variable">CalanderStart</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="873702833643817" title="By Seeds">
+                    <sub-events>
+                        <event-block sid="698008396820404">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="646904379652787" type="Farmer" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="585447784214083" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="628273395005860" type="Farmer">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="382797624321196">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="482473691341928" type="Farmer2" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="277143567941184" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="516634409931581" type="Farmer2">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="598384894350658" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="600992352273102" type="System">
+                                    <param id="0" name="Variable">CalanderStart</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="107414065322957">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="936161929291738" type="System">
+                                    <param id="0" name="Variable">BySeeds</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="953662002803216" type="Farmer">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="259551545074195">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="124731363845116" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="437115906916870" type="Farmer">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="316308481881044" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="865645574452207" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="285980505046276" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="473945960591785" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="516107355440236" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="973921719423751" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="627118574135621" type="Farmer2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="530471730416620" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="304301169810786" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="825509138238171" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="420457453350604" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="881680299529699" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="668594474661141" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="417633007143805" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="478571226469345" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="203063496117208" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="966307400965375" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="369947338904042" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="231466918597476" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="926439426986539" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="139924070099942" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="194104227326132" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="108863949046138" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="417230652163462" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="972024276950020" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="520679150293296" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="521979117871200" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="682354841343520" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="902096511531050" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="564507624150200" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="249898722918136" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="384422439616117" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="820828363077093" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="350952783149906" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="165073582809041" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="642636465345634" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="622889894281404" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="795249834878929" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="433587266992158" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="706483160701198" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="410233990827313" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="663000330920741" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="900319033032331" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="837571871035602" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="199640827192965" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="255542593251786" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="891330746654129" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="282157288832211" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="843318370757326" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="612878469847180" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="667312005602131" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="937625846609865" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="840369512495737" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="575362775978508" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="965919162672443" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="244600478005783" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="461085242879492" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="194234576062823" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="135825075240683" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="255693642594942" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="854223767973171" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="787364359570713" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="924025105450486" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="614114690943090" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="182571765240331" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="691724361670002" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="450417267564687" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="588203121030291" type="Particles">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="887104066029875" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="226517845505135" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="644885712519930" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="533240712285161" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="528663468819089" type="System">
+                                            <param id="0" name="Object to create">Particles</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="273292835661780" type="Particles">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="763999505103382" type="Particles">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="803870347242799" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="100714612517482" type="Farmer">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="946043564142474" type="Farmer">
+                                            <param id="0" name="X">Self.X-170</param>
+                                            <param id="1" name="Y">Self.Y-300</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="190893350622988" type="Farmer">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="279610092759329" type="Farmer2">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="343868695897318" type="Farmer2">
+                                            <param id="0" name="X">Self.X+450</param>
+                                            <param id="1" name="Y">Self.Y-270</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="900287275787450" type="Farmer2">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="693952816581294" title="uria">
+            <sub-events>
+                <event-group description="" sid="991826369051630" title="By Seeds2">
+                    <sub-events>
+                        <event-block sid="342803960189394">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="198263568799244" type="Farmer" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="657920266448771" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="707668499377017" type="Farmer">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="414859078959783">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="348508967251022" type="Farmer2" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="158637975761872" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="991457435647063" type="Farmer2">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="490519223309775" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="279298093192850" type="System">
+                                    <param id="0" name="Variable">CalanderStart</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="630611235295118">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="485420383043242" type="System">
+                                    <param id="0" name="Variable">Byuria</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="254851587050384">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="319132301997902" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="327733610433099" type="System">
+                                            <param id="0" name="Object to create">Farmer</param>
+                                            <param id="1" name="Layer">&quot;UI2&quot;</param>
+                                            <param id="2" name="X">520</param>
+                                            <param id="3" name="Y">983</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="715288892319805" type="System">
+                                            <param id="0" name="Object to create">Farmer2</param>
+                                            <param id="1" name="Layer">&quot;UI2&quot;</param>
+                                            <param id="2" name="X">1353</param>
+                                            <param id="3" name="Y">988</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="589951005239847" type="Farmer">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="673837266333246" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="911156567101420" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="260694663191020" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="104131450194524" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="419289724240313" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="210852055294512" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="475675755322595" type="Farmer2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="131671554958596" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="597922222823447" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="610260874878089" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="229897648622146" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="339181629463746" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="447403077097307" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="882326293819582" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="884087964204547" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="910847641991921" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="667798200634497" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="284519887374021" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="582873453756442" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="781634075862467" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="965248235464754" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="352769587325834" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="786106793724851" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="150225710491062" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="657853509990863" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="993186978916208" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="147538547789408" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="547158066728638" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="355431601256792" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="658763164085042" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="985740886267894" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="642295988912916" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="712838267490434" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="340680551537543" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="161087463206718" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="441967475152106" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="800990324391089" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="129846566151031" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="865798957710897" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="429753890786500" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="756648849130736" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="519668485336749" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="208226148144702" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="626920964811607" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="474204079685752" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="984937832689492" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="187015473196727" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="739113405696854" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="838545746592990" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="920508243639484" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="982621900959363" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="270690724840350" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="425461159305100" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="353986716631660" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="671647492645903" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="578054135856918" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="989379262278741" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="945723311340435" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="793035733505770" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="984461264328925" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="157017057208057" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="665279428089262" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="566920208023376" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="316450298492782" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="906948858980396" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="243658520437011" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="147989388399769" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="814193085941323" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="381756475624030" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="525393776451067" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="637409476794177" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="972828484344812" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="953465481120613" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="840072403592558" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="105118982860628" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="282373816638634" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="453539752542068" type="Farmer">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="113294192779781" type="Farmer">
+                                            <param id="0" name="X">Self.X-170</param>
+                                            <param id="1" name="Y">Self.Y-300</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="764385970278467" type="Farmer">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="873426900094715" type="Farmer2">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="656230256639944" type="Farmer2">
+                                            <param id="0" name="X">Self.X+450</param>
+                                            <param id="1" name="Y">Self.Y-270</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="437068502239919" type="Farmer2">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="439521309835430" title="uria2">
+            <sub-events>
+                <event-group description="" sid="759972915091556" title="By Seeds3">
+                    <sub-events>
+                        <event-block sid="601274440459401">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="346203203925710" type="Farmer" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="995188175681835" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="104134881028086" type="Farmer">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="465484231660858">
+                            <conditions>
+                                <condition behavior="LiteTween" id="4" name="On tween end" sid="154125864541442" type="Farmer2" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="909905423700182" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-26" name="Move to layer" sid="880548249585106" type="Farmer2">
+                                    <param id="0" name="Layer">&quot;bgBottom&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="871787763825548" type="System">
+                                    <param id="0" name="Seconds">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="245669241636480" type="System">
+                                    <param id="0" name="Variable">CalanderStart</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="965688425348834">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="669205327033410" type="System">
+                                    <param id="0" name="Variable">Byuria</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="148641237616259">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="104462169671594" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="826978004928467" type="System">
+                                            <param id="0" name="Object to create">Farmer</param>
+                                            <param id="1" name="Layer">&quot;UI2&quot;</param>
+                                            <param id="2" name="X">520</param>
+                                            <param id="3" name="Y">983</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="471439159957763" type="System">
+                                            <param id="0" name="Object to create">Farmer2</param>
+                                            <param id="1" name="Layer">&quot;UI2&quot;</param>
+                                            <param id="2" name="X">1353</param>
+                                            <param id="3" name="Y">988</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="358268575413882" type="Farmer">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="968145229248156" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="248530173857190" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="784030271835130" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="974527679340034" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="231083545525857" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="568879227612415" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="165117049775663" type="Farmer2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="152615587927050" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="129148534588024" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="869348210972643" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="701738453262259" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="348992881606295" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="999126622215995" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="770861338018810" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="775916410150914" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="149070137556441" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="750491933588150" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="384083720508776" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="377022229933590" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="622685394978364" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="239016647418460" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="473503247572700" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="755875056510561" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="296415252116087" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="307804785212535" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="584078188083233" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="341420561553686" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="698848096440028" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="745527734001811" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="225016569545238" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="110953187496369" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="965109451009048" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="136534939510000" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="667320130190634" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="647230101092972" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="782735623415787" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="593600879978243" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="285610347625272" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="758727248066200" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="554114371609058" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="289691796303847" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="921269338305756" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="311014811641618" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="972496464493256" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="447101717458237" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="586217068162910" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="248547821472114" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="198238765015043" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="534449989003900" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="334995764236167" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="513939978624760" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="312060732260713" type="Farmer">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="736098121765192" type="Farmer">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="100258415842704" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="801872577567633" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="982105913730707" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="946229871022660" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="105000056628225" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="343919182858943" type="Farmer">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="894221172171864" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="797221213815099" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer.ImagePointX(1)</param>
+                                            <param id="3" name="Y">Farmer.ImagePointY(1)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="868342680561466" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="721625526107364" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="521161752301756" type="Farmer2">
+                                            <param id="0" name="X">Self.X</param>
+                                            <param id="1" name="Y">Self.Y-150</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="251339846988920" type="Farmer2">
+                                            <param id="0" name="Frame number">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="327495661215407" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="984337667195018" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="823952833887217" type="Particles5">
+                                            <param id="0" name="Angle">200</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="499791321452634" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="599999927526235" type="System">
+                                            <param id="0" name="Seconds">1.0</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="406433560026308" type="Farmer2">
+                                            <param id="0" name="Frame number">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="613792589303042" type="System">
+                                            <param id="0" name="Seconds">0.3</param>
+                                        </action>
+                                        <action id="-3" name="Create object" sid="627113357144746" type="System">
+                                            <param id="0" name="Object to create">Particles5</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="X">Farmer2.ImagePointX(2)</param>
+                                            <param id="3" name="Y">Farmer2.ImagePointY(2)</param>
+                                        </action>
+                                        <action id="-8" name="Set angle" sid="866912837451679" type="Particles5">
+                                            <param id="0" name="Angle">320</param>
+                                        </action>
+                                        <action id="4" name="Set speed" sid="568467725109583" type="Particles5">
+                                            <param id="0" name="Speed">random(300,500)</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="997303734605975" type="System">
+                                            <param id="0" name="Seconds">0.5</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="597013747460915" type="Farmer">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="476173061698190" type="Farmer">
+                                            <param id="0" name="X">Self.X-170</param>
+                                            <param id="1" name="Y">Self.Y-300</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="334635882588465" type="Farmer">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="1" name="Set maximum speed" sid="251864274666545" type="Farmer2">
+                                            <param id="0" name="Max speed">270</param>
+                                        </action>
+                                        <action behavior="MoveTo" id="4" name="Move to XY" sid="150842896756950" type="Farmer2">
+                                            <param id="0" name="X">Self.X+450</param>
+                                            <param id="1" name="Y">Self.Y-270</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="171860429708614" type="Farmer2">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="259159629406408">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="982521022549046" type="System">
+                    <param id="0" name="Variable">Farming</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="333835100950523">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="426638622971637" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="357256264177937" type="System">
+                            <param id="0" name="Variable">ByMan</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="358111507861429" type="System">
+                            <param id="0" name="Group name">&quot;By Man&apos;&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="681892960385489">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="564248292550761" type="System">
+                    <param id="0" name="Variable">Farming</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="662741042130257">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="642021188273101" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="365346217673332" type="System">
+                            <param id="0" name="Variable">BySeeds</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="911834340620002" type="System">
+                            <param id="0" name="Group name">&quot;By Seeds&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="978214972502054">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="222176278638106" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="636775630564457" type="water">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="944066077027907" type="rain">
+                    <param id="0" name="Angle">random(125,100)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="445851475604272" type="rain">
+                    <param id="0" name="Speed">random(700,900)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="558821586883716">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="264396308786674" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="732760247691830" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(400,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="788171248201682" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(300,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="260420060224379" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(200,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="884203208946916" type="rain" />
+                        <action id="-16" name="Wait" sid="210536911025810" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="109250745082433" type="System">
+                            <param id="0" name="Variable">opacity</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="314205017878283">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="664971015723032" type="rain">
+                    <param id="0" name="Object">collider</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="784466178072456" type="rain" />
+            </actions>
+        </event-block>
+        <event-block sid="217011376224867">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="551316649054988" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="554096139647473" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790010359475441">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="445082083144384" type="water" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-16" name="Set opacity" sid="819515757613388" type="water">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="306482107280672" type="New">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="333492810799211" type="TiledBackground2">
+                    <param id="0" name="Speed">bulletCloud</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="143327910472817" type="TiledBackground2">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-16" name="Wait" sid="846163676555856" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="483666115586977" type="System">
+                    <param id="0" name="Variable">bulletValue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="165001354631196">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="131765188644405" type="rain">
+                    <param id="0" name="Object">water</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="150783981682070" type="water">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">30</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="883411138707931">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="192747393707168" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="648229635113543" type="rain">
+                            <param id="0" name="Object">New</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="657700565324593" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="658398427927062" type="New" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="515290838081192">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="646329100067178" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="512612071554131" type="TiledBackground2">
+                    <param id="0" name="Width">Self.Width+200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="375916200972065">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="514604157418994" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">95</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="937125786624725" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="719227189071699">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="565165155069282" type="System">
+                    <param id="0" name="Variable">bulletValue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="196959810598838" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="127394055097874">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="228675930010080" type="TiledBackground2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">100</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="326647662067608">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="532852102296835" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="877056295144562" type="System">
+                            <param id="0" name="Variable">part</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="508682270520159" type="System">
+                            <param id="0" name="Variable">walletGame</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="738645271504079" title="Harvesting">
+            <sub-events>
+                <event-group description="" sid="997981773958195" title="HArvesting-MAnual" />
+            </sub-events>
+        </event-group>
+        <event-block sid="786871840176120">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="719183917909503" type="System">
+                    <param id="0" name="Variable">Harvesting</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action disabled="1" id="-12" name="Set group active" sid="596518968938765" type="System">
+                    <param id="0" name="Group name">&quot;Harvesting&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action disabled="1" id="0" name="Call function" sid="181911423833235" type="Function">
+                    <param id="0" name="Name">&quot;Harvesting&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="256941113233339">
+            <conditions>
+                <condition id="3" name="On touched object" sid="704375696584967" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="494489745515916" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="498766733418765" type="Sprite6">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="150088445284189" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="212292783646768" type="System">
+                    <param id="0" name="Variable">HarvestingManual</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="629456820215456" type="System">
+                    <param id="0" name="Variable">CalanderStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="548405244846764">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="224255331780896" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="352079227530589" type="System">
+                            <param id="0" name="Variable">walletGame</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="715295825412529">
+            <conditions>
+                <condition id="3" name="On touched object" sid="159993472708634" type="Touch">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="430482408440495" type="Sprite5">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="11" name="Reverse" sid="973799892456659" type="Sprite6">
+                    <param id="0" name="Reverse mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="794836882052282" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="564082744147203" type="System">
+                    <param id="0" name="Variable">HarvestingMAchine</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="110014153699654" type="System">
+                    <param id="0" name="Variable">CalanderStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="262411223208603">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="264051042142745" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="757589164800512" type="System">
+                            <param id="0" name="Variable">walletGame</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="858725018183439">
+            <conditions>
+                <condition id="0" name="On function" sid="547639199912177" type="Function">
+                    <param id="0" name="Name">&quot;Harvesting&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="663000632507824" type="Sprite6">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425135549077357">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="417571621113930" type="Harvesting">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">40</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="997235223922315">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="462861906956251" type="System">
+                    <param id="0" name="Variable">landPre</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="272461899092255" type="spRound6" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="409676201851146" type="spRound6">
+                    <param id="0" name="Text">landPre</param>
+                </action>
+                <action id="-15" name="Set visible" sid="393520863871890" type="Sprite9">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="588769239408426">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="541732193978073" type="System">
+                    <param id="0" name="Variable">landPre</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="674694570419479" type="Sprite9">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="285679138384217" type="spRound6">
+                    <param id="0" name="Text">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721784967810074">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="349862484472104" type="System">
+                    <param id="0" name="Variable">schoolGame</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="374784470046853" type="spRound7" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="522916077016701" type="spRound7">
+                    <param id="0" name="Text">schoolGame</param>
+                </action>
+                <action id="-15" name="Set visible" sid="778229227126497" type="Sprite10">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="823776466481507">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="546169207396420" type="System">
+                    <param id="0" name="Variable">schoolGame</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="873267822069839" type="spRound7">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="742522246305626" type="Sprite10">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="132149964520438">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="145434820850834" type="System">
+                    <param id="0" name="Variable">insuranceGame</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="336677348602776" type="spRound8" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="243318567764687" type="spRound8">
+                    <param id="0" name="Text">insuranceGame</param>
+                </action>
+                <action id="-15" name="Set visible" sid="976332637154110" type="Sprite11">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297119436953467">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="633329745826930" type="System">
+                    <param id="0" name="Variable">insuranceGame</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="740614874758844" type="spRound8">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="409562122681913" type="Sprite11">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="626904469399612">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="538776444771276" type="System">
+                    <param id="0" name="Variable">harvestingCost</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="167010980365233" type="spRound10" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="802279978531438" type="spRound10">
+                    <param id="0" name="Text">harvestingCost</param>
+                </action>
+                <action id="-15" name="Set visible" sid="983984160938677" type="Sprite13">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101790988097810">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="461079640111158" type="System">
+                    <param id="0" name="Variable">harvestingCost</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="476326611256211" type="spRound10">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="762550608646397" type="Sprite13">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634372098005067">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="898158867875713" type="System">
+                    <param id="0" name="Variable">uriaFert</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="312818329279803" type="spRound11" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="393852109270990" type="spRound11">
+                    <param id="0" name="Text">uriaFert</param>
+                </action>
+                <action id="-15" name="Set visible" sid="300867267886470" type="Sprite14">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="906798301125809">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="950240061844200" type="System">
+                    <param id="0" name="Variable">uriaFert</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="560824479621376" type="spRound11">
+                    <param id="0" name="Text">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="597743106733503" type="Sprite14">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="385107914296062">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="855132819747378" type="System">
+                    <param id="0" name="Variable">yeldProfit</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="410779735654500" type="spRound14" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="339885724691941" type="spRound14">
+                    <param id="0" name="Text">yeldProfit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315251625222694">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="272564287941567" type="spRound15" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="295896190412529" type="spRound15">
+                    <param id="0" name="Text">otherExp</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="372924668546241">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="719865746803477" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="620639122202664">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="667664383019066" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="494666973711989" type="System">
+                            <param id="0" name="Variable">planting</param>
+                            <param id="1" name="Value">2000</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="123100169791979" type="System">
+                            <param id="0" name="Variable">walletGame</param>
+                            <param id="1" name="Value">2000</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="698760610086370">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="870209212874228" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">12</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="183569383037216">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="481453805679479" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="716248542955962" type="System">
+                            <param id="0" name="Variable">Byuria</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="850486316387944">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="212625958707027" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">38</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="253775843609544">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="245030316569468" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="269982275369214" type="System">
+                            <param id="0" name="Variable">Byuria</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
