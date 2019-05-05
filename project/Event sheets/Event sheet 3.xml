@@ -4,9 +4,6 @@
     <name>Event sheet 3</name>
     <events>
         <include>connect</include>
-        <variable constant="0" name="login" sid="578079121126181" static="0" type="number">0</variable>
-        <variable constant="0" name="radio" sid="704178731007198" static="0" type="number">0</variable>
-        <variable constant="0" name="radio2" sid="126685031023229" static="0" type="number">0</variable>
         <event-block sid="548401926258126">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="246057777313291" type="System" />

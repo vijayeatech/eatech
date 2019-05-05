@@ -332,7 +332,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling3.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling4.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\vijay\g\eatech\png\new2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\welcome.png">
                         <collision-poly>
                             <point x="0.0958333" y="0.114815" />
                             <point x="0.9" y="0.111111" />
@@ -496,7 +496,16 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\toplay.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="G:\eatech\png\land.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="C:\vijay\g\eatech\png\how-to-plant.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\vijay\g\eatech\png\cutHarvest.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="C:\Users\SS_HP\Desktop\cutHarvest.png">
+                        <collision-poly>
+                            <point x="0.0176471" y="0.2" />
+                            <point x="0.5" y="0.333333" />
+                            <point x="0.98" y="0.226667" />
+                            <point x="0.961176" y="0.56" />
+                            <point x="0.5" y="0.48" />
+                            <point x="0.0188235" y="0.786667" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="D:\g\eatech\png\seedstype.png">
                         <collision-poly>
                             <point x="0.00898204" y="0.105882" />
@@ -1002,7 +1011,7 @@
         </object-type>
         <object-type name="drt" sid="561998017672377">
             <plugin id="TiledBg" />
-            <texture original-source="C:\vijay\g\eatech\png\dt.png" />
+            <texture original-source="C:\Users\SS_HP\Desktop\game_vectors_cond.png" />
         </object-type>
         <object-type name="ManualPlantation" sid="239579491913139">
             <plugin id="Sprite" />
@@ -1221,7 +1230,17 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="335128052130141" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\vijay\g\eatech\png\chartBack.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\Revenue.png">
+                        <collision-poly>
+                            <point x="0.147917" y="0.262963" />
+                            <point x="0.5" y="0.114815" />
+                            <point x="0.854688" y="0.258333" />
+                            <point x="0.854688" y="0.5" />
+                            <point x="0.840104" y="0.715741" />
+                            <point x="0.159896" y="0.715741" />
+                            <point x="0.147917" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1476,10 +1495,6 @@
             <plugin id="Spritefont2" />
             <texture original-source="G:\eatech\png\sp2.png" />
         </object-type>
-        <object-type name="spRound15" sid="426811531677177">
-            <plugin id="Spritefont2" />
-            <texture original-source="G:\eatech\png\sp2.png" />
-        </object-type>
         <object-type name="Particles4" sid="886836102421375">
             <plugin id="Particles" />
             <behaviors>
@@ -1565,6 +1580,15 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="welcomeWallet" sid="819315441028631">
+            <plugin id="Spritefont2" />
+            <behaviors>
+                <behavior-type name="Pin" sid="413820746235933">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\SS_HP\Desktop\sperate.png" />
         </object-type>
     </object-folder>
     <families>

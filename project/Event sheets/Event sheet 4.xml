@@ -4,12 +4,6 @@
     <name>Event sheet 4</name>
     <events>
         <include>connect</include>
-        <variable constant="0" name="opacity" sid="404834286409908" static="0" type="number">0</variable>
-        <variable constant="0" name="roundGame" sid="451527613271921" static="0" type="number">1</variable>
-        <variable constant="0" name="insuranceGame" sid="793255300219526" static="0" type="number">0</variable>
-        <variable constant="0" name="schoolGame" sid="382149619320804" static="0" type="number">0</variable>
-        <variable constant="0" name="cropGame" sid="895610885061286" static="0" type="number">0</variable>
-        <variable constant="0" name="walletGame" sid="543028951026528" static="0" type="number">20000</variable>
         <event-block sid="235818093481089">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="332644422905014" type="System" />
@@ -20,23 +14,27 @@
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="312288338113705" type="System">
-                    <param id="0" name="Variable">insuranceGame</param>
+                    <param id="0" name="Variable">insuranceCost</param>
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="366478249532082" type="System">
-                    <param id="0" name="Variable">schoolGame</param>
+                    <param id="0" name="Variable">schoolingCost</param>
                     <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="413023873423880" type="System">
                     <param id="0" name="Variable">cropGame</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="508017396537043" type="welcomeWallet">
+                    <param id="0" name="Pin to">Sprite5</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="820736899321775">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="481244371495596" type="System">
-                            <param id="0" name="Variable">schoolGame</param>
+                            <param id="0" name="Variable">schoolingCost</param>
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">1</param>
                         </condition>
@@ -264,11 +262,11 @@
                                     <param id="0" name="Frame number">3</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="746475235178366" type="System">
-                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="0" name="Variable">insuranceCost</param>
                                     <param id="1" name="Value">500</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="258502964193927" type="System">
-                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="0" name="Variable">walletTotal</param>
                                     <param id="1" name="Value">500</param>
                                 </action>
                             </actions>
@@ -296,11 +294,11 @@
                                     <param id="0" name="Frame number">2</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="914169611950032" type="System">
-                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="0" name="Variable">walletTotal</param>
                                     <param id="1" name="Value">500</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="467783849144510" type="System">
-                                    <param id="0" name="Variable">insuranceGame</param>
+                                    <param id="0" name="Variable">insuranceCost</param>
                                     <param id="1" name="Value">500</param>
                                 </action>
                             </actions>
@@ -338,11 +336,11 @@
                                     <param id="0" name="Frame number">5</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="661908179301135" type="System">
-                                    <param id="0" name="Variable">schoolGame</param>
+                                    <param id="0" name="Variable">schoolingCost</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="696384232182805" type="System">
-                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="0" name="Variable">walletTotal</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                             </actions>
@@ -370,11 +368,11 @@
                                     <param id="0" name="Frame number">4</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="219128686717115" type="System">
-                                    <param id="0" name="Variable">walletGame</param>
+                                    <param id="0" name="Variable">walletTotal</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                                 <action id="-11" name="Subtract from" sid="421790767196324" type="System">
-                                    <param id="0" name="Variable">schoolGame</param>
+                                    <param id="0" name="Variable">schoolingCost</param>
                                     <param id="1" name="Value">2000</param>
                                 </action>
                             </actions>
@@ -382,6 +380,16 @@
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="607045602447804">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="187254838518051" type="welcomeWallet" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="490932775165752" type="welcomeWallet">
+                    <param id="0" name="Text">walletTotal</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

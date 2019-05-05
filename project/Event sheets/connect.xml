@@ -3,10 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>connect</name>
     <events>
+        <variable constant="0" name="loan" sid="740303292560913" static="0" type="number">0</variable>
+        <variable constant="0" name="CalanderStart" sid="612733493996957" static="0" type="number">0</variable>
         <variable constant="0" name="drawout" sid="850271058571731" static="0" type="number">0</variable>
         <variable constant="0" name="SesionOver" sid="608546648601576" static="0" type="number">0</variable>
         <variable constant="0" name="Harvesting" sid="309271812510658" static="0" type="number">0</variable>
-        <variable constant="0" name="CalanderStart" sid="612733493996957" static="0" type="number">0</variable>
+        <variable constant="0" name="planting" sid="213568127261477" static="0" type="number">0</variable>
         <variable constant="0" name="Fullscreen" sid="517503941587190" static="0" type="number">0</variable>
         <variable constant="0" name="prepration" sid="493887395161782" static="0" type="number">0</variable>
         <variable constant="0" name="Crop" sid="628398055956865" static="0" type="number">0</variable>
@@ -18,25 +20,51 @@
         <variable constant="0" name="preHarvestRain" sid="520528871207932" static="0" type="number">0</variable>
         <variable constant="0" name="postHarvestRain" sid="681090165025869" static="0" type="number">0</variable>
         <variable constant="0" name="district" sid="857216278582463" static="0" type="number">0</variable>
+        <variable constant="0" name="HarvestingMAchine" sid="930985274593115" static="0" type="number">0</variable>
+        <variable constant="0" name="HarvestingManual" sid="622608495941141" static="0" type="number">0</variable>
+        <variable constant="0" name="Farming" sid="328433749750204" static="0" type="number">0</variable>
+        <variable constant="0" name="ByMan" sid="354583270189884" static="0" type="number">0</variable>
+        <variable constant="0" name="BySeeds" sid="893349016467286" static="0" type="number">0</variable>
+        <variable constant="0" name="Byuria" sid="389978625776465" static="0" type="number">0</variable>
+        <variable constant="0" name="TractorAngle" sid="112804733007964" static="0" type="number">180</variable>
+        <variable constant="0" name="fuil" sid="373060874585377" static="0" type="number">0</variable>
+        <variable constant="0" name="login" sid="709466469737647" static="0" type="number">0</variable>
+        <variable constant="0" name="radio" sid="298190500736886" static="0" type="number">0</variable>
+        <variable constant="0" name="radio2" sid="915937642043169" static="0" type="number">0</variable>
+        <variable constant="0" name="opacity" sid="904870160873889" static="0" type="number">0</variable>
+        <variable constant="0" name="cropGame" sid="509938165922818" static="0" type="number">0</variable>
+        <variable constant="0" name="TractorOrBull" sid="765558687665938" static="0" type="number">0</variable>
+        <variable constant="0" name="Calander" sid="211543570611642" static="0" type="number">0</variable>
+        <variable constant="0" name="checkWeather" sid="389736615991751" static="0" type="number">0</variable>
+        <comment>layout 4 game cost </comment>
+        <variable constant="0" name="gameRound" sid="480948952023201" static="0" type="number">1</variable>
+        <variable constant="0" name="walletTotal" sid="114879652907106" static="0" type="number">20000</variable>
+        <variable constant="0" name="insuranceCost" sid="482320287895948" static="0" type="number">0</variable>
+        <variable constant="0" name="schoolingCost" sid="431783965505000" static="0" type="number">0</variable>
+        <comment>layout 7 chart cost </comment>
+        <variable constant="0" name="landPreCost" sid="228800702526590" static="0" type="number">2000</variable>
+        <variable constant="0" name="harvestingCost" sid="872105560355329" static="0" type="number">2000</variable>
+        <variable constant="0" name="yeldProfit" sid="157773284099118" static="0" type="number">21000</variable>
+        <variable constant="0" name="uriaFertCost" sid="241065707639839" static="0" type="number">3500</variable>
         <event-block sid="909207592051119">
             <conditions>
                 <condition id="-1" name="Every tick" sid="367976525330920" type="System" />
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="450029986315922" type="spRound">
-                    <param id="0" name="Text">roundGame</param>
+                    <param id="0" name="Text">gameRound</param>
                 </action>
                 <action id="0" name="Set text" sid="760093656842194" type="spRound2">
-                    <param id="0" name="Text">insuranceGame</param>
+                    <param id="0" name="Text">insuranceCost</param>
                 </action>
                 <action id="0" name="Set text" sid="699864131516011" type="spRound3">
-                    <param id="0" name="Text">schoolGame</param>
+                    <param id="0" name="Text">schoolingcost</param>
                 </action>
                 <action id="0" name="Set text" sid="716320768592434" type="spRound4">
                     <param id="0" name="Text">cropGame</param>
                 </action>
                 <action id="0" name="Set text" sid="116533356726390" type="spRound5">
-                    <param id="0" name="Text">walletGame</param>
+                    <param id="0" name="Text">walletTotal</param>
                 </action>
                 <action id="0" name="Set text" sid="440800116615349" type="CalanderText">
                     <param id="0" name="Text">Calander</param>
@@ -52,10 +80,10 @@
                     <param id="0" name="Angle">TractorAngle</param>
                 </action>
                 <action id="0" name="Set text" sid="203795056275082" type="Text">
-                    <param id="0" name="Text">walletGame</param>
+                    <param id="0" name="Text">walletTotal</param>
                 </action>
                 <action id="0" name="Set text" sid="615131607386322" type="Text2">
-                    <param id="0" name="Text">insuranceGame</param>
+                    <param id="0" name="Text">insuranceCost</param>
                 </action>
             </actions>
         </event-block>
@@ -238,7 +266,7 @@
                 <event-block sid="612668220115397">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="328068772246416" type="System">
-                            <param id="0" name="Interval (seconds)">0.6</param>
+                            <param id="0" name="Interval (seconds)">0.1</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="474636545234114" type="System">
                             <param id="0" name="Variable">Calander</param>
@@ -5385,9 +5413,6 @@
                         <action id="-16" name="Set opacity" sid="698609008414102" type="spRound14">
                             <param id="0" name="Opacity">100</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="393574465283093" type="spRound15">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
                         <action id="-16" name="Wait" sid="967571436374109" type="System">
                             <param id="0" name="Seconds">5</param>
                         </action>
@@ -5400,7 +5425,7 @@
                             <param id="1" name="Force use current">1</param>
                         </action>
                         <action id="-10" name="Add to" sid="280294810457909" type="System">
-                            <param id="0" name="Variable">walletGame</param>
+                            <param id="0" name="Variable">walletTotal</param>
                             <param id="1" name="Value">21000</param>
                         </action>
                     </actions>
@@ -5435,7 +5460,7 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Add to" sid="876531790665306" type="System">
-                                    <param id="0" name="Variable">roundGame</param>
+                                    <param id="0" name="Variable">gameRound</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -5471,7 +5496,7 @@
                             </conditions>
                             <actions>
                                 <action id="-10" name="Add to" sid="311413055021281" type="System">
-                                    <param id="0" name="Variable">roundGame</param>
+                                    <param id="0" name="Variable">gameRound</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>

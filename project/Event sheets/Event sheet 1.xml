@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <variable constant="0" name="fuil" sid="335437149602803" static="0" type="number">0</variable>
         <include>connect</include>
         <event-block sid="657297751364091">
             <conditions>
