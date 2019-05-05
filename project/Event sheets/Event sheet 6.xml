@@ -125,7 +125,7 @@
             <actions>
                 <action id="-9" name="Set value" sid="162337060278869" type="System">
                     <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">200</param>
+                    <param id="1" name="Value">350</param>
                 </action>
             </actions>
         </event-block>
@@ -197,21 +197,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="593453327702272">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="989143538425856" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">95</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="732518610363773" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">70</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="775839162465580">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="365328874606869" type="System">
@@ -223,7 +208,7 @@
             <actions>
                 <action id="-11" name="Subtract from" sid="174202560078216" type="System">
                     <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">1</param>
+                    <param id="1" name="Value">1/5</param>
                 </action>
             </actions>
         </event-block>
@@ -274,6 +259,10 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="883641122638974" type="System">
                             <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="326018774288205" type="System">
+                            <param id="0" name="Variable">landPreCost</param>
                             <param id="1" name="Value">2500</param>
                         </action>
                         <action id="0" name="Set text" sid="338552270056888" type="spRound5">
