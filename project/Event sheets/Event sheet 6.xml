@@ -16,7 +16,7 @@
                     <param id="0" name="X">0</param>
                     <param id="1" name="Y">0</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="245611976046507" type="TiledBackground2">
+                <action disabled="1" id="-16" name="Set opacity" sid="245611976046507" type="TiledBackground2">
                     <param id="0" name="Opacity">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="200278336837204" type="System">
@@ -45,10 +45,6 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="817338952419068" type="Sprite8">
                     <param id="0" name="Pin to">Sprite6</param>
                     <param id="1" name="Mode">0</param>
-                </action>
-                <action disabled="1" id="-9" name="Set value" sid="846490227045156" type="System">
-                    <param id="0" name="Variable">TractorOrBull</param>
-                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="468482856115456" type="System">
                     <param id="0" name="Variable">Calander</param>
@@ -147,10 +143,10 @@
                 <action id="-16" name="Set opacity" sid="577784404838823" type="water">
                     <param id="0" name="Opacity">opacity</param>
                 </action>
-                <action disabled="1" id="-16" name="Set opacity" sid="964426212709055" type="New">
+                <action id="-16" name="Set opacity" sid="964426212709055" type="New">
                     <param id="0" name="Opacity">opacity</param>
                 </action>
-                <action behavior="Bullet" disabled="1" id="0" name="Set speed" sid="926773514115828" type="TiledBackground2">
+                <action behavior="Bullet" id="0" name="Set speed" sid="926773514115828" type="TiledBackground2">
                     <param id="0" name="Speed">bulletCloud</param>
                 </action>
                 <action behavior="Bullet" id="3" name="Set angle of motion" sid="275169464125925" type="TiledBackground2">
