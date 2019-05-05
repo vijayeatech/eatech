@@ -36,7 +36,7 @@
         <variable constant="0" name="Calander" sid="211543570611642" static="0" type="number">0</variable>
         <variable constant="0" name="checkWeather" sid="389736615991751" static="0" type="number">0</variable>
         <comment>layout 4 game cost </comment>
-        <variable constant="0" name="plantingCost" sid="213568127261477" static="0" type="number">0</variable>
+        <variable constant="0" name="plantingSeedsSprayCost" sid="213568127261477" static="0" type="number">0</variable>
         <variable constant="0" name="gameRound" sid="480948952023201" static="0" type="number">1</variable>
         <variable constant="0" name="walletTotal" sid="114879652907106" static="0" type="number">20000</variable>
         <variable constant="0" name="insuranceCost" sid="482320287895948" static="0" type="number">0</variable>

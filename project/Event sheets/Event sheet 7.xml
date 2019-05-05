@@ -1103,26 +1103,6 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="283692892400448">
-                                    <conditions>
-                                        <condition id="-4" name="Trigger once while true" sid="242206123692119" type="System" />
-                                    </conditions>
-                                    <actions>
-                                        <action id="-11" name="Subtract from" sid="223740487873452" type="System">
-                                            <param id="0" name="Variable">walletTotal</param>
-                                            <param id="1" name="Value">3500</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="323374489521323" type="System">
-                                            <param id="0" name="Variable">uriaFertCost</param>
-                                            <param id="1" name="Value">3500</param>
-                                        </action>
-                                        <action id="0" name="Set text" sid="809981659384149" type="spRound5">
-                                            <param id="0" name="Text">walletTotal</param>
-                                        </action>
-                                    </actions>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                         <event-block sid="965688425348834">
                             <conditions>
@@ -1809,7 +1789,11 @@
                     <actions>
                         <action id="-11" name="Subtract from" sid="757589164800512" type="System">
                             <param id="0" name="Variable">walletTotal</param>
-                            <param id="1" name="Value">2500</param>
+                            <param id="1" name="Value">2000</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="576814110087208" type="System">
+                            <param id="0" name="Variable">harvestingCost</param>
+                            <param id="1" name="Value">2000</param>
                         </action>
                     </actions>
                 </event-block>
@@ -2038,6 +2022,24 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="920156763240911">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="425255438428518" type="System">
+                    <param id="0" name="Variable">plantingSeedsSprayCost</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="317900613693090" type="spRound10" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="952072752790531" type="spRound10">
+                    <param id="0" name="Text">plantingSeedsSprayCost</param>
+                </action>
+                <action id="-15" name="Set visible" sid="259733017791277" type="Sprite18">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="385107914296062">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="855132819747378" type="System">
@@ -2050,6 +2052,21 @@
             <actions>
                 <action id="0" name="Set text" sid="339885724691941" type="spRound14">
                     <param id="0" name="Text">yeldProfit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="384947714203864">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="814571517285028" type="System">
+                    <param id="0" name="Variable">yeldProfit</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="313977679648721" type="spRound14" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="609425847866037" type="spRound14">
+                    <param id="0" name="Text">0</param>
                 </action>
             </actions>
         </event-block>
@@ -2069,12 +2086,12 @@
                     </conditions>
                     <actions>
                         <action id="-10" name="Add to" sid="494666973711989" type="System">
-                            <param id="0" name="Variable">plantingCost</param>
-                            <param id="1" name="Value">2000</param>
+                            <param id="0" name="Variable">plantingSeedsSprayCost</param>
+                            <param id="1" name="Value">4000</param>
                         </action>
                         <action id="-11" name="Subtract from" sid="123100169791979" type="System">
                             <param id="0" name="Variable">walletTotal</param>
-                            <param id="1" name="Value">2000</param>
+                            <param id="1" name="Value">4000</param>
                         </action>
                         <action id="0" name="Set text" sid="559460212798570" type="spRound5">
                             <param id="0" name="Text">walletTotal</param>
@@ -2110,9 +2127,9 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="850486316387944">
+        <event-block sid="551397829913687">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="212625958707027" type="System">
+                <condition id="-14" name="Compare variable" sid="553782634949132" type="System">
                     <param id="0" name="Variable">Calander</param>
                     <param id="1" name="Comparison">5</param>
                     <param id="2" name="Value">50</param>
@@ -2120,18 +2137,48 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="253775843609544">
+                <event-block sid="200669064671517">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="245030316569468" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="877190401408578" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="269982275369214" type="System">
+                        <action id="-9" name="Set value" sid="418876989134262" type="System">
                             <param id="0" name="Variable">Byuria</param>
                             <param id="1" name="Value">2</param>
                         </action>
-                        <action id="-9" name="Set value" sid="749398813459041" type="System">
+                        <action id="-9" name="Set value" sid="163155082831321" type="System">
                             <param id="0" name="Variable">CalanderStart</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="850486316387944">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="212625958707027" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">52</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="798323407441140">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="870758743691086" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="795322596147881" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">3500</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="921735895920232" type="System">
+                            <param id="0" name="Variable">uriaFertCost</param>
+                            <param id="1" name="Value">3500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="107831593354435" type="spRound5">
+                            <param id="0" name="Text">walletTotal</param>
                         </action>
                     </actions>
                 </event-block>

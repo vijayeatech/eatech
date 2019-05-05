@@ -1230,7 +1230,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="335128052130141" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\Revenue.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\Revenue (1).png">
                         <collision-poly>
                             <point x="0.147917" y="0.262963" />
                             <point x="0.5" y="0.114815" />
