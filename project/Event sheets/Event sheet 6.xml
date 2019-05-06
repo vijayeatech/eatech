@@ -9,6 +9,10 @@
                 <condition id="-2" name="On start of layout" sid="139435427373079" type="System" />
             </conditions>
             <actions>
+                <action id="-9" name="Set value" sid="162337060278869" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">350</param>
+                </action>
                 <action id="-3" name="Set position" sid="763764486396866" type="fade">
                     <param id="0" name="X">0</param>
                     <param id="1" name="Y">0</param>
@@ -20,6 +24,10 @@
                 <action id="-9" name="Set value" sid="835048768754046" type="System">
                     <param id="0" name="Variable">bulletValue</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="345425443710953" type="System">
+                    <param id="0" name="Variable">checkWeather</param>
+                    <param id="1" name="Value">0</param>
                 </action>
                 <action id="-16" name="Wait" sid="150806041558076" type="System">
                     <param id="0" name="Seconds">1.5</param>
@@ -42,10 +50,6 @@
                 </action>
                 <action id="-9" name="Set value" sid="468482856115456" type="System">
                     <param id="0" name="Variable">Calander</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="345425443710953" type="System">
-                    <param id="0" name="Variable">checkWeather</param>
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
@@ -116,17 +120,6 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="805076174820108" type="rain" />
-            </actions>
-        </event-block>
-        <event-block sid="541916732728885">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="660382390692222" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="162337060278869" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">350</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="214223561719421">

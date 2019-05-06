@@ -807,7 +807,7 @@
                         <character-width>70</character-width>
                         <character-height>70</character-height>
                         <character-set>0123456789</character-set>
-                        <text>99</text>
+                        <text>0</text>
                         <scale>2</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>

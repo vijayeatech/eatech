@@ -325,7 +325,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="13" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
+                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
                     <frame duration="1" hotspotX="0.501767" hotspotY="0.504274" original-source="G:\eatech\png\next.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\select-option.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling2.png" />
@@ -367,6 +367,14 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.500795" hotspotY="0.5" original-source="D:\g\eatech\png\non_strv1.png">
+                        <collision-poly>
+                            <point x="0.00158983" y="0.00471698" />
+                            <point x="0.99841" y="0.00471698" />
+                            <point x="0.99841" y="0.995283" />
+                            <point x="0.00158983" y="0.995283" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501042" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\welcome.png">
                         <collision-poly>
                             <point x="0.00158983" y="0.00471698" />
                             <point x="0.99841" y="0.00471698" />
