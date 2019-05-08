@@ -1095,7 +1095,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="781935077276612" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Saurabh\Desktop\Harvesting_new.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\harvetingMachie.png">
                         <image-point name="Imagepoint 1" x="0.0766667" y="0.0420168" />
                         <image-point name="Imagepoint 2" x="0.0766667" y="0.168067" />
                         <image-point name="Imagepoint 3" x="0.0766667" y="0.294118" />
@@ -1114,7 +1114,7 @@
                             <point x="0.0583333" y="0.721112" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\harvetingMachie.png">
                         <image-point name="Imagepoint 1" x="0.923333" y="0.630252" />
                         <image-point name="Imagepoint 2" x="0.923333" y="0.462185" />
                         <image-point name="Imagepoint 3" x="0.923333" y="0.294118" />
@@ -1597,6 +1597,24 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\SS_HP\Desktop\sperate.png" />
+        </object-type>
+        <object-type name="badh" sid="937387345415519">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379254001096539" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\badh.png">
+                        <collision-poly>
+                            <point x="0.146875" y="0.261111" />
+                            <point x="0.5" y="0.225926" />
+                            <point x="0.835938" y="0.291667" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families>

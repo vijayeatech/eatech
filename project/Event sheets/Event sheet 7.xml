@@ -1755,6 +1755,24 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="381210271167370">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="980200575883602" type="System" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="894248829069266" type="System">
+                    <param id="0" name="Variable">walletTotal</param>
+                    <param id="1" name="Value">2000</param>
+                </action>
+                <action id="-10" name="Add to" sid="262924110912972" type="System">
+                    <param id="0" name="Variable">harvestingCost</param>
+                    <param id="1" name="Value">2000</param>
+                </action>
+                <action id="0" name="Set text" sid="814578873211975" type="spRound5">
+                    <param id="0" name="Text">walletTotal</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="715295825412529">
             <conditions>
                 <condition id="3" name="On touched object" sid="159993472708634" type="Touch">
