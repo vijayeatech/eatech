@@ -8,8 +8,8 @@
         <height>1080</height>
     </size>
     <margins>
-        <horizontal>100000</horizontal>
-        <vertical>100000</vertical>
+        <horizontal>10000</horizontal>
+        <vertical>1000</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>

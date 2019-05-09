@@ -62,6 +62,10 @@
                     <param id="0" name="Variable">TractorAngle</param>
                     <param id="1" name="Value">180</param>
                 </action>
+                <action id="-9" name="Set value" sid="367446626935194" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">200</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="137941924078121" title="Drought">
@@ -2144,6 +2148,10 @@
                             <param id="0" name="Variable">CalanderStart</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="349686077990457" type="System">
+                            <param id="0" name="Variable">rain</param>
+                            <param id="1" name="Value">choose(1,2)</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -2201,9 +2209,310 @@
                         <action id="0" name="Set text" sid="107831593354435" type="spRound5">
                             <param id="0" name="Text">walletTotal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="452643557184149" type="System">
+                            <param id="0" name="Variable">rain</param>
+                            <param id="1" name="Value">choose(1,2)</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <comment>baadh</comment>
+        <event-block sid="524098017176440">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="215166404312380" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="279452204452125" type="water">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="326194805717286" type="rain">
+                    <param id="0" name="Angle">random(125,100)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="261574218304162" type="rain">
+                    <param id="0" name="Speed">random(700,900)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="553580487071797">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="585504985528620" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="651695331814862" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(400,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="530923159793164" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(300,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="323787896498754" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(200,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="110192602236127" type="rain" />
+                        <action id="-16" name="Wait" sid="474338428580723" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="286769859042968" type="System">
+                            <param id="0" name="Variable">opacity</param>
+                            <param id="1" name="Value">0.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="874306089229931">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="226770594711016" type="rain">
+                    <param id="0" name="Object">collider</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="470344419677683" type="rain" />
+            </actions>
+        </event-block>
+        <event-block sid="650684125006593">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="685253545927951" type="water" />
+            </conditions>
+            <actions>
+                <action disabled="1" id="-16" name="Set opacity" sid="870639850627726" type="water">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="761798142778771" type="New">
+                    <param id="0" name="Opacity">opacity</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="457433777103869" type="TiledBackground2">
+                    <param id="0" name="Speed">bulletCloud</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="828014645565083" type="TiledBackground2">
+                    <param id="0" name="Angle">180</param>
+                </action>
+                <action id="-16" name="Wait" sid="725840775279695" type="System">
+                    <param id="0" name="Seconds">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="233821428914000" type="System">
+                    <param id="0" name="Variable">bulletValue</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287683987654783">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="558249085961940" type="rain">
+                    <param id="0" name="Object">water</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="484464056480697" type="water">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">30</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="773587412019731">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="385909124969711" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="567630701549843" type="rain">
+                            <param id="0" name="Object">New</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="395020430632278" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="456111216360290" type="New" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="921817760115327">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="631571512792587" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="775681857466897" type="TiledBackground2">
+                    <param id="0" name="Width">Self.Width+200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="564002186014699">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="622817361113004" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">95</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="983982399600540" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="960914479950014">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="597459376403470" type="System">
+                    <param id="0" name="Variable">bulletValue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="888654337896848" type="System">
+                    <param id="0" name="Variable">bulletCloud</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="477169268251737">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="882639070937757" type="TiledBackground2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">100</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="200916081610263">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="641663684517196" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="297059965628895" type="System">
+                            <param id="0" name="Variable">part</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="942362768629468" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="622541418051593">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="354296257424434" type="System">
+                    <param id="0" name="Variable">rain</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="877827196816458">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="639563450322294" type="System" />
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="-10" name="Add to" sid="510062762596286" type="System">
+                            <param id="0" name="Variable">rainprob</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="493633418243228" type="System">
+                            <param id="0" name="Variable">highlow</param>
+                            <param id="1" name="Value">choose(1,1,1,1,1,1,1,1,1,1,1,2)</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="813132553525923" type="water">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="287064113249062">
+            <conditions>
+                <condition id="-22" name="Else" sid="977284508720969" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="645358824283515" type="System">
+                    <param id="0" name="Variable">highlow</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="947410590122997" title="raining">
+            <sub-events>
+                <event-block sid="610428910046947">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="654837069260351" type="System">
+                            <param id="0" name="Variable">highlow</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="126959224486312" type="System">
+                            <param id="0" name="Variable">highhigh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="331137361997064" type="Function">
+                            <param id="0" name="Name">&quot;fludHigh&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-10" name="Add to" sid="923604622881017" type="System">
+                            <param id="0" name="Variable">highhigh</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147503828406205">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="288364890543737" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="373360865813907" type="Function">
+                            <param id="0" name="Name">&quot;fludLow&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="407342948831623">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="844432414316366" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="390586019852282" type="System">
+                    <param id="0" name="Group name">&quot;raining&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="305789420331682" type="TiledBackground2" />
+                <action id="-16" name="Wait" sid="184376369323729" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="352785127709657" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

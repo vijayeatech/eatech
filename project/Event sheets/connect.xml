@@ -41,6 +41,10 @@
         <variable constant="0" name="walletTotal" sid="114879652907106" static="0" type="number">20000</variable>
         <variable constant="0" name="insuranceCost" sid="482320287895948" static="0" type="number">0</variable>
         <variable constant="0" name="schoolingCost" sid="431783965505000" static="0" type="number">0</variable>
+        <comment>badh</comment>
+        <variable constant="0" name="highhigh" sid="288348813728748" static="0" type="number">0</variable>
+        <variable constant="0" name="rainprob" sid="759821932481279" static="0" type="number">0</variable>
+        <variable constant="0" name="rain" sid="133153831354628" static="0" type="number">0</variable>
         <comment>layout 7 chart cost </comment>
         <variable constant="0" name="landPreCost" sid="228800702526590" static="0" type="number">0</variable>
         <variable constant="0" name="harvestingCost" sid="872105560355329" static="0" type="number">0</variable>
@@ -5571,6 +5575,64 @@
                         </action>
                         <action behavior="Bullet" id="5" name="Set enabled" sid="719744437470231" type="TiledBackground2">
                             <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="476512113230652">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="419079113413160" type="System">
+                    <param id="0" name="Variable">part</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="667644764601805" type="water">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Opacity">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="462800082954638" type="rain">
+                    <param id="0" name="Angle">random(125,100)</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="687247910854577" type="rain">
+                    <param id="0" name="Speed">random(700,900)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="361971136519441">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="352688388115952" type="System">
+                            <param id="0" name="Interval (seconds)">0.01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="385823950358938" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(400,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="541239921112040" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(300,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="700507288423954" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;UI&quot;</param>
+                            <param id="2" name="X">random(200,2000)</param>
+                            <param id="3" name="Y">100</param>
+                        </action>
+                        <action id="-25" name="Move to bottom" sid="239313646492182" type="rain" />
+                        <action id="-16" name="Wait" sid="142671876645749" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="263425828234717" type="System">
+                            <param id="0" name="Variable">opacity</param>
+                            <param id="1" name="Value">0.1</param>
                         </action>
                     </actions>
                 </event-block>
