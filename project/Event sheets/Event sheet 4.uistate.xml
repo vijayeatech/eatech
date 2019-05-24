@@ -6,11 +6,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
     <scroll-pos>0</scroll-pos>
     <conditions-column>295</conditions-column>
-    <actions-namecolumn>108</actions-namecolumn>
+    <actions-namecolumn>130</actions-namecolumn>
     <condition-namecolumns>
         <nest>93</nest>
-        <nest>26</nest>
-        <nest>26</nest>
+        <nest>87</nest>
+        <nest>108</nest>
         <nest>26</nest>
         <nest>26</nest>
         <nest>26</nest>
@@ -24,6 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event collapsed="1" sid="820736899321775" />
         <event collapsed="1" sid="365450208079077" />
         <event collapsed="1" sid="440628674322532" />
+        <event collapsed="1" sid="901062032396602" />
         <event collapsed="1" sid="979993934778768" />
         <event collapsed="1" sid="832031753235291" />
         <event collapsed="1" sid="740111541995998" />

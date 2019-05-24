@@ -325,7 +325,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="14" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
+                <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="136751431759014" speed="0">
                     <frame duration="1" hotspotX="0.501767" hotspotY="0.504274" original-source="G:\eatech\png\next.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\select-option.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\schooling2.png" />
@@ -375,6 +375,14 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.501042" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\welcome.png">
+                        <collision-poly>
+                            <point x="0.00158983" y="0.00471698" />
+                            <point x="0.99841" y="0.00471698" />
+                            <point x="0.99841" y="0.995283" />
+                            <point x="0.00158983" y="0.995283" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.500787" hotspotY="0.503311" original-source="D:\g\eatech\png\loanText.png">
                         <collision-poly>
                             <point x="0.00158983" y="0.00471698" />
                             <point x="0.99841" y="0.00471698" />
@@ -499,7 +507,7 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="876384413798951" speed="0">
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="876384413798951" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.502703" original-source="G:\eatech\png\welocme-Message.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="G:\eatech\png\toplay.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="G:\eatech\png\land.png" />
@@ -514,18 +522,8 @@
                             <point x="0.0188235" y="0.786667" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="D:\g\eatech\png\seedstype.png">
-                        <collision-poly>
-                            <point x="0.00898204" y="0.105882" />
-                            <point x="0.5" y="0.188235" />
-                            <point x="0.982036" y="0.211765" />
-                            <point x="0.993014" y="0.494118" />
-                            <point x="0.979042" y="0.752941" />
-                            <point x="0.5" y="0.329412" />
-                            <point x="0.0219561" y="0.741176" />
-                            <point x="0.00299401" y="0.494118" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505882" original-source="D:\g\eatech\png\seedstype.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\g\eatech\png\needLoan.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -742,6 +740,12 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="498604497220078">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="LiteTween" sid="943643912415137">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="255020447701172">
+                    <behavior id="lunarray_LiteTween" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1092,10 +1096,16 @@
                 <behavior-type name="Bullet" sid="879454251801231">
                     <behavior id="Bullet" />
                 </behavior-type>
+                <behavior-type name="LiteTween" sid="398313802035031">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+                <behavior-type name="LiteTween2" sid="101693172499625">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="781935077276612" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\harvetingMachie.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.365546" original-source="C:\Users\SS_HP\Desktop\0.png">
                         <image-point name="Imagepoint 1" x="0.0766667" y="0.0420168" />
                         <image-point name="Imagepoint 2" x="0.0766667" y="0.168067" />
                         <image-point name="Imagepoint 3" x="0.0766667" y="0.294118" />
@@ -1109,12 +1119,11 @@
                             <point x="0.9" y="0.126183" />
                             <point x="0.8925" y="0.582457" />
                             <point x="0.485834" y="0.599369" />
-                            <point x="0.53" y="0.984214" />
                             <point x="0.393333" y="0.604657" />
                             <point x="0.0583333" y="0.721112" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\harvetingMachie.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.365546" original-source="D:\g\eatech\png\harvetingMachie.png">
                         <image-point name="Imagepoint 1" x="0.923333" y="0.630252" />
                         <image-point name="Imagepoint 2" x="0.923333" y="0.462185" />
                         <image-point name="Imagepoint 3" x="0.923333" y="0.294118" />
@@ -1122,8 +1131,6 @@
                         <image-point name="Imagepoint 5" x="0.473333" y="0.991597" />
                         <collision-poly>
                             <point x="0.941667" y="0.721112" />
-                            <point x="0.606667" y="0.604657" />
-                            <point x="0.47" y="0.984214" />
                             <point x="0.514166" y="0.599369" />
                             <point x="0.1075" y="0.582457" />
                             <point x="0.1" y="0.126183" />
@@ -1238,7 +1245,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="335128052130141" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\Revenue (1).png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\Revenue-(1).png">
                         <collision-poly>
                             <point x="0.147917" y="0.262963" />
                             <point x="0.5" y="0.114815" />
@@ -1616,6 +1623,59 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite19" sid="422828416796572">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183540023303692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501062" original-source="G:\eatech\png\inputBg2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="332907955595101">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="753254873008738">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="640291805019398" speed="0">
+                    <frame duration="1" hotspotX="0.500787" hotspotY="0.503311" original-source="D:\g\eatech\png\loanText.png">
+                        <collision-poly>
+                            <point x="0.00158983" y="0.00471698" />
+                            <point x="0.99841" y="0.00471698" />
+                            <point x="0.99841" y="0.995283" />
+                            <point x="0.00158983" y="0.995283" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="969559086970005">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="761738053784876">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="587491211374186" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667" original-source="D:\g\eatech\png\needLoan.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="spRound15" sid="377900379816363">
+            <plugin id="Spritefont2" />
+            <texture original-source="G:\eatech\png\sp2.png" />
+        </object-type>
+        <object-type name="restart" sid="907164285427679">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587107275528126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\g\eatech\png\restart.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="First" plugin-id="Sprite" sid="460516161280621">
@@ -1625,6 +1685,7 @@
         </family>
         <family name="move" plugin-id="Sprite" sid="290973074610799">
             <members>
+                <member>Sprite20</member>
                 <member>Sprite5</member>
                 <member>Sprite8</member>
             </members>
@@ -1636,7 +1697,10 @@
         </family>
         <family name="pop" plugin-id="Sprite" sid="306649588496076">
             <members>
+                <member>Sprite19</member>
                 <member>Sprite2</member>
+                <member>Sprite20</member>
+                <member>Sprite21</member>
                 <member>Sprite5</member>
                 <member>Sprite6</member>
                 <member>Sprite8</member>

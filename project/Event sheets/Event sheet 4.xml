@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 4</name>
     <events>
+        <variable constant="0" name="gameStarted" sid="198964265408177" static="0" type="number">0</variable>
         <include>connect</include>
         <event-block sid="235818093481089">
             <conditions>
@@ -29,8 +30,81 @@
                     <param id="0" name="Pin to">Sprite5</param>
                     <param id="1" name="Mode">0</param>
                 </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="418591560530757" type="Sprite21">
+                    <param id="0" name="Pin to">Sprite19</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="770535638574705" type="Sprite20">
+                    <param id="0" name="Pin to">Sprite19</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
             </actions>
             <sub-events>
+                <event-block sid="703862607159130">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="975958701810144" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">14500</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="641358261365617" type="System">
+                            <param id="0" name="Variable">gameStarted</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="244905867462071" type="fade" />
+                    </actions>
+                </event-block>
+                <event-block sid="902313378972943">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="824891896683356" type="System">
+                            <param id="0" name="Variable">gameRound</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="833445974647863" type="System">
+                            <param id="0" name="Variable">gameRound</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="677977074571216" type="System">
+                            <param id="0" name="Variable">gameStarted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="988989106218831" type="Sprite5" />
+                        <action id="-9" name="Destroy" sid="899478009649378" type="Sprite19" />
+                        <action id="-9" name="Destroy" sid="722783681524123" type="Sprite20" />
+                        <action id="-9" name="Destroy" sid="740212610574706" type="Sprite21" />
+                        <action id="-16" name="Set opacity" sid="966482778094096" type="restart">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="480275884397312">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="635216301361115" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">14500</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="148917325535275" type="System">
+                            <param id="0" name="Variable">gameStarted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="LiteTween2" id="10" name="Start" sid="893879041755576" type="Sprite19">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="758281623877161" type="fade">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="820736899321775">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="481244371495596" type="System">
@@ -167,215 +241,227 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="901062032396602">
+        <event-block sid="184983924952123">
             <conditions>
-                <condition id="3" name="On touched object" sid="118802508911252" type="Touch">
-                    <param id="0" name="Object">Sprite5</param>
+                <condition id="-14" name="Compare variable" sid="762512474452380" type="System">
+                    <param id="0" name="Variable">gameStarted</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="979993934778768">
+                <event-block sid="901062032396602">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="231646250386586" type="Sprite5">
-                            <param id="0" name="Unique ID">43</param>
+                        <condition id="3" name="On touched object" sid="118802508911252" type="Touch">
+                            <param id="0" name="Object">Sprite5</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="636532431378410">
+                        <event-block sid="979993934778768">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="257057002267624" type="System" />
+                                <condition id="-14" name="Pick by unique ID" sid="231646250386586" type="Sprite5">
+                                    <param id="0" name="Unique ID">43</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="LiteTween" id="10" name="Start" sid="343061166828984" type="move">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">1</param>
-                                </action>
-                                <action behavior="LiteTween" id="10" name="Start" sid="322414500341590" type="Sprite5">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">1</param>
-                                </action>
-                                <action behavior="Fade" id="1" name="Start fade" sid="400481747285315" type="fade" />
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="636532431378410">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="257057002267624" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="343061166828984" type="move">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action behavior="LiteTween" id="10" name="Start" sid="322414500341590" type="Sprite5">
+                                            <param id="0" name="Start Mode">0</param>
+                                            <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action behavior="Fade" id="1" name="Start fade" sid="400481747285315" type="fade" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="832031753235291">
-            <conditions>
-                <condition id="3" name="On touched object" sid="557410251301942" type="Touch">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="824174528523738">
+                <event-block sid="832031753235291">
                     <conditions>
-                        <condition id="-14" name="Pick by unique ID" sid="822105205123135" type="Sprite5">
-                            <param id="0" name="Unique ID">9</param>
+                        <condition id="3" name="On touched object" sid="557410251301942" type="Touch">
+                            <param id="0" name="Object">Sprite5</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="703387379685636">
+                        <event-block sid="824174528523738">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="225554834478370" type="System" />
+                                <condition id="-14" name="Pick by unique ID" sid="822105205123135" type="Sprite5">
+                                    <param id="0" name="Unique ID">9</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="910410139855778" type="System">
-                                    <param id="0" name="Layout">Layout 5</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="703387379685636">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="225554834478370" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="910410139855778" type="System">
+                                            <param id="0" name="Layout">Layout 5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="740111541995998">
-            <conditions>
-                <condition id="3" name="On touched object" sid="703860969102076" type="Touch">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="770076035779731">
+                <event-block sid="740111541995998">
                     <conditions>
-                        <condition id="3" name="Compare frame" sid="366719910331077" type="Sprite5">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">2</param>
+                        <condition id="3" name="On touched object" sid="703860969102076" type="Touch">
+                            <param id="0" name="Object">Sprite5</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="199111401435144">
+                        <event-block sid="770076035779731">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="500743917323141" type="System" />
+                                <condition id="3" name="Compare frame" sid="366719910331077" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">2</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="287969903215349" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="433492269213737" type="Sprite5">
-                                    <param id="0" name="Frame number">3</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="746475235178366" type="System">
-                                    <param id="0" name="Variable">insuranceCost</param>
-                                    <param id="1" name="Value">500</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="258502964193927" type="System">
-                                    <param id="0" name="Variable">walletTotal</param>
-                                    <param id="1" name="Value">500</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="199111401435144">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="500743917323141" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="287969903215349" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="433492269213737" type="Sprite5">
+                                            <param id="0" name="Frame number">3</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="746475235178366" type="System">
+                                            <param id="0" name="Variable">insuranceCost</param>
+                                            <param id="1" name="Value">500</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="258502964193927" type="System">
+                                            <param id="0" name="Variable">walletTotal</param>
+                                            <param id="1" name="Value">500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="403611972660032">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="386353957225888" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="566715439376201">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="664751086084647" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="638542072220961" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="951571564233595" type="Sprite5">
+                                            <param id="0" name="Frame number">2</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="914169611950032" type="System">
+                                            <param id="0" name="Variable">walletTotal</param>
+                                            <param id="1" name="Value">500</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="467783849144510" type="System">
+                                            <param id="0" name="Variable">insuranceCost</param>
+                                            <param id="1" name="Value">500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block sid="403611972660032">
+                <event-block sid="883796856323371">
                     <conditions>
-                        <condition id="3" name="Compare frame" sid="386353957225888" type="Sprite5">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">3</param>
+                        <condition id="3" name="On touched object" sid="334605147195877" type="Touch">
+                            <param id="0" name="Object">Sprite5</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="566715439376201">
+                        <event-block sid="485624838438946">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="664751086084647" type="System" />
+                                <condition id="3" name="Compare frame" sid="873257961202736" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="638542072220961" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="951571564233595" type="Sprite5">
-                                    <param id="0" name="Frame number">2</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="914169611950032" type="System">
-                                    <param id="0" name="Variable">walletTotal</param>
-                                    <param id="1" name="Value">500</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="467783849144510" type="System">
-                                    <param id="0" name="Variable">insuranceCost</param>
-                                    <param id="1" name="Value">500</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="449086979466966">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="822292436483714" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="916017261114804" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="927641694414595" type="Sprite5">
+                                            <param id="0" name="Frame number">5</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="661908179301135" type="System">
+                                            <param id="0" name="Variable">schoolingCost</param>
+                                            <param id="1" name="Value">2000</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="696384232182805" type="System">
+                                            <param id="0" name="Variable">walletTotal</param>
+                                            <param id="1" name="Value">2000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="883796856323371">
-            <conditions>
-                <condition id="3" name="On touched object" sid="334605147195877" type="Touch">
-                    <param id="0" name="Object">Sprite5</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="485624838438946">
-                    <conditions>
-                        <condition id="3" name="Compare frame" sid="873257961202736" type="Sprite5">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">4</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="449086979466966">
+                        <event-block sid="174101128239667">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="822292436483714" type="System" />
+                                <condition id="3" name="Compare frame" sid="778944431958642" type="Sprite5">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">5</param>
+                                </condition>
                             </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="916017261114804" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="927641694414595" type="Sprite5">
-                                    <param id="0" name="Frame number">5</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="661908179301135" type="System">
-                                    <param id="0" name="Variable">schoolingCost</param>
-                                    <param id="1" name="Value">2000</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="696384232182805" type="System">
-                                    <param id="0" name="Variable">walletTotal</param>
-                                    <param id="1" name="Value">2000</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="174101128239667">
-                    <conditions>
-                        <condition id="3" name="Compare frame" sid="778944431958642" type="Sprite5">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">5</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="893639001147130">
-                            <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="794596871206470" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="246229876922274" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                                <action id="5" name="Set frame" sid="717174018074894" type="Sprite5">
-                                    <param id="0" name="Frame number">4</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="219128686717115" type="System">
-                                    <param id="0" name="Variable">walletTotal</param>
-                                    <param id="1" name="Value">2000</param>
-                                </action>
-                                <action id="-11" name="Subtract from" sid="421790767196324" type="System">
-                                    <param id="0" name="Variable">schoolingCost</param>
-                                    <param id="1" name="Value">2000</param>
-                                </action>
-                            </actions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="893639001147130">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="794596871206470" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="246229876922274" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="717174018074894" type="Sprite5">
+                                            <param id="0" name="Frame number">4</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="219128686717115" type="System">
+                                            <param id="0" name="Variable">walletTotal</param>
+                                            <param id="1" name="Value">2000</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="421790767196324" type="System">
+                                            <param id="0" name="Variable">schoolingCost</param>
+                                            <param id="1" name="Value">2000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
@@ -390,6 +476,66 @@
                     <param id="0" name="Text">walletTotal</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="578562039500767">
+            <conditions>
+                <condition id="17" name="On tap object" sid="688090548251510" type="Touch">
+                    <param id="0" name="Object">Sprite20</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="613159897476834">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="813907660682061" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="833154316555156" type="System">
+                            <param id="0" name="Variable">loan</param>
+                            <param id="1" name="Value">20000-walletTotal</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="448366850743114" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">20000-walletTotal</param>
+                        </action>
+                        <action behavior="LiteTween2" id="11" name="Reverse" sid="175701122680351" type="Sprite19">
+                            <param id="0" name="Reverse mode">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="597438920344234" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="272104858337911" type="System">
+                            <param id="0" name="Variable">gameStarted</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="352758035530653" type="fade" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848310466740775">
+            <conditions>
+                <condition id="3" name="On touched object" sid="847976750668818" type="Touch">
+                    <param id="0" name="Object">restart</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="891582916934756">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="412022972670965" type="restart">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="601622950381537" type="System">
+                            <param id="0" name="Layout">Layout 1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="396438333276802" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
