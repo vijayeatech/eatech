@@ -2020,65 +2020,33 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="948088784503142">
-            <conditions />
-            <actions />
-            <sub-events>
-                <event-block sid="937810845087108">
-                    <conditions />
-                    <actions />
-                    <sub-events>
-                        <event-block sid="435993099936655">
-                            <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="774599596415597" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="372014263775798" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="331151486876578">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Wait" sid="969273784339007" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        <event-block sid="925205332704550">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="294967321568111" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="986799817540820" type="List2">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="773666708079421">
-            <conditions />
-            <actions />
-            <sub-events>
-                <event-block sid="866034756165611">
-                    <conditions />
-                    <actions />
-                    <sub-events>
-                        <event-block sid="350924323524066">
-                            <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="638925920819121" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="509219760872396" type="System">
-                                    <param id="0" name="Seconds">0.1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="524588260605351">
-                    <conditions />
-                    <actions>
-                        <action id="-16" name="Wait" sid="537529505138354" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        <event-block sid="678827583730199">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="444785087801564" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="271457457989755" type="List2">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

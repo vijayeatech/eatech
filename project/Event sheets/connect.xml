@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>connect</name>
     <events>
+        <variable constant="0" name="districtSlected" sid="278496158388784" static="0" type="number">0</variable>
+        <variable constant="0" name="bolckSlected" sid="799352853471956" static="0" type="number">0</variable>
+        <variable constant="0" name="gpSlected" sid="578327641038168" static="0" type="number">0</variable>
         <variable constant="0" name="loan" sid="740303292560913" static="0" type="number">0</variable>
         <variable constant="0" name="CalanderStart" sid="612733493996957" static="0" type="number">0</variable>
         <variable constant="0" name="drawout" sid="850271058571731" static="0" type="number">0</variable>
@@ -26,7 +29,6 @@
         <variable constant="0" name="ByMan" sid="354583270189884" static="0" type="number">0</variable>
         <variable constant="0" name="BySeeds" sid="893349016467286" static="0" type="number">0</variable>
         <variable constant="0" name="Byuria" sid="389978625776465" static="0" type="number">0</variable>
-        <variable constant="0" name="TractorAngle" sid="112804733007964" static="0" type="number">180</variable>
         <variable constant="0" name="fuil" sid="373060874585377" static="0" type="number">0</variable>
         <comment>layout 3 form</comment>
         <variable constant="0" name="login" sid="709466469737647" static="0" type="number">0</variable>
@@ -4548,10 +4550,6 @@
                         <action id="0" name="Call function" sid="272484137281269" type="Function">
                             <param id="0" name="Name">&quot;Harvesting&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action disabled="1" id="-9" name="Set value" sid="364562069696674" type="System">
-                            <param id="0" name="Variable">TractorAngle</param>
-                            <param id="1" name="Value">180</param>
                         </action>
                     </actions>
                 </event-block>
