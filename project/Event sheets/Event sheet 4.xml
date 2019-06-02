@@ -78,13 +78,13 @@
                         <condition id="-14" name="Compare variable" sid="824891896683356" type="System">
                             <param id="0" name="Variable">gameRound</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">10</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="833445974647863" type="System">
                             <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">4</param>
                         </action>
                         <action id="-9" name="Set value" sid="677977074571216" type="System">
                             <param id="0" name="Variable">gameStarted</param>
