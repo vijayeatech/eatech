@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 9</name>
+    <events>
+        <include>connect</include>
+        <event-block sid="364374760193278">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="515832841846329" type="sesComp" />
+                <condition id="-14" name="Compare variable" sid="613081186825078" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="675625256691475" type="profit" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="818918081736891" type="profit">
+                    <param id="0" name="Height">profithight1</param>
+                </action>
+                <action id="-6" name="Set height" sid="144932694611765" type="loss">
+                    <param id="0" name="Height">losshight1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="693212702552285">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796602276005143" type="System">
+                            <param id="0" name="Variable">profithight1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">yeldProfit/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="466080688162180">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="106694262782467" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="177937583842029" type="System">
+                                    <param id="0" name="Variable">profithight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="415415332941924">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="830881332728253" type="System">
+                            <param id="0" name="Variable">losshight1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">(harvestingCost+landPreCost+plantingSeedsSprayCost+uriaFertCost+insuranceCost+schoolingCost+loan)/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="707544709770439">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="539628087315318" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="384388134983665" type="System">
+                                    <param id="0" name="Variable">losshight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="627423474229670">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="188957453254049" type="sesComp" />
+                <condition id="-9" name="Is visible" sid="256378305283297" type="profit2" />
+                <condition id="-14" name="Compare variable" sid="489372653849304" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="840178421993785" type="profit2">
+                    <param id="0" name="Height">profithight2</param>
+                </action>
+                <action id="-6" name="Set height" sid="247895131411512" type="loss2">
+                    <param id="0" name="Height">losshight2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="265546201411165">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="712109659487005" type="System">
+                            <param id="0" name="Variable">profithight2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">yeldProfit/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="177103298892016">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="717947708107529" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="889725851776163" type="System">
+                                    <param id="0" name="Variable">profithight2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="835879131553436">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="520158227190522" type="System">
+                            <param id="0" name="Variable">losshight2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">(harvestingCost+landPreCost+plantingSeedsSprayCost+uriaFertCost+insuranceCost+schoolingCost+loan)/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="341306723776820">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="781346851542298" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="511177057201927" type="System">
+                                    <param id="0" name="Variable">losshight2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="369320775732442">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="102477657485007" type="sesComp" />
+                <condition id="-9" name="Is visible" sid="247534488063339" type="profit3" />
+                <condition id="-14" name="Compare variable" sid="502321764572737" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="734260212933550" type="profit3">
+                    <param id="0" name="Height">profithight3</param>
+                </action>
+                <action id="-6" name="Set height" sid="838378816858727" type="loss3">
+                    <param id="0" name="Height">losshight3</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="753836428747397">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="689355723810658" type="System">
+                            <param id="0" name="Variable">profithight3</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">yeldProfit/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="602823973106175">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="113963309997455" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="668685984328023" type="System">
+                                    <param id="0" name="Variable">profithight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="946122630465335">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="913748251600055" type="System">
+                            <param id="0" name="Variable">losshight3</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">(harvestingCost+landPreCost+plantingSeedsSprayCost+uriaFertCost+insuranceCost+schoolingCost+loan)/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="483096121869626">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="615760141903626" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="346262218934585" type="System">
+                                    <param id="0" name="Variable">losshight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="710901489044827">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="594852589267710" type="sesComp" />
+                <condition id="-9" name="Is visible" sid="122317896057929" type="profit4" />
+                <condition id="-14" name="Compare variable" sid="925305322688690" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="445328420123958" type="profit4">
+                    <param id="0" name="Height">profithight4</param>
+                </action>
+                <action id="-6" name="Set height" sid="313804061844049" type="loss4">
+                    <param id="0" name="Height">losshight4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="718458191886578">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="512264503784717" type="System">
+                            <param id="0" name="Variable">profithight4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">yeldProfit/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="132762086088918">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="524559435207814" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="955353759252722" type="System">
+                                    <param id="0" name="Variable">profithight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="883852876610328">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="267197487644719" type="System">
+                            <param id="0" name="Variable">losshight4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">(harvestingCost+landPreCost+plantingSeedsSprayCost+uriaFertCost+insuranceCost+schoolingCost+loan)/84</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="297546614465551">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="260499951016681" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="242713082773217" type="System">
+                                    <param id="0" name="Variable">losshight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

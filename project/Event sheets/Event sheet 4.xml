@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 4</name>
     <events>
+        <variable comment="saurabh" constant="0" name="Check_fload" sid="921233837799631" static="0" type="number">0</variable>
         <variable constant="0" name="gameStarted" sid="198964265408177" static="0" type="number">0</variable>
         <include>connect</include>
         <event-block sid="235818093481089">
@@ -37,6 +38,22 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="770535638574705" type="Sprite20">
                     <param id="0" name="Pin to">Sprite19</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="152581017539661" type="System">
+                    <param id="0" name="Variable">Crop</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="281285713193165" type="System">
+                    <param id="0" name="Variable">Crop2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="152625018236433" type="System">
+                    <param id="0" name="Variable">ByMan</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="779845949791038" type="System">
+                    <param id="0" name="Variable">Byuria</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
             <sub-events>
@@ -537,5 +554,699 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-group description="" sid="776755629598319" title="Distric-2">
+            <sub-events>
+                <event-block sid="878619909551735">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="395154954648870" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="341563748161699">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="478909393287706" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="143563282391581" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="465605932223939">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="930245876925428" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="849866036019013">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="882867559864485" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="521633296642174" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="797152360414329">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="214516964506762" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="800107284171832">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="914281129320864" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="120395161645067" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="959345886220526">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="899134186349191" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="301139517046451">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="541120332065636" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="322179396902664" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="472777215766863">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="858514451387979" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="816752144013775">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="728173188590094" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="146560829817658" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="457034234830514">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="200589747576805" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="876393018731027">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="412980652936817" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="809278311701702" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="491097939991185">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="694031379049323" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="119456716587523">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="721694956639992" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="502704628943102" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="784649104817912">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="444091330987211" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="267859322465630">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="420403999910463" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="459620448001389" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="490685668078259">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="302380214801778" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="682705605083162">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="682927860415203" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="839030746491930" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="165041642974385">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="717189199557279" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="387033758076282">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="498285842079298" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="994381481599533" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="359642207636625">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="734342018473857" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="998045432912331">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="396027143960482" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="239486798822650" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="790300817298163">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="430801684940382" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="840695637406602">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="242065984485078" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="530821411804271" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="835945641228136">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="125493479275160" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="227216867924371">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="825444734451007" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="803236415690030" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="925572392729585">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="958055288174360" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="761924255874852">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="358169067334823" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="828812015662331" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="970882602531839">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="951022547668100" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="218591731887175">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="725824406724483" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="133003935960748" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="548324683541989">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="237541388137035" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="934834570939401">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="720864172458431" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="562923063884430" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="419308842929639">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="545686244439400" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="263713055112884">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="672232948463651" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="132328391027392" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="834189809125284">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="752360651065597" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="520125874898859">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="677310950649695" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="322492276808301" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="154131403431147">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="798571176973776" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="291361421182411">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="308031672416543" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="709499786685256" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="861443956049794">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="579898913743328" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="660823555434411">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="761984605773804" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="399249595646919" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="862158195197088">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="994478186256339" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="284134476120391">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="329415806929792" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="722971331557700" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="559047223709156">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="350403528155778" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="935640488807505">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="534347768663342" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="389865449492988" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="436619519966090">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="925540338174433" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="321669311918158">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="264317584966658" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="598748749818713" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="881316070494201">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="907459634385228" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="356475068790668">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="205749705525254" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="729161022411825" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="796784528222329">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="519027109005971" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="232923627950708">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="718384996254654" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="638103417440315" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="267782821113413">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="721297251450439" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="479188306152923">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="434427431410099" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="472364983303818" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="434114846659469">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="971269142385554" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="952115059623464">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="313274429147131" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="354924786964164" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="919232358708248">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="718674310059230" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">28</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="913496778999334">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="177896041974438" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="883907217332666" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="810827476811654">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="777097271230175" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">29</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="843573198839452">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="338185644404513" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="247280016458570" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="339651972339276">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="769638159671146" type="System">
+                            <param id="0" name="Variable">district</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">30</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="452049042681687">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="547133221350991" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="483131486471151" type="System">
+                                    <param id="0" name="Variable">Check_fload</param>
+                                    <param id="1" name="Value">choose(1,2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

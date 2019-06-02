@@ -11,7 +11,7 @@
             <actions>
                 <action id="-9" name="Set value" sid="162337060278869" type="System">
                     <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">350</param>
+                    <param id="1" name="Value">400</param>
                 </action>
                 <action id="-3" name="Set position" sid="763764486396866" type="fade">
                     <param id="0" name="X">0</param>
@@ -190,21 +190,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="775839162465580">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="365328874606869" type="System">
-                    <param id="0" name="Variable">bulletValue</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="174202560078216" type="System">
-                    <param id="0" name="Variable">bulletCloud</param>
-                    <param id="1" name="Value">1/5</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="717834935935839">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="435475279259397" type="System">
@@ -260,6 +245,15 @@
                         </action>
                         <action id="0" name="Set text" sid="338552270056888" type="spRound5">
                             <param id="0" name="Text">walletTotal</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="722971669912918" type="popup">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="519542518771213" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="813644376307364" type="popup">
+                            <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -810,14 +804,14 @@
                     </conditions>
                     <actions>
                         <action id="-16" name="Wait" sid="245873006673091" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="993912438914554" type="System">
                             <param id="0" name="Variable">Crop</param>
                             <param id="1" name="Value">5</param>
                         </action>
                         <action id="-16" name="Wait" sid="380306787003510" type="System">
-                            <param id="0" name="Seconds">1</param>
+                            <param id="0" name="Seconds">2</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -834,6 +828,10 @@
                                     <param id="0" name="Variable">checkWeather</param>
                                     <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10)</param>
                                 </action>
+                                <action disabled="1" id="-9" name="Set value" sid="244502267318352" type="System">
+                                    <param id="0" name="Variable">checkWeather</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="753594951769371">
@@ -848,6 +846,10 @@
                                 <action id="-9" name="Set value" sid="382063021704247" type="System">
                                     <param id="0" name="Variable">checkWeather</param>
                                     <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9)</param>
+                                </action>
+                                <action disabled="1" id="-9" name="Set value" sid="424208553930342" type="System">
+                                    <param id="0" name="Variable">checkWeather</param>
+                                    <param id="1" name="Value">10</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -870,6 +872,10 @@
                     <param id="0" name="Name">&quot;planting&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
+                <action id="-9" name="Set value" sid="875674848912234" type="System">
+                    <param id="0" name="Variable">strv</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="400286495438753">
@@ -886,6 +892,10 @@
                 <action id="0" name="Call function" sid="146144245002975" type="Function">
                     <param id="0" name="Name">&quot;planting&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="976621603877969" type="System">
+                    <param id="0" name="Variable">strv</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
@@ -948,21 +958,22 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="225791168860736">
+        <event-block sid="701706174218574">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="264458783129745" type="System">
+                <condition id="-14" name="Compare variable" sid="227466049128442" type="System">
                     <param id="0" name="Variable">checkWeather</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">10</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-16" name="Set opacity" sid="136827888598417" type="drt">
+                <action id="-16" name="Set opacity" sid="749118263496170" type="drt">
                     <param id="0" name="Opacity">100</param>
                 </action>
+                <action id="-24" name="Move to top" sid="417940976269939" type="drt" />
             </actions>
         </event-block>
-        <event-block sid="218476527082793">
+        <event-block disabled="1" sid="218476527082793">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="638626376888011" type="Sprite6" />
             </conditions>
@@ -1021,6 +1032,19 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="905920949267935">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="305433480888636" type="System">
+                    <param id="0" name="Variable">Crop</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-4" name="Is outside layout" sid="734794008246148" type="tractor3" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="371750024323063" type="tractor3" />
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

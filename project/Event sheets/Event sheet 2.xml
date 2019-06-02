@@ -23,30 +23,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="344832380727904">
-                    <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="962130351955696" type="System" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="582599841895547">
-                            <conditions>
-                                <condition id="-14" name="Pick by unique ID" sid="583453303724538" type="Sprite">
-                                    <param id="0" name="Unique ID">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Wait" sid="227304280062413" type="System">
-                                    <param id="0" name="Seconds">0.5</param>
-                                </action>
-                                <action behavior="LiteTween" id="10" name="Start" sid="699405014835543" type="Sprite">
-                                    <param id="0" name="Start Mode">0</param>
-                                    <param id="1" name="Force use current">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
             </sub-events>
         </event-block>
         <event-block sid="824781912676807">

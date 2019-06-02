@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>connect</name>
+    <events>
+        <comment>every layout</comment>
+        <comment>form Global veriable for layout 3</comment>
+        <variable constant="0" name="FarmerNumber" sid="632783076428623" static="0" type="number">0</variable>
+        <variable constant="0" name="FarmerName" sid="917069014347378" static="0" type="text"></variable>
+        <variable constant="0" name="FarmerDistrict" sid="883181139829964" static="0" type="text"></variable>
+        <variable constant="0" name="FarmerBlock" sid="406215793484701" static="0" type="text"></variable>
+        <variable constant="0" name="FarmerGp" sid="502027420332681" static="0" type="text"></variable>
+        <variable constant="0" name="login" sid="152645467428567" static="0" type="number">0</variable>
+        <variable constant="0" name="District" sid="514037957774544" static="0" type="number">0</variable>
+        <variable constant="0" name="CheckDistSel" sid="389394828644071" static="0" type="number">0</variable>
+        <comment>All ui Global veriable for layout 4</comment>
+        <variable constant="0" name="gameRound" sid="425094035359505" static="0" type="number">1</variable>
+        <variable constant="0" name="walletTotal" sid="402774550822544" static="0" type="number">12000</variable>
+        <variable constant="0" name="insuranceCost" sid="349703214850011" static="0" type="number">0</variable>
+        <variable constant="0" name="schoolingCost" sid="956834058732004" static="0" type="number">0</variable>
+        <variable constant="0" name="loan" sid="565313307228407" static="0" type="number">0</variable>
+        <event-group description="" sid="877459414819317" title="All layout evey tick " />
+        <event-block sid="174179965382589">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="318385378026098" type="UiTopBoard" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="263403848107579" type="spRound">
+                    <param id="0" name="Text">gameRound</param>
+                </action>
+                <action id="0" name="Set text" sid="522736205456615" type="spRound2">
+                    <param id="0" name="Text">gameRound</param>
+                </action>
+                <action id="0" name="Set text" sid="454639506908785" type="spRound3">
+                    <param id="0" name="Text">gameRound</param>
+                </action>
+                <action id="0" name="Set text" sid="458703183448301" type="spLoan">
+                    <param id="0" name="Text">gameRound</param>
+                </action>
+                <action id="0" name="Set text" sid="113235633529454" type="spRound5">
+                    <param id="0" name="Text">loan</param>
+                </action>
+                <action id="0" name="Set text" sid="143014638209626" type="welcomeWallet">
+                    <param id="0" name="Text">walletTotal</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

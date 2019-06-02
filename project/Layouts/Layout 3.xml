@@ -8,8 +8,8 @@
         <height>1080</height>
     </size>
     <margins>
-        <horizontal>100000</horizontal>
-        <vertical>100000</vertical>
+        <horizontal>1000</horizontal>
+        <vertical>1000</vertical>
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
@@ -186,7 +186,7 @@
                 </instance>
                 <instance type="List" uid="55">
                     <properties>
-                        <items>Select District ; Anugul; Balasore; Bargarh; Bhadrak; Bolangir; Boudh; Cuttack; Deogarh; Dhenkanal; Gajapati; Ganjam; Jagatsinghpur; Jajpur; Jharsuguda; Kalahandi;</items>
+                        <items>Select District* ; Anugul; Balasore; Bargarh; Bhadrak; Bolangir; Boudh; Cuttack; Deogarh; Dhenkanal; Gajapati; Ganjam; Jagatsinghpur; Jajpur; Jharsuguda; Kalahandi;Kandhamal; Kendrapara;Keonjhar; Khordha; Koraput; Malkanagiri; Mayurbhanj; Nawarangpur; Nayagarh; Nuapada;Puri; Rayagada; Sambalpur;Subarnapur;Sundargarh;  </items>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
@@ -208,7 +208,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="TextBox" uid="7">
+                <instance type="farmerNumber" uid="7">
                     <properties>
                         <text></text>
                         <placeholder></placeholder>
@@ -373,7 +373,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1226</x>
-                        <y>636</y>
+                        <y>592</y>
                         <z>0</z>
                         <width>403</width>
                         <height>35</height>
@@ -450,39 +450,7 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances>
-                <instance type="fade" uid="23">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Fade">
-                            <properties>
-                                <active-at-start>Yes</active-at-start>
-                                <fade-in-time>0</fade-in-time>
-                                <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
-                                <destroy>After fade out</destroy>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-1922</x>
-                        <y>1118</y>
-                        <z>0</z>
-                        <width>1920</width>
-                        <height>1080</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-            </instances>
+            <instances />
             <effects />
         </layer>
     </layers>
