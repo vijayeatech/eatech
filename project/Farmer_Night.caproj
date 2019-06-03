@@ -1439,25 +1439,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="494795900225646">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781375547159207" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Saurabh\Desktop\harvest_land_manual.png">
-                        <collision-poly>
-                            <point x="0.05" y="0.106383" />
-                            <point x="0.5" y="0.234043" />
-                            <point x="0.91" y="0.191489" />
-                            <point x="1" y="0.489362" />
-                            <point x="0.9" y="0.787234" />
-                            <point x="0.5" y="0.765957" />
-                            <point x="0.07" y="0.851064" />
-                            <point x="0" y="0.489362" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="sesComp" sid="109624140298057">
             <plugin id="Sprite" />
             <behaviors>

@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 8</name>
     <events>
+        <variable constant="0" name="basicRisk" sid="148490051622306" static="0" type="number">0</variable>
+        <variable constant="0" name="basicRiskface" sid="519302410342169" static="0" type="number">0</variable>
+        <variable constant="0" name="insuranceclaimed" sid="659847601342451" static="0" type="number">0</variable>
         <include>connect</include>
         <event-block sid="432071451464920">
             <conditions>
@@ -14,6 +17,54 @@
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="150980187551962">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="685796342489328" type="System">
+                            <param id="0" name="Variable">basicRiskface</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="494673843509203">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="122587848733656" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="306200030119700" type="System">
+                                    <param id="0" name="Variable">basicRisk</param>
+                                    <param id="1" name="Value">floor(random(1,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="831906009596086">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="472292084474489" type="System">
+                            <param id="0" name="Variable">basicRiskface</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="472219823887833">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="207533498527005" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="968813128251008" type="System">
+                                    <param id="0" name="Variable">basicRisk</param>
+                                    <param id="1" name="Value">floor(random(2,5))</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="904363336436104">
             <conditions>
@@ -369,119 +420,79 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block disabled="1" sid="948468540511695">
+        <event-block sid="670521389595659">
             <conditions>
-                <condition id="3" name="On touched object" sid="441262835818263" type="Touch">
-                    <param id="0" name="Object">nextSession</param>
+                <condition id="-14" name="Compare variable" sid="262104684065675" type="System">
+                    <param id="0" name="Variable">strv</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions />
             <sub-events>
-                <event-block disabled="1" sid="658337080986354">
+                <event-block sid="501849021778989">
                     <conditions>
-                        <condition id="-10" name="Compare opacity" sid="461359126026308" type="nextSession">
-                            <param id="0" name="Comparison">5</param>
-                            <param id="1" name="Opacity">100</param>
+                        <condition id="-14" name="Compare variable" sid="787701848009335" type="System">
+                            <param id="0" name="Variable">insuranceCost</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="485960145969739" type="System">
-                            <param id="0" name="Variable">landPreCost</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="269326165290255" type="System">
-                            <param id="0" name="Variable">harvestingCost</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="102079267059316" type="System">
-                            <param id="0" name="Variable">uriaFertCost</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="312255897330837" type="System">
-                            <param id="0" name="Variable">plantingSeedsSprayCost</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="141005231942170" type="System">
-                            <param id="0" name="Seconds">0.1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="514986016702819" type="System">
-                            <param id="0" name="Layout">Layout 4</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
-                        <event-block disabled="1" sid="513430786850137">
+                        <event-block sid="778778172483604">
                             <conditions>
-                                <condition id="-4" name="Trigger once while true" sid="727244929287244" type="System" />
-                                <condition id="-14" name="Compare variable" sid="800612422260211" type="System">
-                                    <param id="0" name="Variable">walletTotal</param>
-                                    <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">loan+loan*4/100</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="791718475393062" type="System">
-                                    <param id="0" name="Variable">gameRound</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="529492693077139" type="System">
-                                    <param id="0" name="Variable">loan</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block disabled="1" sid="861124804409194">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="730928560998218" type="System">
-                                    <param id="0" name="Variable">part</param>
+                                <condition id="-14" name="Compare variable" sid="689101669526644" type="System">
+                                    <param id="0" name="Variable">drtflood</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                                <condition id="-10" name="Compare opacity" sid="195477258918191" type="water">
-                                    <param id="0" name="Comparison">2</param>
-                                    <param id="1" name="Opacity">100</param>
+                                    <param id="2" name="Value">2</param>
                                 </condition>
                             </conditions>
-                            <actions>
-                                <action behavior="Bullet" id="3" name="Set angle of motion" sid="584158442929786" type="rain">
-                                    <param id="0" name="Angle">random(125,100)</param>
-                                </action>
-                                <action behavior="Bullet" id="0" name="Set speed" sid="192913199205599" type="rain">
-                                    <param id="0" name="Speed">random(700,900)</param>
-                                </action>
-                            </actions>
+                            <actions />
                             <sub-events>
-                                <event-block disabled="1" sid="597129250114747">
+                                <event-block sid="251382748596669">
                                     <conditions>
-                                        <condition id="-6" name="Every X seconds" sid="569389939290966" type="System">
-                                            <param id="0" name="Interval (seconds)">0.01</param>
+                                        <condition id="-14" name="Compare variable" sid="778447953941831" type="System">
+                                            <param id="0" name="Variable">basicRisk</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Create object" sid="754680034053690" type="System">
-                                            <param id="0" name="Object to create">rain</param>
-                                            <param id="1" name="Layer">&quot;UI&quot;</param>
-                                            <param id="2" name="X">random(400,2000)</param>
-                                            <param id="3" name="Y">100</param>
+                                        <action id="-9" name="Set value" sid="517957825224063" type="System">
+                                            <param id="0" name="Variable">basicRiskface</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-3" name="Create object" sid="566637426548241" type="System">
-                                            <param id="0" name="Object to create">rain</param>
-                                            <param id="1" name="Layer">&quot;UI&quot;</param>
-                                            <param id="2" name="X">random(300,2000)</param>
-                                            <param id="3" name="Y">100</param>
+                                        <action id="-9" name="Set value" sid="239742923251581" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">0</param>
                                         </action>
-                                        <action id="-3" name="Create object" sid="264350284154409" type="System">
-                                            <param id="0" name="Object to create">rain</param>
-                                            <param id="1" name="Layer">&quot;UI&quot;</param>
-                                            <param id="2" name="X">random(200,2000)</param>
-                                            <param id="3" name="Y">100</param>
+                                        <action id="-9" name="Set value" sid="486838583892727" type="System">
+                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="1" name="Value">-2000</param>
                                         </action>
-                                        <action id="-25" name="Move to bottom" sid="980791630525281" type="rain" />
-                                        <action id="-16" name="Wait" sid="672092146624972" type="System">
-                                            <param id="0" name="Seconds">0.1</param>
+                                        <action id="-9" name="Set value" sid="349241011939178" type="System">
+                                            <param id="0" name="Variable">loss</param>
+                                            <param id="1" name="Value">-1500</param>
                                         </action>
-                                        <action id="-10" name="Add to" sid="640373479210173" type="System">
-                                            <param id="0" name="Variable">opacity</param>
-                                            <param id="1" name="Value">0.1</param>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="641834943615808">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="341142121464719" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="843281301536478" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">12500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="852486932325176" type="System">
+                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="1" name="Value">10500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="478090019302751" type="System">
+                                            <param id="0" name="Variable">loss</param>
+                                            <param id="1" name="Value">-1500</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -489,195 +500,59 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-                <event-block disabled="1" sid="144401176748030">
+                <event-block sid="576873283700250">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="838994451142384" type="System">
-                            <param id="0" name="Variable">gameRound</param>
+                        <condition id="-14" name="Compare variable" sid="932166303443862" type="System">
+                            <param id="0" name="Variable">insuranceCost</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="420190609410583" type="System">
-                            <param id="0" name="Variable">profithight1</param>
-                            <param id="1" name="Value">profit.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="545527299033308" type="System">
-                            <param id="0" name="Variable">losshight1</param>
-                            <param id="1" name="Value">loss.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="892649425655972">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="315650600897783" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="440891309490702" type="System">
-                            <param id="0" name="Variable">profithight2</param>
-                            <param id="1" name="Value">profit2.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="354274641737047" type="System">
-                            <param id="0" name="Variable">losshight2</param>
-                            <param id="1" name="Value">loss2.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="936867674647573">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="230987564483663" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="788755536957358" type="System">
-                            <param id="0" name="Variable">profithight3</param>
-                            <param id="1" name="Value">profit3.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="475499693848104" type="System">
-                            <param id="0" name="Variable">losshight3</param>
-                            <param id="1" name="Value">loss3.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="116268301484005">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="664586087676976" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">4</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="705662343335876" type="System">
-                            <param id="0" name="Variable">profithight4</param>
-                            <param id="1" name="Value">profit4.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="623241038014205" type="System">
-                            <param id="0" name="Variable">losshight4</param>
-                            <param id="1" name="Value">loss4.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="410709346776688">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="346005401007614" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="194307786553491" type="System">
-                            <param id="0" name="Variable">profithight5</param>
-                            <param id="1" name="Value">profit5.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="743692760115497" type="System">
-                            <param id="0" name="Variable">losshight5</param>
-                            <param id="1" name="Value">loss5.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="345584471077485">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="593643886150555" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">6</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="775764558376044" type="System">
-                            <param id="0" name="Variable">profithight6</param>
-                            <param id="1" name="Value">profit6.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="179891394783400" type="System">
-                            <param id="0" name="Variable">losshight6</param>
-                            <param id="1" name="Value">loss6.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="777361731299017">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="236397195259978" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">7</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="542873116764733" type="System">
-                            <param id="0" name="Variable">profithight7</param>
-                            <param id="1" name="Value">profit7.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="559566111531005" type="System">
-                            <param id="0" name="Variable">losshight7</param>
-                            <param id="1" name="Value">loss7.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="617761296552342">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="532929533605191" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="444812154386442" type="System">
-                            <param id="0" name="Variable">profithight8</param>
-                            <param id="1" name="Value">profit8.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="966232321162684" type="System">
-                            <param id="0" name="Variable">losshight8</param>
-                            <param id="1" name="Value">loss8.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="851747260629950">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="105959122432194" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="272680902937653" type="System">
-                            <param id="0" name="Variable">profithight9</param>
-                            <param id="1" name="Value">profit9.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="150449757189188" type="System">
-                            <param id="0" name="Variable">losshight9</param>
-                            <param id="1" name="Value">loss9.Height</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="117665970901483">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="146956639261996" type="System">
-                            <param id="0" name="Variable">gameRound</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">10</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="289275136826703" type="System">
-                            <param id="0" name="Variable">profithight10</param>
-                            <param id="1" name="Value">profit10.Height</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="202362858968254" type="System">
-                            <param id="0" name="Variable">losshight10</param>
-                            <param id="1" name="Value">loss10.Height</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="961057119149629">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="975768239840099" type="System">
+                                    <param id="0" name="Variable">drtflood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="960470120989981" type="System">
+                                    <param id="0" name="Variable">insuranceclaimed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="355404460236971" type="System">
+                                    <param id="0" name="Variable">yeldProfit</param>
+                                    <param id="1" name="Value">-2000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="939880036393186" type="System">
+                                    <param id="0" name="Variable">loss</param>
+                                    <param id="1" name="Value">-1500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="537154753689331">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="965917389195109" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="330415877663277" type="System">
+                                    <param id="0" name="Variable">insuranceclaimed</param>
+                                    <param id="1" name="Value">12500</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="368474674859145" type="System">
+                                    <param id="0" name="Variable">yeldProfit</param>
+                                    <param id="1" name="Value">10500</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="418446704530737" type="System">
+                                    <param id="0" name="Variable">loss</param>
+                                    <param id="1" name="Value">-1500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>

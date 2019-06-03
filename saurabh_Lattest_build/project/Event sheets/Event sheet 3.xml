@@ -1,0 +1,2374 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 3</name>
+    <events>
+        <include>connect</include>
+        <event-block sid="548401926258126">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="246057777313291" type="System" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set CSS style" sid="333277951415564" type="farmerNumber">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="564384341443783" type="farmerNumber">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="374913897128720" type="TextBox2">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="525031654903032" type="TextBox2">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="408470475448941">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="609575329013142" type="fade">
+                            <param id="0" name="Unique ID">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="659541106269975" type="fade">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="678857095735761">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="294957415583042" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="742782121016940" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="913276075972831" type="Sprite">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="394213097256195" type="farmerNumber">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="629316646655327" type="login">
+                            <param id="0" name="Pin to">Sprite</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="131810543432479" type="farmerNumber">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="1" name="Set placeholder" sid="841053309607329" type="farmerNumber">
+                            <param id="0" name="Placeholder">&quot;Please Enter Your Mobile No*&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="618447191161386" type="farmerNumber">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="687710732332953" type="List">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="792689454127633" type="List">
+                            <param id="0" name="Property name">&quot;border-color&quot;</param>
+                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="470579121871674">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="904377534532688" type="List" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set CSS style" sid="903808503452083" type="List">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="416345421092920" type="List">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="100997801958973" type="List2">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="753521052960174" type="List2">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="428999653580687" type="List3">
+                    <param id="0" name="Property name">&quot;font-size&quot;</param>
+                    <param id="1" name="Value">&quot;2vw&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="166116016675006" type="List3">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181793049178426">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="781858632683147" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="277383850215919" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="696499047904598" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="631293690372155" type="farmerNumber">
+                    <param id="0" name="Text">left(farmerNumber.Text,10)</param>
+                </action>
+                <action id="-9" name="Set value" sid="737077532582102" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="295544254737316">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="908572955725705" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="200877313105326" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655906492711191">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="316248024432186" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="147734654395745" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255613788331004">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="595662524276344" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="651788961806385" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894079587488844">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="507696141719610" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="868344742337435" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728299614240850">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="447211092290819" type="login" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="974063681822043" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Value">list.SelectedIndex</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="866843078641778">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="557249368542447" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="346256632719541">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="354712588818273" type="Touch">
+                            <param id="0" name="Object">login</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="794497084262175" type="error">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="122083981682338" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action behavior="LiteTween" id="11" name="Reverse" sid="688924974004846" type="error">
+                            <param id="0" name="Reverse mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="899998935019978">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="751962430938156" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="209093789834219">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="847106229889728" type="Touch">
+                            <param id="0" name="Object">login</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="207297530132618" type="System">
+                            <param id="0" name="Layout">Layout 4</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="324683900813597" type="System">
+                            <param id="0" name="Variable">FarmerNumber</param>
+                            <param id="1" name="Value">farmerNumber.Text</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="688501034498281" type="System">
+                            <param id="0" name="Variable">FarmerName</param>
+                            <param id="1" name="Value">TextBox2.Text</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="775423660859414" type="System">
+                            <param id="0" name="Variable">FarmerDistrict</param>
+                            <param id="1" name="Value">List.SelectedText</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="560169710284513" type="System">
+                            <param id="0" name="Variable">FarmerBlock</param>
+                            <param id="1" name="Value">List2.SelectedText</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="169577566955736" type="System">
+                            <param id="0" name="Variable">FarmerGp</param>
+                            <param id="1" name="Value">List3.SelectedText</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="971127861123269">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="187183371282962" type="List">
+                    <param id="0" name="Text to compare">&quot;Anugul&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="569975557635946" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Anugul&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="386557984071532" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Athmallik&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="644828823400786" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Banarpal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="401429375995848" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Chhendipada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="460821470687165" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Kaniha&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="483384115114276" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Kishorenagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="372956035172747" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Pallahara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="696372889148667" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Talcher&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="867775702291258" type="List2">
+                    <param id="0" name="Index">9</param>
+                </action>
+                <action id="-9" name="Set value" sid="112261778334635" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986973101276834">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="601795735544004" type="List">
+                    <param id="0" name="Text to compare">&quot;BALASORE&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="967839316513094" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bahanaga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="850197280417665" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Balasore&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="533322605423521" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Baliapal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="324191092764832" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Basta&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="976374702734881" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Bhograi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="217531853403672" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Jaleswar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="947906733772657" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Khaira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="567676565954444" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Nilgiri&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="537817012043168" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Oupada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="413825442596218" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Remuna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="437304216794151" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Simulia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="944727733655720" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Soro&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="815738618752173" type="List2">
+                    <param id="0" name="Index">13</param>
+                </action>
+                <action id="-9" name="Set value" sid="987488145375891" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="787491154492931">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="779573639800086" type="List">
+                    <param id="0" name="Text to compare">&quot;Bargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="728991550104867" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Ambabhana&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="623457721019585" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Attabira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="600736531355195" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Bargarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="695519404418571" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Barpalli&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="198197901517793" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Bhatli&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="565509011283440" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Bheden&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="343971512917070" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Bijepur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="843000876162554" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Gaisilet&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="573060184584231" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Jharabandha&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="693015574499705" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Paikmal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="843774165339485" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Rajborasambar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="885002942720256" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Sohela&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="997558539281662" type="List2">
+                    <param id="0" name="Index">13</param>
+                </action>
+                <action id="-9" name="Set value" sid="276471891166249" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="489297935587703">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="718256040643293" type="List">
+                    <param id="0" name="Text to compare">&quot;Bhadrak&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="580100634165923" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Basudevpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="889635689193412" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Bhadrak&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="768015436875715" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Bhandari&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="975548600616254" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;pokhari&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="522828359674839" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Bonth&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="368861653151686" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Chandabali&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="378394291364336" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Dhamnagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="559779139448029" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Tihidi&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="797792543827272" type="List2">
+                    <param id="0" name="Index">9</param>
+                </action>
+                <action id="-9" name="Set value" sid="153847478759592" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="462606666642307">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="226329985293479" type="List">
+                    <param id="0" name="Text to compare">&quot;Bolangir &quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="554172563670934" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Agalpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="979846396142453" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Belpara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="194728610471555" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Bolangir&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="281405822353660" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Bongamunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="483266103073951" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Deogaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="331986993960707" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Gudvella&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="210087110462940" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Khaparakhol&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="825055298476850" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Loisinga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="906732044414982" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Muribahal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="182973973832357" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Patnagarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="758410958936505" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Puintala&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="484725601435174" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Saintala&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="111596253812325" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Titilagarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="852458351185737" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Tureikela&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="729848666399031" type="List2">
+                    <param id="0" name="Index">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="363740463895918" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="640668078216786">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="650262132704510" type="List">
+                    <param id="0" name="Text to compare">&quot;Boudh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="119108774696396" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Boudh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="844557221438987" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Harabhanga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="723574700088395" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Kantamal&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="952094751285576" type="List2">
+                    <param id="0" name="Index">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="912948354297502" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="581235371190945">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="189903708547410" type="List">
+                    <param id="0" name="Text to compare">&quot;Cuttack&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="128766657552281" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Athgarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="376592720613562" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Banki&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="570989536279412" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Baramba&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="412734619902327" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Baranga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="331622609425262" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Cuttack Sadar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="359083537183449" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Dampara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="511008111189813" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Kantapada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="982621622421815" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Mahanga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="403910240746962" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Narasinghpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="834679194025291" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Niali&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="442094600768049" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Nischintakoili&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="614965018328789" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Salipur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="770305429940746" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Tangi-Chowdwar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="494683395649136" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Tigiria&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="563046144377030" type="List2">
+                    <param id="0" name="Index">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="416665039550574" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601385946245914">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="887009096826091" type="List">
+                    <param id="0" name="Text to compare">&quot;Deogarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="461662688785341" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Barkote&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="629023830786805" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Riamal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="294737700925279" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Tileibani&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="591448517239048" type="List2">
+                    <param id="0" name="Index">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="545167743288073" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="749031999279393">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="297888345032558" type="List">
+                    <param id="0" name="Text to compare">&quot;Dhenkanal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="137963909945889" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bhuban&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="974466080223335" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Gondia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="449356312184814" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Hindol&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="658364087913359" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Kamakhyanagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="486145919176546" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Kankadahad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="947370960309672" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Odapada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="520836962518102" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Parjang&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="801184016509239" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Sadar&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="922938442721096" type="List2">
+                    <param id="0" name="Index">9</param>
+                </action>
+                <action id="-9" name="Set value" sid="164530320071757" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="723260324501749">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="373970647241578" type="List">
+                    <param id="0" name="Text to compare">&quot;Gajapati&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="699785748559140" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Gumma&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="214176812822737" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Kasinagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="681369274702528" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Mohana&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="120355105943039" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Nuagad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="589813695500220" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Paralakhemundi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="328356577607719" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;R.Udayagiri&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="992139822156275" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Rayagada&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="196470974130973" type="List2">
+                    <param id="0" name="Index">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="937901390455789" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674434904598470">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="442575579838792" type="List">
+                    <param id="0" name="Text to compare">&quot;Ganjam&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="729962514576132" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Aska&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="376771858244191" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Belguntha&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="831448690209109" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Bhanjanagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="688007660084502" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Buguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="181694051768353" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Chhatrapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="279241995954268" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Chikiti&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="731912145228934" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Dharakote&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="713069589307008" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Digapahandi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="936264994162239" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Ganjam&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="251215344901329" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Hinjilicut&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="834042102383621" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Jagannathprasad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="280933048640857" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;K.S.Nagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="923470886909515" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Khalikote&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="826230733765350" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Kodala&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="109691042668715" type="List2">
+                    <param id="0" name="Index">15</param>
+                    <param id="1" name="Text">&quot;Kukudakhandi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="920985843907755" type="List2">
+                    <param id="0" name="Index">16</param>
+                    <param id="1" name="Text">&quot;Patrapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="436990634307638" type="List2">
+                    <param id="0" name="Index">17</param>
+                    <param id="1" name="Text">&quot;Polsara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="961461068380890" type="List2">
+                    <param id="0" name="Index">18</param>
+                    <param id="1" name="Text">&quot;Purusottampur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="346726184686658" type="List2">
+                    <param id="0" name="Index">19</param>
+                    <param id="1" name="Text">&quot;Rangeilunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="969561760881908" type="List2">
+                    <param id="0" name="Index">20</param>
+                    <param id="1" name="Text">&quot;Sankhemundi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="308995278320230" type="List2">
+                    <param id="0" name="Index">21</param>
+                    <param id="1" name="Text">&quot;Seragad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="257674338907848" type="List2">
+                    <param id="0" name="Index">22</param>
+                    <param id="1" name="Text">&quot;Surada&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="915662440647375" type="List2">
+                    <param id="0" name="Index">23</param>
+                </action>
+                <action id="-9" name="Set value" sid="429765818819421" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">11</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="450633935546375">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="850293652551301" type="List">
+                    <param id="0" name="Text to compare">&quot;Jagatsinghpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="947322362807136" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Balikuda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="264422510227609" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Biridi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="223246299288569" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Erasma&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="602263265319578" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Jagatsinghpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="482363379289408" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Kujang&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="147363248018318" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Nuagaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="224746263972881" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Raghunathpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="657265697240640" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Tirtol&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="801866777507554" type="List2">
+                    <param id="0" name="Index">9</param>
+                </action>
+                <action id="-9" name="Set value" sid="229156081815116" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">12</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615133044787201">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="216658844172313" type="List">
+                    <param id="0" name="Text to compare">&quot;Jajpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="172798624052916" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Badachana&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="189935829655184" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Bari&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="249303872022170" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Binjharpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="931131973480769" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Dangadi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="729563735438745" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Dasarathpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="606557098021683" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Dharmasala&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="920601670615944" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Jajpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="185267564223302" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Korei&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="828298874961705" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Rasulpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="446000852917250" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Sukinda&quot;&#x0D;&#x0A;</param>
+                </action>
+                <action id="9" name="Remove" sid="227290496721853" type="List2">
+                    <param id="0" name="Index">11</param>
+                </action>
+                <action id="-9" name="Set value" sid="206259751601713" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">13</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="952376516369109">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="433713832588961" type="List">
+                    <param id="0" name="Text to compare">&quot;Jharsuguda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="467085742174597" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Jharsuguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="664166910595438" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Kirimira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="949724820525500" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Kolabira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="862579977834347" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Laikera&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="200441599097417" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Lakhanpur&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="566359973737323" type="List2">
+                    <param id="0" name="Index">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="243964030952911" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">14</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="481021854355608">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="122861773808046" type="List">
+                    <param id="0" name="Text to compare">&quot;Kalahandi&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="969457174757022" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bhawanipatna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="199168906937116" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Dharmagarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="745213694843424" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Golamunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="749857559630547" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Jaipatna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="206909139394546" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Junagarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="390968056430438" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Kalampur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="280857854564066" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Karlamunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="172157867197614" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Kesinga&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="394982274584273" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Koksara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="480935165723616" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Lanjigarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="280252237169193" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;M.Rampur; &quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="277660230673340" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Narla&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="823459743606220" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;ThumalRampur&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="123406311398310" type="List2">
+                    <param id="0" name="Index">14</param>
+                </action>
+                <action id="-9" name="Set value" sid="835881410968580" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">15</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="139331813799436">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="143814660113180" type="List">
+                    <param id="0" name="Text to compare">&quot;Kandhamal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="171081550730008" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Balliguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="177149759183931" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Chakpad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="214798470943398" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Daringibadi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="497445280263110" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;G.Udayagiri&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="685168739556207" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Khajuripada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="588836102280331" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Kotgarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="921142400159068" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Nuagaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="214023038527235" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Phiringia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="486105550154837" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Phulbani&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="765213555371948" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Raikia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="139565996861859" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Tikabali&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="934748189979566" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Tumudibandh&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="728847444692861" type="List2">
+                    <param id="0" name="Index">13</param>
+                </action>
+                <action id="-9" name="Set value" sid="274782294406628" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">16</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155533459288182">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="452666941716329" type="List">
+                    <param id="0" name="Text to compare">&quot;Kendrapara&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="279164074925492" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Aul&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="678050313070613" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Derabis&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="664322344782974" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Garadpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="101596389226482" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Kendrapara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="203357889745398" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Mahakalapada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="480357462934557" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Marsaghai&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="288835886389173" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Pattamundai&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="120829745578420" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Rajkanika&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="759357115665627" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Rajnagar&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="583648035164953" type="List2">
+                    <param id="0" name="Index">10</param>
+                </action>
+                <action id="-9" name="Set value" sid="221558539683042" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">17</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228970362186232">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="373653124721008" type="List">
+                    <param id="0" name="Text to compare">&quot;Keonjhar&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="664188910367888" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Anadapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="401732659285429" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Banspal&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="583138706250087" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Champua&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="853361287279788" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Ghasipur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="809047219874576" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Ghatgaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="899785484391870" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Harichandanpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="663323385604996" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Hatadihi; &quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="785965971091672" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Jhumpura&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="546539668836307" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Joda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="100422689301825" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Keonjhargarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="994268346678840" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Patna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="274669738852276" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Saharpada&#x0D;&#x0A;&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="521266125503611" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Telkoi&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="137875841488445" type="List2">
+                    <param id="0" name="Index">14</param>
+                </action>
+                <action id="-9" name="Set value" sid="409675282365065" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">18</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739501492830005">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="129543014806784" type="List">
+                    <param id="0" name="Text to compare">&quot;Khurda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="310756264548018" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Balianta&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="860977983154008" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Balipatna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="424976833583562" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Banpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="645653952558634" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Begunia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="759726588089899" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Bhubaneswar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="615130999722999" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Bolgarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="745220281986878" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Chilika&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="789067363506731" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Jatni&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="732881762116750" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Khurda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="981330067526424" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Tangi&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="717096597562233" type="List2">
+                    <param id="0" name="Index">11</param>
+                </action>
+                <action id="-9" name="Set value" sid="592929632594513" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">19</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="365263322216242">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="938920333609493" type="List">
+                    <param id="0" name="Text to compare">&quot;Koraput&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="862726475448406" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bandhugaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="295006349233581" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Bariguma&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="651998291851259" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Boipariguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="216841841382970" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Dasmantpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="627907858303337" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Jeypore&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="108531533655358" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Koraput&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="563714675389266" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Kotpada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="357379406056012" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Kundara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="534627286256677" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Lamtaput&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="309067526218708" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Laxmipur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="892539852748391" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Nandapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="523079612356237" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Narayanpatna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="171108771664667" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Pottangi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="187075870857750" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Similiguda&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="176385155920898" type="List2">
+                    <param id="0" name="Index">15</param>
+                </action>
+                <action id="-9" name="Set value" sid="635118932037278" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">20</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608881379925795">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="227356621553659" type="List">
+                    <param id="0" name="Text to compare">&quot;Malkangiri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="337988602873631" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Kalimela&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="835435092938465" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Khairaput&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="560259401962657" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Korkunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="797660858631496" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Kudumuluguma&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="400147448651872" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Malkangiri;&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="487192431722726" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Mathili&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="215231274898059" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Podia; &quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="201252673335678" type="List2">
+                    <param id="0" name="Index">8</param>
+                </action>
+                <action id="-9" name="Set value" sid="757615752961234" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">21</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455322827295357">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="602529061522940" type="List">
+                    <param id="0" name="Text to compare">&quot;Mayurbhanj&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="106693590163904" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bahalda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="144359716970971" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Bangiriposi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="251892984417263" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Baripada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="412868831662385" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Betnati&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="228550137859723" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Bijatala&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="228005197137997" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Bisoi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="809725048413136" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Bodasahi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="786162797342935" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Gopabandhunagar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="594681260093259" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Jamda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="716900778537020" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Jasipur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="383099970944540" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Kaptipada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="533191137557214" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Karanjia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="676673646008233" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Khunta&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="374570763747878" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Kuliana&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="268532333007458" type="List2">
+                    <param id="0" name="Index">15</param>
+                    <param id="1" name="Text">&quot;Kusumi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="840077641687319" type="List2">
+                    <param id="0" name="Index">16</param>
+                    <param id="1" name="Text">&quot;Morada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="334115503579177" type="List2">
+                    <param id="0" name="Index">17</param>
+                    <param id="1" name="Text">&quot;Rairangpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="527573915553356" type="List2">
+                    <param id="0" name="Index">18</param>
+                    <param id="1" name="Text">&quot;Raruan&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="369648520269568" type="List2">
+                    <param id="0" name="Index">19</param>
+                    <param id="1" name="Text">&quot;Rasgovindpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="492374441029157" type="List2">
+                    <param id="0" name="Index">20</param>
+                    <param id="1" name="Text">&quot;Samakhunta&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="582225517071316" type="List2">
+                    <param id="0" name="Index">21</param>
+                    <param id="1" name="Text">&quot;Sarasakana&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="427780168702640" type="List2">
+                    <param id="0" name="Index">22</param>
+                    <param id="1" name="Text">&quot;Sukruli&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="214191808772231" type="List2">
+                    <param id="0" name="Index">23</param>
+                    <param id="1" name="Text">&quot;Suliapada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="871589031718323" type="List2">
+                    <param id="0" name="Index">24</param>
+                    <param id="1" name="Text">&quot;Thakurmunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="727703807777051" type="List2">
+                    <param id="0" name="Index">25</param>
+                    <param id="1" name="Text">&quot;Tiring&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="455626043240925" type="List2">
+                    <param id="0" name="Index">26</param>
+                    <param id="1" name="Text">&quot;Udala&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="571478031742646" type="List2">
+                    <param id="0" name="Index">27</param>
+                </action>
+                <action id="-9" name="Set value" sid="102287677436513" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">22</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="986247160331502">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="452478502624302" type="List">
+                    <param id="0" name="Text to compare">&quot;Nabarangpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="262723447265766" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Chandahandi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="423284662866610" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Dabugaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="586075129751172" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Jharigam&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="980830205178080" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Kosagumuda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="150532524947655" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Nandahandi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="569972407018957" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Nawrangpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="818668512104739" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Papadahandi&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="126320885883925" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Raighar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="188128883714184" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Tentulikhunti&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="931244682335719" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Umerkote&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="375556446415094" type="List2">
+                    <param id="0" name="Index">11</param>
+                </action>
+                <action id="-9" name="Set value" sid="204160130832774" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">23</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186215811344970">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="677404051346115" type="List">
+                    <param id="0" name="Text to compare">&quot;Nayagarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="843438602348941" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bhapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="813975126653362" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Daspalla&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="910717743781581" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Gania&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="144526894162080" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Khandapada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="903258737350034" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Nayagarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="597075292257230" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Nuagaon&quot;&#x0D;&#x0A;</param>
+                </action>
+                <action id="10" name="Set item text" sid="630327748517091" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Odagaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="605723312754105" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Ranpur&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="628731064366907" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">24</param>
+                </action>
+                <action id="9" name="Remove" sid="243133412747467" type="List2">
+                    <param id="0" name="Index">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="812507198147364">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="995414258376618" type="List">
+                    <param id="0" name="Text to compare">&quot;Nuapada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="208701101148465" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Boden&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="656961875270324" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Khariar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="623472114173123" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Komna&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="687641387231936" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Nawapara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="219983624875163" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Sinapalli&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="460403506532988" type="List2">
+                    <param id="0" name="Index">6</param>
+                </action>
+                <action id="-9" name="Set value" sid="226408308136673" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="114638696946110">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="742295970713260" type="List">
+                    <param id="0" name="Text to compare">&quot;Puri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="166185158555252" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Astarang&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="328282385811092" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Brahmagiri&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="480787039692933" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Delang&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="242455078176128" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Gop&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="224666565126856" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Kakatpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="398877835649852" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Kanas&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="966351775491323" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Krushna- prasad&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="888427447637988" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Nimapara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="618995025026939" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Pipili&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="477036940326232" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Sadar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="105944016726960" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Satyabadi&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="344557334014644" type="List2">
+                    <param id="0" name="Index">12</param>
+                </action>
+                <action id="-9" name="Set value" sid="372592743359934" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">26</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="614239967483394">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="971467535290009" type="List">
+                    <param id="0" name="Text to compare">&quot;Rayagada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="329051063517345" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bisam-Cuttack&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="943649952860851" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Chandrapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="285555344069019" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Gudari&quot;&#x0D;&#x0A;</param>
+                </action>
+                <action id="10" name="Set item text" sid="549812538725779" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Gunupur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="901496235095660" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;K.Singpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="582028925787351" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Kasipur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="355917507169515" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Kolnara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="440377608895786" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Muniguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="527614331910114" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Padmapur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="314796598329717" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Ramanguda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="272602960074790" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Rayagada&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="968252311633517" type="List2">
+                    <param id="0" name="Index">12</param>
+                </action>
+                <action id="-9" name="Set value" sid="166083062224016" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">27</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="355539892796153">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="152128863219508" type="List">
+                    <param id="0" name="Text to compare">&quot;Sonpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="700328582082246" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;B.M.Pur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="671831699562078" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Binka&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="131752202512334" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Dunguripali&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="417573204386018" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Sonepur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="257995955520668" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Tarbha&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="886030148935985" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Ulunda&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="732678164412676" type="List2">
+                    <param id="0" name="Index">7</param>
+                </action>
+                <action id="-9" name="Set value" sid="999369066307653" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">28</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837388846337127">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="162681708434175" type="List">
+                    <param id="0" name="Text to compare">&quot;Subarnapur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="481583717292699" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Bamra&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="598683999228001" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Binika&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="443371922440831" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Biramaharajpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="785095510018026" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Dhankhanda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="851640931831203" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Dunguripalli&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="592825667680977" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Jamankira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="533696856798140" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Jujumura&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="814293094452878" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Kuchinda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="801245724987631" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Maneswar&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="709518464428148" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Naktideul&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="590479462197019" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Rairakhol&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="335570787405028" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Rengali&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="790817918555010" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Sonepur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="978100633209816" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Tarva&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="513114774477160" type="List2">
+                    <param id="0" name="Index">15</param>
+                    <param id="1" name="Text">&quot;Ullunda&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="780839813967518" type="List2">
+                    <param id="0" name="Index">16</param>
+                </action>
+                <action id="-9" name="Set value" sid="629608631536271" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">29</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="174894007639797">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="788748592924893" type="List">
+                    <param id="0" name="Text to compare">&quot;Sundargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="10" name="Set item text" sid="500593087304133" type="List2">
+                    <param id="0" name="Index">1</param>
+                    <param id="1" name="Text">&quot;Balisankara&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="610346574670133" type="List2">
+                    <param id="0" name="Index">2</param>
+                    <param id="1" name="Text">&quot;Bargaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="139093294475857" type="List2">
+                    <param id="0" name="Index">3</param>
+                    <param id="1" name="Text">&quot;Bisra&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="607351812962810" type="List2">
+                    <param id="0" name="Index">4</param>
+                    <param id="1" name="Text">&quot;Bonaigarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="377502053750371" type="List2">
+                    <param id="0" name="Index">5</param>
+                    <param id="1" name="Text">&quot;Gurundia&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="248579394147551" type="List2">
+                    <param id="0" name="Index">6</param>
+                    <param id="1" name="Text">&quot;Hemgiri&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="858194596523545" type="List2">
+                    <param id="0" name="Index">7</param>
+                    <param id="1" name="Text">&quot;Koira&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="759471278525078" type="List2">
+                    <param id="0" name="Index">8</param>
+                    <param id="1" name="Text">&quot;Kuarmunda&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="606106346934244" type="List2">
+                    <param id="0" name="Index">9</param>
+                    <param id="1" name="Text">&quot;Kutra&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="626352095287854" type="List2">
+                    <param id="0" name="Index">10</param>
+                    <param id="1" name="Text">&quot;Lafripada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="350756513474669" type="List2">
+                    <param id="0" name="Index">11</param>
+                    <param id="1" name="Text">&quot;Lahunipada&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="675803816887956" type="List2">
+                    <param id="0" name="Index">12</param>
+                    <param id="1" name="Text">&quot;Lathikata&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="478524622498788" type="List2">
+                    <param id="0" name="Index">13</param>
+                    <param id="1" name="Text">&quot;Nuagaon&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="301902942028523" type="List2">
+                    <param id="0" name="Index">14</param>
+                    <param id="1" name="Text">&quot;Rajgangpur&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="312668582572604" type="List2">
+                    <param id="0" name="Index">15</param>
+                    <param id="1" name="Text">&quot;Subdega&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="133177659918852" type="List2">
+                    <param id="0" name="Index">16</param>
+                    <param id="1" name="Text">&quot;Sundargarh&quot;</param>
+                </action>
+                <action id="10" name="Set item text" sid="708347380833232" type="List2">
+                    <param id="0" name="Index">17</param>
+                    <param id="1" name="Text">&quot;Tangarpalli&quot;</param>
+                </action>
+                <action id="9" name="Remove" sid="732480608206608" type="List2">
+                    <param id="0" name="Index">18</param>
+                </action>
+                <action id="-9" name="Set value" sid="406195526917630" type="System">
+                    <param id="0" name="Variable">district</param>
+                    <param id="1" name="Value">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="925205332704550">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="294967321568111" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="986799817540820" type="List2">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="678827583730199">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="444785087801564" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set enabled" sid="271457457989755" type="List2">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="536495747131136">
+            <conditions>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="513853682539580" type="List">
+                    <param id="0" name="Text to compare">&quot;Anugul&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="867340761389004" type="List">
+                    <param id="0" name="Text to compare">&quot;BALASORE&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="763731795035908" type="List">
+                    <param id="0" name="Text to compare">&quot;Bargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="502016494929349" type="List">
+                    <param id="0" name="Text to compare">&quot;Bhadrak&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="363337906016954" type="List">
+                    <param id="0" name="Text to compare">&quot;Bolangir &quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="321056777598254" type="List">
+                    <param id="0" name="Text to compare">&quot;Boudh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="408431013963370" type="List">
+                    <param id="0" name="Text to compare">&quot;Cuttack&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="530983163948638" type="List">
+                    <param id="0" name="Text to compare">&quot;Deogarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="747460530087536" type="List">
+                    <param id="0" name="Text to compare">&quot;Dhenkanal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="475395357124754" type="List">
+                    <param id="0" name="Text to compare">&quot;Gajapati&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="735309642827759" type="List">
+                    <param id="0" name="Text to compare">&quot;Ganjam&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="195324818753921" type="List">
+                    <param id="0" name="Text to compare">&quot;Jagatsinghpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="992507034026190" type="List">
+                    <param id="0" name="Text to compare">&quot;Jajpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="860490535240617" type="List">
+                    <param id="0" name="Text to compare">&quot;Jharsuguda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="241863565493301" type="List">
+                    <param id="0" name="Text to compare">&quot;Kalahandi&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="569250058858478" type="List">
+                    <param id="0" name="Text to compare">&quot;Kandhamal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="156545360614209" type="List">
+                    <param id="0" name="Text to compare">&quot;Kendrapara&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="410697907507221" type="List">
+                    <param id="0" name="Text to compare">&quot;Keonjhar&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="573234644229950" type="List">
+                    <param id="0" name="Text to compare">&quot;Khurda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="149277380288974" type="List">
+                    <param id="0" name="Text to compare">&quot;Koraput&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="601689324186986" type="List">
+                    <param id="0" name="Text to compare">&quot;Malkangiri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="341377740116860" type="List">
+                    <param id="0" name="Text to compare">&quot;Mayurbhanj&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="701225596200102" type="List">
+                    <param id="0" name="Text to compare">&quot;Nabarangpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="727983867399689" type="List">
+                    <param id="0" name="Text to compare">&quot;Nayagarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="424537650042820" type="List">
+                    <param id="0" name="Text to compare">&quot;Nuapada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="991423717368248" type="List">
+                    <param id="0" name="Text to compare">&quot;Puri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="158202384849293" type="List">
+                    <param id="0" name="Text to compare">&quot;Rayagada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="488908402464028" type="List">
+                    <param id="0" name="Text to compare">&quot;Sonpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="349941241471575" type="List">
+                    <param id="0" name="Text to compare">&quot;Subarnapur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" inverted="1" name="Compare selected item text" sid="712190455451586" type="List">
+                    <param id="0" name="Text to compare">&quot;Sundargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="748202580264577" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="957639375435871">
+            <conditions>
+                <condition id="4" name="Compare selected item text" sid="177096682415227" type="List">
+                    <param id="0" name="Text to compare">&quot;Anugul&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="353372267000972" type="List">
+                    <param id="0" name="Text to compare">&quot;BALASORE&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="573553879375564" type="List">
+                    <param id="0" name="Text to compare">&quot;Bargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="311210115789343" type="List">
+                    <param id="0" name="Text to compare">&quot;Bhadrak&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="583758144939557" type="List">
+                    <param id="0" name="Text to compare">&quot;Bolangir &quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="896974190941020" type="List">
+                    <param id="0" name="Text to compare">&quot;Boudh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="274289401037303" type="List">
+                    <param id="0" name="Text to compare">&quot;Cuttack&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="809637111350751" type="List">
+                    <param id="0" name="Text to compare">&quot;Deogarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="338062047363550" type="List">
+                    <param id="0" name="Text to compare">&quot;Dhenkanal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="470410934175232" type="List">
+                    <param id="0" name="Text to compare">&quot;Gajapati&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="679096376505655" type="List">
+                    <param id="0" name="Text to compare">&quot;Ganjam&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="329222401529294" type="List">
+                    <param id="0" name="Text to compare">&quot;Jagatsinghpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="676548454388473" type="List">
+                    <param id="0" name="Text to compare">&quot;Jajpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="869959978632343" type="List">
+                    <param id="0" name="Text to compare">&quot;Jharsuguda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="130640124053131" type="List">
+                    <param id="0" name="Text to compare">&quot;Kalahandi&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="724486944112569" type="List">
+                    <param id="0" name="Text to compare">&quot;Kandhamal&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="547672647880350" type="List">
+                    <param id="0" name="Text to compare">&quot;Kendrapara&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="845685713991401" type="List">
+                    <param id="0" name="Text to compare">&quot;Keonjhar&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="515446152506203" type="List">
+                    <param id="0" name="Text to compare">&quot;Khurda&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="459868543063266" type="List">
+                    <param id="0" name="Text to compare">&quot;Koraput&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="310424761186973" type="List">
+                    <param id="0" name="Text to compare">&quot;Malkangiri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="684313980542949" type="List">
+                    <param id="0" name="Text to compare">&quot;Mayurbhanj&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="670486230814060" type="List">
+                    <param id="0" name="Text to compare">&quot;Nabarangpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="126984211453543" type="List">
+                    <param id="0" name="Text to compare">&quot;Nayagarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="141438547468009" type="List">
+                    <param id="0" name="Text to compare">&quot;Nuapada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="792123597347337" type="List">
+                    <param id="0" name="Text to compare">&quot;Puri&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="771411973341683" type="List">
+                    <param id="0" name="Text to compare">&quot;Rayagada&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="291114160094761" type="List">
+                    <param id="0" name="Text to compare">&quot;Sonpur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="736676480973432" type="List">
+                    <param id="0" name="Text to compare">&quot;Subarnapur&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+                <condition id="4" name="Compare selected item text" sid="158514760506109" type="List">
+                    <param id="0" name="Text to compare">&quot;Sundargarh&quot;</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="253939976423967" type="System">
+                    <param id="0" name="Variable">districtSlected</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

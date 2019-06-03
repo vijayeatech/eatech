@@ -4,6 +4,8 @@
     <name>connect</name>
     <events>
         <variable constant="0" name="Fload_coming_Value" sid="402213936950340" static="0" type="number">0</variable>
+        <variable constant="0" name="drtflood" sid="111704813756065" static="0" type="number">0</variable>
+        <variable constant="0" name="loss" sid="600490136170002" static="0" type="number">0</variable>
         <variable constant="0" name="Low_Fload" sid="187506706349174" static="0" type="number">0</variable>
         <variable constant="0" name="High_Fload" sid="647962396272595" static="0" type="number">0</variable>
         <variable constant="0" name="Time_Of_Floads" sid="512734522181225" static="0" type="number">0</variable>
@@ -685,9 +687,6 @@
                         <action behavior="Bullet" id="5" name="Set enabled" sid="383605525005194" type="HarvestingManual">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="-15" name="Set visible" sid="208201135282219" type="Sprite4">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="801650603622210">
@@ -708,53 +707,7 @@
                             <param id="0" name="Interval (seconds)">0.25</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="863395925473035" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="200342715523946" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">2</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="731091950212589" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">3</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="597996929445906" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">4</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="818719830148073" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">5</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="760513761412272" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">6</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="501859997480205" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">7</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="516871747517188" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">8</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="859650002130539" type="HarvestingManual">
-                            <param id="0" name="Object">Sprite4</param>
-                            <param id="1" name="Layer">&quot;bgBottom&quot;</param>
-                            <param id="2" name="Image point">9</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="960253129147250">
                     <conditions>
@@ -922,7 +875,6 @@
                         <condition id="-4" name="Trigger once while true" sid="985473165827973" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="996589054068210" type="Sprite4" />
                         <action id="-9" name="Destroy" sid="232360530508812" type="Harvesting" />
                         <action id="17" name="Execute Javascript" sid="250137231464268" type="Browser">
                             <param id="0" name="Javascript">&quot;sendData(&apos;&quot; &amp; FarmerNumber  &amp; &quot;&apos;, &apos;&quot; &amp; FarmerName  &amp; &quot;&apos;,&apos;&quot; &amp; FarmerDistrict &amp; &quot;&apos;,&apos;&quot; &amp; FarmerBlock &amp; &quot;&apos;,&apos;&quot; &amp; FarmerGp  &amp; &quot;&apos;,&apos;&quot; &amp; gameRound &amp; &quot;&apos;, &apos;&quot; &amp; insuranceCost &amp; &quot;&apos;, &apos;&quot; &amp; schoolingCost &amp; &quot;&apos;, &apos;&quot; &amp; loan &amp; &quot;&apos;, &apos;&quot; &amp; walletTotal  &amp; &quot;&apos;, &apos;&quot; &amp; landPreCost  &amp; &quot;&apos;, &apos;&quot; &amp; harvestingCost  &amp; &quot;&apos;, &apos;&quot; &amp; uriaFertCost &amp; &quot;&apos;, &apos;&quot; &amp; yeldProfit &amp; &quot;&apos;)&quot;</param>

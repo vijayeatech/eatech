@@ -2131,7 +2131,6 @@
                 <action id="-16" name="Wait" sid="200128693907789" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="-9" name="Destroy" sid="997643890961366" type="Sprite4" />
                 <action id="-9" name="Set value" sid="549225193986417" type="System">
                     <param id="0" name="Variable">SesionOver</param>
                     <param id="1" name="Value">1</param>
@@ -2152,7 +2151,6 @@
                     <param id="0" name="Seconds">2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="770209459421444" type="Harvesting" />
-                <action id="-9" name="Destroy" sid="675635826783232" type="Sprite4" />
                 <action id="-9" name="Set value" sid="493442755011129" type="System">
                     <param id="0" name="Variable">SesionOver</param>
                     <param id="1" name="Value">1</param>
@@ -2172,7 +2170,6 @@
                 <action id="-16" name="Wait" sid="562434463276584" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="-9" name="Destroy" sid="631898834612564" type="Sprite4" />
                 <action id="-9" name="Destroy" sid="414250194474097" type="HarvestingManual" />
                 <action id="-9" name="Set value" sid="370474505508051" type="System">
                     <param id="0" name="Variable">SesionOver</param>

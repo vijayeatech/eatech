@@ -21,13 +21,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="14">Layout 8</layout>
         <event-sheet order="0">connect</event-sheet>
         <event-sheet order="2">Event sheet 3</event-sheet>
-        <event-sheet active="1" order="8">Event sheet 4</event-sheet>
+        <event-sheet order="8">Event sheet 4</event-sheet>
         <event-sheet order="9">Event sheet 5</event-sheet>
         <event-sheet order="10">Event sheet 6</event-sheet>
         <event-sheet order="11">Event sheet 2</event-sheet>
         <event-sheet order="15">Event sheet 8</event-sheet>
         <event-sheet order="16">Event sheet 9</event-sheet>
-        <event-sheet order="17">Event sheet 7</event-sheet>
+        <event-sheet active="1" order="17">Event sheet 7</event-sheet>
         <event-sheet order="18">risk</event-sheet>
     </open-tabs>
     <properties>
@@ -79,7 +79,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Harvesting/" />
         <folder expanded="1" path="animation-folder/Sprite7/" />
         <folder expanded="1" path="animation-folder/HarvestingManual/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
         <folder expanded="1" path="animation-folder/sesComp/" />
         <folder expanded="1" path="animation-folder/sesComp2/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
