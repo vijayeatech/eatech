@@ -8,7 +8,11 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="537405495252753" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="6" name="Stop" sid="737575700623190" type="Audio">
+                    <param id="0" name="Tag">&quot;main&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="568015477182916">
                     <conditions>

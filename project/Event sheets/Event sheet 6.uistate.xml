@@ -4,22 +4,16 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
-    <scroll-pos>383</scroll-pos>
-    <conditions-column>309</conditions-column>
-    <actions-namecolumn>223</actions-namecolumn>
+    <scroll-pos>350</scroll-pos>
+    <conditions-column>199</conditions-column>
+    <actions-namecolumn>207</actions-namecolumn>
     <condition-namecolumns>
-        <nest>160</nest>
-        <nest>125</nest>
-        <nest>100</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>31</nest>
-        <nest>29</nest>
-        <nest>28</nest>
+        <nest>99</nest>
+        <nest>34</nest>
+        <nest>34</nest>
+        <nest>34</nest>
+        <nest>27</nest>
+        <nest>26</nest>
     </condition-namecolumns>
     <events>
         <event collapsed="1" sid="717834935935839" />

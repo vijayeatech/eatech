@@ -52,7 +52,39 @@
                     <param id="0" name="Variable">Calander</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-16" name="Wait" sid="778910531101001" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="878371905980470">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="900710755179898" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="891163644238392" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="923239560670877" type="System">
+                            <param id="0" name="Variable">landPreCost</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="221977297406300" type="spRound5">
+                            <param id="0" name="Text">walletTotal</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="536918382614464" type="popup">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="250822091733022" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="309190037281385" type="popup">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="409216545642186">
             <conditions>
@@ -235,24 +267,24 @@
                             <param id="0" name="Variable">part</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-11" name="Subtract from" sid="883641122638974" type="System">
+                        <action disabled="1" id="-11" name="Subtract from" sid="883641122638974" type="System">
                             <param id="0" name="Variable">walletTotal</param>
                             <param id="1" name="Value">2500</param>
                         </action>
-                        <action id="-10" name="Add to" sid="326018774288205" type="System">
+                        <action disabled="1" id="-10" name="Add to" sid="326018774288205" type="System">
                             <param id="0" name="Variable">landPreCost</param>
                             <param id="1" name="Value">2500</param>
                         </action>
-                        <action id="0" name="Set text" sid="338552270056888" type="spRound5">
+                        <action disabled="1" id="0" name="Set text" sid="338552270056888" type="spRound5">
                             <param id="0" name="Text">walletTotal</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="722971669912918" type="popup">
+                        <action disabled="1" id="-16" name="Set opacity" sid="722971669912918" type="popup">
                             <param id="0" name="Opacity">100</param>
                         </action>
-                        <action id="-16" name="Wait" sid="519542518771213" type="System">
+                        <action disabled="1" id="-16" name="Wait" sid="519542518771213" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="813644376307364" type="popup">
+                        <action disabled="1" id="-16" name="Set opacity" sid="813644376307364" type="popup">
                             <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>
@@ -813,47 +845,10 @@
                         <action id="-16" name="Wait" sid="380306787003510" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="325981170877585" type="TiledBackground2">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
-                    <sub-events>
-                        <event-block sid="290739212086203">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="397029575647423" type="System">
-                                    <param id="0" name="Variable">drawout</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="243588934019123" type="System">
-                                    <param id="0" name="Variable">checkWeather</param>
-                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9,10)</param>
-                                </action>
-                                <action disabled="1" id="-9" name="Set value" sid="244502267318352" type="System">
-                                    <param id="0" name="Variable">checkWeather</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="753594951769371">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="929228820344837" type="System">
-                                    <param id="0" name="Variable">drawout</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="382063021704247" type="System">
-                                    <param id="0" name="Variable">checkWeather</param>
-                                    <param id="1" name="Value">choose(1,2,3,4,5,6,7,8,9)</param>
-                                </action>
-                                <action disabled="1" id="-9" name="Set value" sid="424208553930342" type="System">
-                                    <param id="0" name="Variable">checkWeather</param>
-                                    <param id="1" name="Value">10</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
@@ -939,41 +934,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="703258040797442">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="609576060899570" type="System">
-                    <param id="0" name="Variable">checkWeather</param>
-                    <param id="1" name="Comparison">1</param>
-                    <param id="2" name="Value">10</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="306667158500479" type="System">
-                    <param id="0" name="Variable">checkWeather</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="5" name="Set enabled" sid="681741707859863" type="TiledBackground2">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="701706174218574">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="227466049128442" type="System">
-                    <param id="0" name="Variable">checkWeather</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">10</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-16" name="Set opacity" sid="749118263496170" type="drt">
-                    <param id="0" name="Opacity">100</param>
-                </action>
-                <action id="-24" name="Move to top" sid="417940976269939" type="drt" />
-            </actions>
-        </event-block>
-        <event-block disabled="1" sid="218476527082793">
+        <event-block sid="218476527082793">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="638626376888011" type="Sprite6" />
             </conditions>

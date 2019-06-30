@@ -52,7 +52,39 @@
                     <param id="0" name="Variable">Calander</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-16" name="Wait" sid="778910531101001" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="878371905980470">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="900710755179898" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="891163644238392" type="System">
+                            <param id="0" name="Variable">walletTotal</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="923239560670877" type="System">
+                            <param id="0" name="Variable">landPreCost</param>
+                            <param id="1" name="Value">2500</param>
+                        </action>
+                        <action id="0" name="Set text" sid="221977297406300" type="spRound5">
+                            <param id="0" name="Text">walletTotal</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="536918382614464" type="popup">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="250822091733022" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="309190037281385" type="popup">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="409216545642186">
             <conditions>
@@ -235,24 +267,24 @@
                             <param id="0" name="Variable">part</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-11" name="Subtract from" sid="883641122638974" type="System">
+                        <action disabled="1" id="-11" name="Subtract from" sid="883641122638974" type="System">
                             <param id="0" name="Variable">walletTotal</param>
                             <param id="1" name="Value">2500</param>
                         </action>
-                        <action id="-10" name="Add to" sid="326018774288205" type="System">
+                        <action disabled="1" id="-10" name="Add to" sid="326018774288205" type="System">
                             <param id="0" name="Variable">landPreCost</param>
                             <param id="1" name="Value">2500</param>
                         </action>
-                        <action id="0" name="Set text" sid="338552270056888" type="spRound5">
+                        <action disabled="1" id="0" name="Set text" sid="338552270056888" type="spRound5">
                             <param id="0" name="Text">walletTotal</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="722971669912918" type="popup">
+                        <action disabled="1" id="-16" name="Set opacity" sid="722971669912918" type="popup">
                             <param id="0" name="Opacity">100</param>
                         </action>
-                        <action id="-16" name="Wait" sid="519542518771213" type="System">
+                        <action disabled="1" id="-16" name="Wait" sid="519542518771213" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
-                        <action id="-16" name="Set opacity" sid="813644376307364" type="popup">
+                        <action disabled="1" id="-16" name="Set opacity" sid="813644376307364" type="popup">
                             <param id="0" name="Opacity">0</param>
                         </action>
                     </actions>

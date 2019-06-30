@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>sound</name>
+    <events>
+        <event-block sid="267819172934230">
+            <conditions>
+                <condition id="0" name="On function" sid="714870265124992" type="Function">
+                    <param id="0" name="Name">&quot;welcomeSound&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="820609841173526">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="734335256348372" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

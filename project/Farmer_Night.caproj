@@ -10,12 +10,10 @@
     <unique-id>2tz37fxw2c8u1</unique-id>
     <saved-with-version>25900</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
-        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -160,20 +158,9 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type global="1" name="Array" sid="941720638512760">
-            <plugin id="Arr" />
-        </object-type>
         <object-type name="spRound" sid="202063057714910">
             <plugin id="Spritefont2" />
             <texture original-source="G:\eatech\png\sp2.png" />
-        </object-type>
-        <object-type name="Button" sid="395201888789449">
-            <plugin id="Button" />
-            <behaviors>
-                <behavior-type name="Pin" sid="637121917282923">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
         </object-type>
         <object-type name="login" sid="284115030622656">
             <plugin id="Sprite" />
@@ -439,7 +426,7 @@
         <object-type name="land" sid="518334224630037">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="878215734692132" speed="0">
+                <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="878215734692132" speed="0">
                     <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="C:\Users\Saurabh\Desktop\bgBottom1.png">
                         <collision-poly>
                             <point x="0.160926" y="0.00572246" />
@@ -497,6 +484,14 @@
                             <point x="0.000564653" y="0.998569" />
                         </collision-poly>
                     </frame>
+                    <frame duration="1" hotspotX="0.500282" hotspotY="0.500715" original-source="C:\Users\SS_HP\Desktop\new_img.png">
+                        <collision-poly>
+                            <point x="0.160926" y="0.00572246" />
+                            <point x="0.861095" y="0.0457797" />
+                            <point x="0.999435" y="0.998569" />
+                            <point x="0.000564653" y="0.998569" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -543,22 +538,6 @@
             <plugin id="TextBox" />
             <behaviors>
                 <behavior-type name="Pin" sid="791317050633189">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="List22" sid="115614330861229">
-            <plugin id="TextBox" />
-            <behaviors>
-                <behavior-type name="Pin" sid="400371412990456">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="List33" sid="478313612507461">
-            <plugin id="TextBox" />
-            <behaviors>
-                <behavior-type name="Pin" sid="519551025991131">
                     <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
@@ -1245,6 +1224,11 @@
         </object-type>
         <object-type name="drt" sid="561998017672377">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="LiteTween" sid="750946643262407">
+                    <behavior id="lunarray_LiteTween" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="C:\Users\SS_HP\Desktop\game_vectors_cond.png" />
         </object-type>
         <object-type name="ManualPlantation" sid="239579491913139">
@@ -1439,6 +1423,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="494795900225646">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781375547159207" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\Saurabh\Desktop\harvest_land_manual.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.106383" />
+                            <point x="0.5" y="0.234043" />
+                            <point x="0.91" y="0.191489" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.9" y="0.787234" />
+                            <point x="0.5" y="0.765957" />
+                            <point x="0.07" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="sesComp" sid="109624140298057">
             <plugin id="Sprite" />
             <behaviors>
@@ -1461,14 +1464,6 @@
         </object-type>
         <object-type global="1" name="XML" sid="121241962367693">
             <plugin id="XML" />
-        </object-type>
-        <object-type name="Button2" sid="308214662284038">
-            <plugin id="Button" />
-            <behaviors>
-                <behavior-type name="Pin" sid="692170081337507">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
         </object-type>
         <object-type name="sesComp2" sid="296934988846172">
             <plugin id="Sprite" />
@@ -1881,14 +1876,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="LocalStorage" sid="460321732538060">
-            <plugin id="LocalStorage" />
-        </object-type>
         <object-type name="graph" sid="493023422122921">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="876709246417935" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\test2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\chartBg.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1924,54 +1916,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="profit5" sid="575423130473730">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss5" sid="508551423510184">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="profit6" sid="146888714844204">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss6" sid="203915742451662">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="profit7" sid="800556792034580">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss7" sid="467335297939595">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="profit8" sid="909047410322613">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss8" sid="322456519144260">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="profit9" sid="140946634098576">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss9" sid="823100823044582">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="profit10" sid="280197925568973">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="loss10" sid="706860395279254">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="TiledBackground3" sid="132890146256332">
             <plugin id="TiledBg" />
             <behaviors>
@@ -1984,8 +1928,8 @@
         <object-type name="popup" sid="681343658143687">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="999668162116709" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\test11\popUp5.png">
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="999668162116709" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501408" original-source="C:\Users\SS_HP\Desktop\test11\popUp5.png">
                         <collision-poly>
                             <point x="0.0988201" y="0.13786" />
                             <point x="0.5" y="0.0390946" />
@@ -1997,8 +1941,8 @@
                             <point x="0.0117994" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\popUp2.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\popUp7.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501408" original-source="C:\Users\SS_HP\Desktop\popUp2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501408" original-source="D:\desktop\test11\popUp7.png">
                         <collision-poly>
                             <point x="0.0988201" y="0.13786" />
                             <point x="0.5" y="0.0390946" />
@@ -2010,9 +1954,41 @@
                             <point x="0.0117994" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SS_HP\Desktop\popUp3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501408" original-source="C:\Users\SS_HP\Desktop\popUp3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502058" original-source="D:\desktop\test11\popUp8.png">
+                        <collision-poly>
+                            <point x="0.0988201" y="0.13786" />
+                            <point x="0.5" y="0.0390946" />
+                            <point x="0.871681" y="0.179012" />
+                            <point x="0.982301" y="0.5" />
+                            <point x="0.840708" y="0.777778" />
+                            <point x="0.5" y="0.87037" />
+                            <point x="0.196165" y="0.726337" />
+                            <point x="0.0117994" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502058" original-source="D:\desktop\test11\popUp9.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="449850394129820">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341982712389561" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nextlayout" sid="825215269945104">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="692928303015436" speed="5">
+                    <frame duration="1" hotspotX="0.501767" hotspotY="0.504274" original-source="C:\Users\SS_HP\Desktop\nextButton.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="269997454130937">
+            <plugin id="Audio" />
         </object-type>
     </object-folder>
     <families>
@@ -2061,6 +2037,7 @@
         <layout>Layout 5.xml</layout>
         <layout>Layout 6.xml</layout>
         <layout>Layout 7.xml</layout>
+        <layout>BasicRisk.xml</layout>
         <layout>Layout 8.xml</layout>
         <layout>Layout 9.xml</layout>
     </layout-folder>
@@ -2075,7 +2052,8 @@
         <event-sheet>Event sheet 7.xml</event-sheet>
         <event-sheet>Event sheet 8.xml</event-sheet>
         <event-sheet>Event sheet 9.xml</event-sheet>
-        <event-sheet>risk.xml</event-sheet>
+        <event-sheet>basicRisk.xml</event-sheet>
+        <event-sheet>sound.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="32">
@@ -2085,10 +2063,37 @@
         </global-instance>
         <global-instance type="Browser" uid="94" />
         <global-instance type="Function" uid="115" />
-        <global-instance type="LocalStorage" uid="157" />
+        <global-instance type="Audio" uid="114">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder />
+    <sounds-folder>
+        <file name="Action Game.m4a" />
+        <file name="File - 1.ogg" />
+        <file name="File - 22.m4a" />
+        <file name="File - 22.ogg" />
+        <file name="File - 23.m4a" />
+        <file name="File - 23.ogg" />
+        <file name="File - 4.m4a" />
+        <file name="File - 4.ogg" />
+        <file name="File - 5.m4a" />
+        <file name="File - 5.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="ui tap2-unused.m4a" />
+        <file name="ui tap2-unused.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

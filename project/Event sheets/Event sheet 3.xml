@@ -8,55 +8,7 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="246057777313291" type="System" />
             </conditions>
-            <actions>
-                <action id="7" name="Set CSS style" sid="333277951415564" type="farmerNumber">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2vw&quot;</param>
-                </action>
-                <action id="7" name="Set CSS style" sid="564384341443783" type="farmerNumber">
-                    <param id="0" name="Property name">&quot;text-align&quot;</param>
-                    <param id="1" name="Value">&quot;center&quot;</param>
-                </action>
-                <action id="7" name="Set CSS style" sid="374913897128720" type="TextBox2">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2vw&quot;</param>
-                </action>
-                <action id="7" name="Set CSS style" sid="525031654903032" type="TextBox2">
-                    <param id="0" name="Property name">&quot;text-align&quot;</param>
-                    <param id="1" name="Value">&quot;center&quot;</param>
-                </action>
-                <action id="5" name="Set CSS style" sid="664429523400609" type="Button">
-                    <param id="0" name="Property name">&quot;color&quot;</param>
-                    <param id="1" name="Value">&quot;white&quot;</param>
-                </action>
-                <action id="5" name="Set CSS style" sid="532112943479346" type="Button2">
-                    <param id="0" name="Property name">&quot;color&quot;</param>
-                    <param id="1" name="Value">&quot;white&quot;</param>
-                </action>
-                <action id="5" name="Set CSS style" sid="880685645200019" type="Button">
-                    <param id="0" name="Property name">&quot;fount-size&quot;</param>
-                    <param id="1" name="Value">&quot;50&quot;</param>
-                </action>
-                <action id="5" name="Set CSS style" sid="162429474099211" type="Button2">
-                    <param id="0" name="Property name">&quot;fount-size&quot;</param>
-                    <param id="1" name="Value">&quot;50&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="913750456290045" type="LocalStorage">
-                    <param id="0" name="Key">&quot;person_number&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="831994165840824" type="LocalStorage">
-                    <param id="0" name="Key">&quot;person_name&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="851541590529912" type="LocalStorage">
-                    <param id="0" name="Key">&quot;person_dist&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="462218619909400" type="LocalStorage">
-                    <param id="0" name="Key">&quot;person_block&quot;</param>
-                </action>
-                <action id="5" name="Check item exists" sid="161337511871394" type="LocalStorage">
-                    <param id="0" name="Key">&quot;person_gp&quot;</param>
-                </action>
-            </actions>
+            <actions />
             <sub-events>
                 <event-block sid="408470475448941">
                     <conditions>
@@ -87,32 +39,9 @@
                             <param id="0" name="Pin to">Sprite</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="575557268194194" type="Button">
-                            <param id="0" name="Pin to">Sprite</param>
-                            <param id="1" name="Mode">0</param>
-                        </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="629316646655327" type="login">
                             <param id="0" name="Pin to">Sprite</param>
                             <param id="1" name="Mode">0</param>
-                        </action>
-                        <action id="7" name="Set CSS style" sid="131810543432479" type="farmerNumber">
-                            <param id="0" name="Property name">&quot;border-color&quot;</param>
-                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
-                        </action>
-                        <action id="1" name="Set placeholder" sid="841053309607329" type="farmerNumber">
-                            <param id="0" name="Placeholder">&quot;Please Enter Your Mobile No*&quot;</param>
-                        </action>
-                        <action id="7" name="Set CSS style" sid="618447191161386" type="farmerNumber">
-                            <param id="0" name="Property name">&quot;border-color&quot;</param>
-                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
-                        </action>
-                        <action id="6" name="Set CSS style" sid="687710732332953" type="List">
-                            <param id="0" name="Property name">&quot;border-color&quot;</param>
-                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
-                        </action>
-                        <action id="6" name="Set CSS style" sid="792689454127633" type="List">
-                            <param id="0" name="Property name">&quot;border-color&quot;</param>
-                            <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -123,42 +52,124 @@
                 <condition id="-3" name="Is on-screen" sid="904377534532688" type="List" />
             </conditions>
             <actions>
-                <action id="6" name="Set CSS style" sid="903808503452083" type="List">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2vw&quot;</param>
-                </action>
                 <action id="6" name="Set CSS style" sid="416345421092920" type="List">
                     <param id="0" name="Property name">&quot;text-align&quot;</param>
                     <param id="1" name="Value">&quot;center&quot;</param>
-                </action>
-                <action id="6" name="Set focused" sid="207909074572989" type="List22" />
-                <action id="6" name="Set focused" sid="974817027594010" type="List22" />
-                <action id="6" name="Set focused" sid="589691313014943" type="List33" />
-                <action id="6" name="Set focused" sid="684936861357059" type="List33" />
-                <action id="6" name="Set CSS style" sid="100997801958973" type="List2">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2vw&quot;</param>
                 </action>
                 <action id="6" name="Set CSS style" sid="753521052960174" type="List2">
                     <param id="0" name="Property name">&quot;text-align&quot;</param>
                     <param id="1" name="Value">&quot;center&quot;</param>
                 </action>
-                <action id="6" name="Set CSS style" sid="428999653580687" type="List3">
-                    <param id="0" name="Property name">&quot;font-size&quot;</param>
-                    <param id="1" name="Value">&quot;2vw&quot;</param>
-                </action>
                 <action id="6" name="Set CSS style" sid="166116016675006" type="List3">
                     <param id="0" name="Property name">&quot;text-align&quot;</param>
                     <param id="1" name="Value">&quot;center&quot;</param>
                 </action>
+                <action id="7" name="Set CSS style" sid="426151975618173" type="farmerNumber">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="358808741998270" type="TextBox2">
+                    <param id="0" name="Property name">&quot;text-align&quot;</param>
+                    <param id="1" name="Value">&quot;center&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="995890905580848" type="farmerNumber">
+                    <param id="0" name="Property name">&quot;border-color&quot;</param>
+                    <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                </action>
+                <action id="1" name="Set placeholder" sid="647771867417300" type="farmerNumber">
+                    <param id="0" name="Placeholder">&quot;House Hold ID*&quot;</param>
+                </action>
+                <action id="7" name="Set CSS style" sid="523263372037047" type="farmerNumber">
+                    <param id="0" name="Property name">&quot;border-color&quot;</param>
+                    <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="661372937073620" type="List">
+                    <param id="0" name="Property name">&quot;border-color&quot;</param>
+                    <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                </action>
+                <action id="6" name="Set CSS style" sid="687828274204202" type="List">
+                    <param id="0" name="Property name">&quot;border-color&quot;</param>
+                    <param id="1" name="Value">&quot;#ffb9bc&quot;</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="238209559202105">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="983003238973211" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set CSS style" sid="734567618104179" type="List">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;22px&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="131035129592773" type="List2">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;22px&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="900860594841636" type="List3">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;22px&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="301613384109504" type="farmerNumber">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;22px&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="781747916188092" type="TextBox2">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;22px&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="828529415311033">
+                    <conditions>
+                        <condition id="-20" inverted="1" name="Is on mobile device" sid="750777642543808" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Set CSS style" sid="369523355154663" type="List">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;2vw&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="536406435650206" type="List2">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;2vw&quot;</param>
+                        </action>
+                        <action id="6" name="Set CSS style" sid="551883435258757" type="List3">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;2vw&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="494565688314787" type="farmerNumber">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;2.5vw&quot;</param>
+                        </action>
+                        <action id="7" name="Set CSS style" sid="828027920391511" type="TextBox2">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;2.5vw&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="181793049178426">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="781858632683147" type="System">
+                <condition id="-8" name="Compare two values" sid="908572955725705" type="System">
                     <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="719328127906901" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">7</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="277383850215919" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
                     <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Second value">10</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="696499047904598" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -171,18 +182,94 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="295544254737316">
+        <event-block any="1" sid="295544254737316">
             <conditions>
-                <condition id="-8" name="Compare two values" sid="908572955725705" type="System">
+                <condition id="-8" name="Compare two values" sid="496072900822768" type="System">
                     <param id="0" name="First value">len(farmerNumber.Text)</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Second value">10</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="849202163763464" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">7</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-9" name="Set value" sid="200877313105326" type="System">
                     <param id="0" name="Variable">login</param>
                     <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655906492711191">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="316248024432186" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="147734654395745" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255613788331004">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="595662524276344" type="System">
+                    <param id="0" name="First value">len(TextBox2.Text)</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">2</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="265841664181741" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">5</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="843601006201326" type="System">
+                    <param id="0" name="First value">len(farmerNumber.Text)</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Second value">7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="222527186308853" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="651788961806385" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894079587488844">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="507696141719610" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="868344742337435" type="System">
+                    <param id="0" name="Variable">login</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728299614240850">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="447211092290819" type="login" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="974063681822043" type="System">
+                    <param id="0" name="Variable">CheckDistSel</param>
+                    <param id="1" name="Value">list.SelectedIndex</param>
                 </action>
             </actions>
         </event-block>
@@ -236,26 +323,6 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="207297530132618" type="System">
                             <param id="0" name="Layout">Layout 4</param>
-                        </action>
-                        <action id="0" name="Set item" sid="126853740875873" type="LocalStorage">
-                            <param id="0" name="Key">&quot;person_number&quot;</param>
-                            <param id="1" name="Value">farmerNumber.Text</param>
-                        </action>
-                        <action id="0" name="Set item" sid="761218444478693" type="LocalStorage">
-                            <param id="0" name="Key">&quot;person_name&quot;</param>
-                            <param id="1" name="Value">TextBox2.Text</param>
-                        </action>
-                        <action id="0" name="Set item" sid="255624474606037" type="LocalStorage">
-                            <param id="0" name="Key">&quot;person_dist&quot;</param>
-                            <param id="1" name="Value">List.SelectedText</param>
-                        </action>
-                        <action id="0" name="Set item" sid="295255954909754" type="LocalStorage">
-                            <param id="0" name="Key">&quot;person_block&quot;</param>
-                            <param id="1" name="Value">List2.SelectedText</param>
-                        </action>
-                        <action id="0" name="Set item" sid="723829712148237" type="LocalStorage">
-                            <param id="0" name="Key">&quot;person_gp&quot;</param>
-                            <param id="1" name="Value">List3.SelectedText</param>
                         </action>
                         <action id="-9" name="Set value" sid="324683900813597" type="System">
                             <param id="0" name="Variable">FarmerNumber</param>

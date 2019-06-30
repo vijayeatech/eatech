@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
-        <include>connect</include>
         <event-block sid="657297751364091">
             <conditions>
                 <condition id="3" name="On touched object" sid="939252872865589" type="Touch">
@@ -85,6 +84,21 @@
                 <action id="-12" name="Set group active" sid="468547850005039" type="System">
                     <param id="0" name="Group name">&quot;full&quot;</param>
                     <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="989749046867023">
+            <conditions>
+                <condition id="5" inverted="1" name="Is tag playing" sid="528600115666668" type="Audio">
+                    <param id="0" name="Tag">&quot;main&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="513571383693148" type="Audio">
+                    <param id="0" name="Audio file">File - 1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;main&quot;</param>
                 </action>
             </actions>
         </event-block>

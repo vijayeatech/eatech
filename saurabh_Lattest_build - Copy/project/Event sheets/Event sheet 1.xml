@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="657297751364091">
+            <conditions>
+                <condition id="3" name="On touched object" sid="939252872865589" type="Touch">
+                    <param id="0" name="Object">play</param>
+                </condition>
+                <condition id="-10" name="Compare opacity" sid="221139820605325" type="play">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Opacity">99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="414995466506667" type="play">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="512589397026536" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="487030810616750" type="play">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="730320894167622" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158394021395234">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="461843062151774" type="fade" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween2" id="10" name="Start" sid="849992963884402" type="simulator">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="500718131421035" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="675475596406724" type="play">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" disabled="1" sid="890564419830235" title="full">
+            <sub-events>
+                <event-block disabled="1" sid="171917089810465">
+                    <conditions>
+                        <condition id="14" name="On tap" sid="446950678204406" type="Touch" />
+                        <condition id="-14" name="Compare variable" sid="903080380456590" type="System">
+                            <param id="0" name="Variable">fuil</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="10" name="Request fullscreen" sid="587183014704541" type="Browser">
+                            <param id="0" name="Mode">3</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="943965510974050" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="287477877181499" type="System">
+                            <param id="0" name="Variable">fuil</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="945028388617855" type="System">
+                            <param id="0" name="Group name">&quot;full&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block disabled="1" sid="398234039399891">
+            <conditions>
+                <condition disabled="1" id="10" inverted="1" name="Is fullscreen" sid="567131532276569" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="468547850005039" type="System">
+                    <param id="0" name="Group name">&quot;full&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

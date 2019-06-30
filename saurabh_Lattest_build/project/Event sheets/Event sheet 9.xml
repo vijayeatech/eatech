@@ -26,7 +26,7 @@
                         <condition id="-14" name="Compare variable" sid="175316166222148" type="System">
                             <param id="0" name="Variable">profithight1</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -51,7 +51,7 @@
                         <condition id="-14" name="Compare variable" sid="787609130525346" type="System">
                             <param id="0" name="Variable">profithight1</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -76,7 +76,7 @@
                         <condition id="-14" name="Compare variable" sid="827474115530442" type="System">
                             <param id="0" name="Variable">losshight1</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -101,7 +101,7 @@
                         <condition id="-14" name="Compare variable" sid="992869497321009" type="System">
                             <param id="0" name="Variable">losshight1</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -145,7 +145,7 @@
                         <condition id="-14" name="Compare variable" sid="696917576681929" type="System">
                             <param id="0" name="Variable">profithight2</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -170,7 +170,7 @@
                         <condition id="-14" name="Compare variable" sid="159068675255399" type="System">
                             <param id="0" name="Variable">profithight2</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -195,7 +195,7 @@
                         <condition id="-14" name="Compare variable" sid="749628798313421" type="System">
                             <param id="0" name="Variable">losshight2</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">loan/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -220,7 +220,7 @@
                         <condition id="-14" name="Compare variable" sid="382288541064400" type="System">
                             <param id="0" name="Variable">losshight2</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">loan/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -264,7 +264,7 @@
                         <condition id="-14" name="Compare variable" sid="606024487200165" type="System">
                             <param id="0" name="Variable">profithight3</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -289,7 +289,7 @@
                         <condition id="-14" name="Compare variable" sid="338899786233010" type="System">
                             <param id="0" name="Variable">profithight3</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -314,7 +314,7 @@
                         <condition id="-14" name="Compare variable" sid="784168933847818" type="System">
                             <param id="0" name="Variable">losshight3</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -339,7 +339,7 @@
                         <condition id="-14" name="Compare variable" sid="692762081289797" type="System">
                             <param id="0" name="Variable">losshight3</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -383,7 +383,7 @@
                         <condition id="-14" name="Compare variable" sid="126470734404814" type="System">
                             <param id="0" name="Variable">profithight4</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -408,7 +408,7 @@
                         <condition id="-14" name="Compare variable" sid="281151109149392" type="System">
                             <param id="0" name="Variable">profithight4</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">yeldProfit/84</param>
+                            <param id="2" name="Value">netRevanue/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -433,7 +433,7 @@
                         <condition id="-14" name="Compare variable" sid="249827570448309" type="System">
                             <param id="0" name="Variable">losshight4</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -458,7 +458,7 @@
                         <condition id="-14" name="Compare variable" sid="204237580108223" type="System">
                             <param id="0" name="Variable">losshight4</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">loss/84</param>
+                            <param id="2" name="Value">cf/84</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -508,42 +508,6 @@
                 </action>
                 <action id="-6" name="Set height" sid="618342339014699" type="loss4">
                     <param id="0" name="Height">losshight4</param>
-                </action>
-                <action id="-6" name="Set height" sid="305283760209077" type="profit5">
-                    <param id="0" name="Height">profithight5</param>
-                </action>
-                <action id="-6" name="Set height" sid="173237151645651" type="loss5">
-                    <param id="0" name="Height">losshight5</param>
-                </action>
-                <action id="-6" name="Set height" sid="353847746357240" type="profit6">
-                    <param id="0" name="Height">profithight6</param>
-                </action>
-                <action id="-6" name="Set height" sid="912509479284122" type="loss6">
-                    <param id="0" name="Height">losshight6</param>
-                </action>
-                <action id="-6" name="Set height" sid="362391520885836" type="profit7">
-                    <param id="0" name="Height">profithight7</param>
-                </action>
-                <action id="-6" name="Set height" sid="989775009617967" type="loss7">
-                    <param id="0" name="Height">losshight7</param>
-                </action>
-                <action id="-6" name="Set height" sid="684988789091180" type="profit8">
-                    <param id="0" name="Height">profithight8</param>
-                </action>
-                <action id="-6" name="Set height" sid="658826470595494" type="loss8">
-                    <param id="0" name="Height">losshight8</param>
-                </action>
-                <action id="-6" name="Set height" sid="252922202802611" type="profit9">
-                    <param id="0" name="Height">profithight9</param>
-                </action>
-                <action id="-6" name="Set height" sid="456742022829439" type="loss9">
-                    <param id="0" name="Height">losshight9</param>
-                </action>
-                <action id="-6" name="Set height" sid="497111992127691" type="profit10">
-                    <param id="0" name="Height">profithight10</param>
-                </action>
-                <action id="-6" name="Set height" sid="654293472882353" type="loss10">
-                    <param id="0" name="Height">losshight10</param>
                 </action>
             </actions>
         </event-block>

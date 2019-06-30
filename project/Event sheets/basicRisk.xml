@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>basicRisk</name>
+    <events>
+        <event-block sid="686160582979485">
+            <conditions>
+                <condition id="3" name="On touched object" sid="219039241636769" type="Touch">
+                    <param id="0" name="Object">nextlayout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="952246589532766" type="nextlayout">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="676239076581126" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="458898512732411" type="System">
+                    <param id="0" name="Layout">Layout 8</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="405936253328235" type="nextlayout">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="428567240020135">
+            <conditions>
+                <condition id="5" inverted="1" name="Is tag playing" sid="646248510229062" type="Audio">
+                    <param id="0" name="Tag">&quot;basikRisk&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="393166825364837" type="Audio">
+                    <param id="0" name="Audio file">File - 23</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-8</param>
+                    <param id="1" name="Tag (optional)">&quot;basikRisk&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

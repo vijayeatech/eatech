@@ -59,6 +59,66 @@
                     <param id="1" name="Value">400</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="835694065116149">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="431414036554482" type="System">
+                            <param id="0" name="Variable">insuranceCost</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">500</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="667358358910136">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="583224166084586" type="System">
+                                    <param id="0" name="Variable">basicRiskface</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="913544473516798">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="431944485349757" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="368392504108872" type="System">
+                                            <param id="0" name="Variable">basicRisk</param>
+                                            <param id="1" name="Value">choose(4,2,3,1,5)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="502556526667410">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="626678198948370" type="System">
+                                    <param id="0" name="Variable">basicRiskface</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="357932246410598">
+                                    <conditions>
+                                        <condition id="-4" name="Trigger once while true" sid="896066737408524" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="736274909105437" type="System">
+                                            <param id="0" name="Variable">basicRisk</param>
+                                            <param id="1" name="Value">choose(2,3,4,5)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-group description="" sid="137941924078121" title="Drought">
             <sub-events>
@@ -2131,9 +2191,9 @@
                 <action id="-16" name="Wait" sid="200128693907789" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="-9" name="Set value" sid="549225193986417" type="System">
-                    <param id="0" name="Variable">SesionOver</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-9" name="Destroy" sid="997643890961366" type="Sprite4" />
+                <action id="-2" name="Go to layout" sid="646022715961300" type="System">
+                    <param id="0" name="Layout">Layout 8</param>
                 </action>
             </actions>
         </event-block>
@@ -2151,9 +2211,9 @@
                     <param id="0" name="Seconds">2</param>
                 </action>
                 <action id="-9" name="Destroy" sid="770209459421444" type="Harvesting" />
-                <action id="-9" name="Set value" sid="493442755011129" type="System">
-                    <param id="0" name="Variable">SesionOver</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-9" name="Destroy" sid="675635826783232" type="Sprite4" />
+                <action id="-2" name="Go to layout" sid="129964039723139" type="System">
+                    <param id="0" name="Layout">Layout 8</param>
                 </action>
             </actions>
         </event-block>
@@ -2170,10 +2230,10 @@
                 <action id="-16" name="Wait" sid="562434463276584" type="System">
                     <param id="0" name="Seconds">2</param>
                 </action>
+                <action id="-9" name="Destroy" sid="631898834612564" type="Sprite4" />
                 <action id="-9" name="Destroy" sid="414250194474097" type="HarvestingManual" />
-                <action id="-9" name="Set value" sid="370474505508051" type="System">
-                    <param id="0" name="Variable">SesionOver</param>
-                    <param id="1" name="Value">1</param>
+                <action id="-2" name="Go to layout" sid="708544001339073" type="System">
+                    <param id="0" name="Layout">Layout 8</param>
                 </action>
             </actions>
         </event-block>
@@ -2254,6 +2314,56 @@
             <actions>
                 <action id="-9" name="Destroy" sid="977348203427511" type="ManualPlantation" />
             </actions>
+        </event-block>
+        <event-block sid="841386543798029">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="152955272615203" type="System">
+                    <param id="0" name="Variable">Calander</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">25</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="792207894968280">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="916918843004378" type="System">
+                            <param id="0" name="Variable">insuranceCost</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">500</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="240570234985643">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="995631920619125" type="System">
+                                    <param id="0" name="Variable">basicRisk</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="549369099193176" type="System">
+                                    <param id="0" name="Variable">basicRiskface</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="907681314274280" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-25" name="Go to layout (by name)" sid="930050258282690" type="System">
+                                    <param id="0" name="Layout">&quot;BasicRisk&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="853293714159166" type="System">
+                                    <param id="0" name="Variable">basicRiskface</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

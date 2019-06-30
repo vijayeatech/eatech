@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 9</name>
+    <events>
+        <include>connect</include>
+        <event-block bookmark="1" sid="213770542938541">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="761305021549832" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="976665153661001" type="profit">
+                    <param id="0" name="Height">profithight1</param>
+                </action>
+                <action id="-6" name="Set height" sid="518256298403947" type="loss">
+                    <param id="0" name="Height">losshight1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="494887148271149">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="175316166222148" type="System">
+                            <param id="0" name="Variable">profithight1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="652943741118374">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="183285875094637" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="684788667694942" type="System">
+                                    <param id="0" name="Variable">profithight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="174658051764726">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="787609130525346" type="System">
+                            <param id="0" name="Variable">profithight1</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="157582286315139">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="736373890106534" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="318194134616005" type="System">
+                                    <param id="0" name="Variable">profithight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="835926107521626">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="827474115530442" type="System">
+                            <param id="0" name="Variable">losshight1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="145351908621861">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="909061915651337" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="409322142551645" type="System">
+                                    <param id="0" name="Variable">losshight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="317638840022058">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="992869497321009" type="System">
+                            <param id="0" name="Variable">losshight1</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="148693650469604">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="788913344119686" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="728905674821254" type="System">
+                                    <param id="0" name="Variable">losshight1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="315817360379324">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="438365768259960" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="912825548099710" type="profit2">
+                    <param id="0" name="Height">profithight2</param>
+                </action>
+                <action id="-6" name="Set height" sid="979150053664620" type="loss2">
+                    <param id="0" name="Height">losshight2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="415537525737099">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="696917576681929" type="System">
+                            <param id="0" name="Variable">profithight2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="549895085008475">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="976689277663659" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="194357618200943" type="System">
+                                    <param id="0" name="Variable">profithight2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="375743507925029">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="159068675255399" type="System">
+                            <param id="0" name="Variable">profithight2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="824280185052980">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="226093048678942" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="795258193547866" type="System">
+                                    <param id="0" name="Variable">basicRisk</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="590388657354043">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="749628798313421" type="System">
+                            <param id="0" name="Variable">losshight2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="806445887883090">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="708364097911974" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="758341570315643" type="System">
+                                    <param id="0" name="Variable">losshight2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="610275819179100">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="382288541064400" type="System">
+                            <param id="0" name="Variable">losshight2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="237793580422916">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="746391386729752" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="506775619668575" type="System">
+                                    <param id="0" name="Variable">losshight2</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="662928689438518">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="205931060266011" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="165693291463148" type="profit3">
+                    <param id="0" name="Height">profithight3</param>
+                </action>
+                <action id="-6" name="Set height" sid="672072771721023" type="loss3">
+                    <param id="0" name="Height">losshight3</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="169168663263621">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="606024487200165" type="System">
+                            <param id="0" name="Variable">profithight3</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="165375603077048">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="679454540941716" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="798883269309803" type="System">
+                                    <param id="0" name="Variable">profithight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="895048490134463">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="338899786233010" type="System">
+                            <param id="0" name="Variable">profithight3</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="546843758699957">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="408523733543876" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="886386563853596" type="System">
+                                    <param id="0" name="Variable">profithight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="251392027239261">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="784168933847818" type="System">
+                            <param id="0" name="Variable">losshight3</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="297785033910575">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="758929767975398" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="638028412775551" type="System">
+                                    <param id="0" name="Variable">losshight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="627683154717708">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="692762081289797" type="System">
+                            <param id="0" name="Variable">losshight3</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="780759452231456">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="672191747577669" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="893804191879482" type="System">
+                                    <param id="0" name="Variable">losshight3</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="476225265110807">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="928453427556082" type="System">
+                    <param id="0" name="Variable">gameRound</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="379930147691100" type="profit4">
+                    <param id="0" name="Height">profithight4</param>
+                </action>
+                <action id="-6" name="Set height" sid="239790275142626" type="loss4">
+                    <param id="0" name="Height">losshight4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="301529484578086">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="126470734404814" type="System">
+                            <param id="0" name="Variable">profithight4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="399782751131145">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="397557100611820" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="473707211555168" type="System">
+                                    <param id="0" name="Variable">profithight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="991539924989317">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="281151109149392" type="System">
+                            <param id="0" name="Variable">profithight4</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">netRevanue/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="919993084513404">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="263923081730209" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="579928042280979" type="System">
+                                    <param id="0" name="Variable">profithight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="456724305005594">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="249827570448309" type="System">
+                            <param id="0" name="Variable">losshight4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="777526801323876">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="988626922779691" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="280341444018160" type="System">
+                                    <param id="0" name="Variable">losshight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="561035236377694">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="204237580108223" type="System">
+                            <param id="0" name="Variable">losshight4</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">cf/42</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="142913713900831">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="176237637532435" type="System">
+                                    <param id="0" name="Interval (seconds)">0.0001</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="211942842956027" type="System">
+                                    <param id="0" name="Variable">losshight4</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block bookmark="1" sid="870077552681699">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="188578055225742" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="124760174494213" type="profit">
+                    <param id="0" name="Height">profithight1</param>
+                </action>
+                <action id="-6" name="Set height" sid="994651864246468" type="loss">
+                    <param id="0" name="Height">losshight1</param>
+                </action>
+                <action id="-6" name="Set height" sid="731871946805189" type="profit2">
+                    <param id="0" name="Height">profithight2</param>
+                </action>
+                <action id="-6" name="Set height" sid="963760813113612" type="loss2">
+                    <param id="0" name="Height">losshight2</param>
+                </action>
+                <action id="-6" name="Set height" sid="472748636829163" type="profit3">
+                    <param id="0" name="Height">profithight3</param>
+                </action>
+                <action id="-6" name="Set height" sid="845316066368032" type="loss3">
+                    <param id="0" name="Height">losshight3</param>
+                </action>
+                <action id="-6" name="Set height" sid="772538531441478" type="profit4">
+                    <param id="0" name="Height">profithight4</param>
+                </action>
+                <action id="-6" name="Set height" sid="618342339014699" type="loss4">
+                    <param id="0" name="Height">losshight4</param>
+                </action>
+                <action id="-6" name="Set height" sid="305283760209077" type="profit5">
+                    <param id="0" name="Height">profithight5</param>
+                </action>
+                <action id="-6" name="Set height" sid="173237151645651" type="loss5">
+                    <param id="0" name="Height">losshight5</param>
+                </action>
+                <action id="-6" name="Set height" sid="353847746357240" type="profit6">
+                    <param id="0" name="Height">profithight6</param>
+                </action>
+                <action id="-6" name="Set height" sid="912509479284122" type="loss6">
+                    <param id="0" name="Height">losshight6</param>
+                </action>
+                <action id="-6" name="Set height" sid="362391520885836" type="profit7">
+                    <param id="0" name="Height">profithight7</param>
+                </action>
+                <action id="-6" name="Set height" sid="989775009617967" type="loss7">
+                    <param id="0" name="Height">losshight7</param>
+                </action>
+                <action id="-6" name="Set height" sid="684988789091180" type="profit8">
+                    <param id="0" name="Height">profithight8</param>
+                </action>
+                <action id="-6" name="Set height" sid="658826470595494" type="loss8">
+                    <param id="0" name="Height">losshight8</param>
+                </action>
+                <action id="-6" name="Set height" sid="252922202802611" type="profit9">
+                    <param id="0" name="Height">profithight9</param>
+                </action>
+                <action id="-6" name="Set height" sid="456742022829439" type="loss9">
+                    <param id="0" name="Height">losshight9</param>
+                </action>
+                <action id="-6" name="Set height" sid="497111992127691" type="profit10">
+                    <param id="0" name="Height">profithight10</param>
+                </action>
+                <action id="-6" name="Set height" sid="654293472882353" type="loss10">
+                    <param id="0" name="Height">losshight10</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

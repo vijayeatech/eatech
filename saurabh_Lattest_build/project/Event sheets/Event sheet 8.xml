@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 8</name>
     <events>
+        <variable constant="0" name="addprofit" sid="988642259317466" static="0" type="number">0</variable>
+        <variable constant="0" name="netRevanue" sid="342286889409229" static="0" type="number">0</variable>
         <variable constant="0" name="basicRisk" sid="597832613691119" static="0" type="number">0</variable>
         <variable constant="0" name="basicRiskface" sid="273788039576503" static="0" type="number">0</variable>
         <variable constant="0" name="insuranceclaimed" sid="125707657814347" static="0" type="number">0</variable>
@@ -16,17 +18,39 @@
                     <param id="0" name="Variable">SesionOver</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="725621451656670" type="System">
-                    <param id="0" name="Seconds">5</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="208457563542766" type="System">
-                    <param id="0" name="Layout">Layout 9</param>
-                </action>
-                <action id="-10" name="Add to" sid="815752137314893" type="System">
-                    <param id="0" name="Variable">walletTotal</param>
-                    <param id="1" name="Value">walletTotal+yeldProfit</param>
+                <action id="-16" name="Wait" sid="647004085358088" type="System">
+                    <param id="0" name="Seconds">0.2</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="157027098497373">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="289914730072786" type="System">
+                            <param id="0" name="Variable">addprofit</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="864188176132711">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="359590275513743" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="669051633405720" type="System">
+                                    <param id="0" name="Variable">walletTotal</param>
+                                    <param id="1" name="Value">yieldProfit</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="706214902455889" type="System">
+                                    <param id="0" name="Variable">addprofit</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="904363336436104">
             <conditions>
@@ -258,33 +282,57 @@
         </event-block>
         <event-block sid="610269485666946">
             <conditions>
-                <condition id="-14" name="Compare variable" sid="648199472573778" type="System">
-                    <param id="0" name="Variable">yeldProfit</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
                 <condition id="-9" name="Is visible" sid="140373222002457" type="spRound14" />
             </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="337802146228187" type="spRound14">
-                    <param id="0" name="Text">yeldProfit</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="408892163812187">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="685713575754407" type="System">
-                    <param id="0" name="Variable">yeldProfit</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-9" name="Is visible" sid="598338618724074" type="spRound14" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="244895538962631" type="spRound14">
-                    <param id="0" name="Text">0</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="887432187563115">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="298522759867470" type="System">
+                            <param id="0" name="Variable">yieldProfit</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="904730900881698" type="spRound14">
+                            <param id="0" name="Text">yieldProfit</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="345484305002746" type="Sprite13">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="382540094331481">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796849745621414" type="System">
+                            <param id="0" name="Variable">yieldProfit</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="775737217401418" type="spRound14">
+                            <param id="0" name="Text">yieldProfit</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="156274173935682" type="Sprite13">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="297104669859044">
+                            <conditions>
+                                <condition id="-4" name="Trigger once while true" sid="288939449167748" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="274438104353438" type="spRound14">
+                                    <param id="0" name="X">Self.X-20</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="297791049865584">
             <conditions>
@@ -362,7 +410,8 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="919883602573196">
+        <comment>if basic risk is happned then we go first basic risk layout then go to chart </comment>
+        <event-block bookmark="1" sid="919883602573196">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="653120583286987" type="System">
                     <param id="0" name="Variable">strv</param>
@@ -376,8 +425,8 @@
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="654237518795975" type="System">
                             <param id="0" name="Variable">insuranceCost</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">500</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -415,11 +464,15 @@
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="324815318446929" type="System">
-                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">10500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="297797819019058" type="System">
+                                            <param id="0" name="Variable">netRevanue</param>
                                             <param id="1" name="Value">-2000</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="860238733726988" type="System">
-                                            <param id="0" name="Variable">loss</param>
+                                            <param id="0" name="Variable">cf</param>
                                             <param id="1" name="Value">-1500</param>
                                         </action>
                                     </actions>
@@ -434,12 +487,107 @@
                                             <param id="1" name="Value">12500</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="561816646012286" type="System">
-                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="0" name="Variable">netRevanue</param>
                                             <param id="1" name="Value">10500</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="170135119849669" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="773715417539188" type="System">
-                                            <param id="0" name="Variable">loss</param>
+                                            <param id="0" name="Variable">cf</param>
                                             <param id="1" name="Value">-1500</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="847076707694704">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="685416822236714" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="132132030813843" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="194289845568268" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="496217304806594" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="257922292750389" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="951782387843805" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="257709645813466">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="681741182100160" type="System">
+                                            <param id="0" name="Variable">basicRisk</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="988615505004616" type="System">
+                                            <param id="0" name="Variable">basicRiskface</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="849566128639115" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">12500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="727114598301853" type="System">
+                                            <param id="0" name="Variable">netRevanue</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="330807080282078" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="601648103170848" type="System">
+                                            <param id="0" name="Variable">cf</param>
+                                            <param id="1" name="Value">9000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="942140582899160">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="112803725064585" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="217369355372628" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="395747597825992" type="System">
+                                            <param id="0" name="Variable">netRevanue</param>
+                                            <param id="1" name="Value">8500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="445624050718144" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="748781890463899" type="System">
+                                            <param id="0" name="Variable">cf</param>
+                                            <param id="1" name="Value">9000</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -475,13 +623,17 @@
                                     <param id="0" name="Variable">insuranceclaimed</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="717338681457133" type="System">
+                                    <param id="0" name="Variable">netRevanue</param>
+                                    <param id="1" name="Value">-1500</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="716194498073102" type="System">
-                                    <param id="0" name="Variable">yeldProfit</param>
-                                    <param id="1" name="Value">-2000</param>
+                                    <param id="0" name="Variable">yieldProfit</param>
+                                    <param id="1" name="Value">10500</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="932846247112123" type="System">
-                                    <param id="0" name="Variable">loss</param>
-                                    <param id="1" name="Value">-1500</param>
+                                    <param id="0" name="Variable">cf</param>
+                                    <param id="1" name="Value">10500</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -492,15 +644,19 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="178841154217263" type="System">
                                     <param id="0" name="Variable">insuranceclaimed</param>
-                                    <param id="1" name="Value">12500</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="282933296274227" type="System">
+                                    <param id="0" name="Variable">netRevanue</param>
+                                    <param id="1" name="Value">9000</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="616352535843790" type="System">
-                                    <param id="0" name="Variable">yeldProfit</param>
-                                    <param id="1" name="Value">10500</param>
+                                    <param id="0" name="Variable">yieldProfit</param>
+                                    <param id="1" name="Value">21000</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="378007181698688" type="System">
-                                    <param id="0" name="Variable">loss</param>
-                                    <param id="1" name="Value">-1500</param>
+                                    <param id="0" name="Variable">cf</param>
+                                    <param id="1" name="Value">8500</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -522,8 +678,8 @@
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="442314304549664" type="System">
                             <param id="0" name="Variable">insuranceCost</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">1</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">500</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -561,11 +717,15 @@
                                             <param id="1" name="Value">0</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="625803154775663" type="System">
-                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="0" name="Variable">netRevanue</param>
                                             <param id="1" name="Value">-10500</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="726975411327084" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="548638482604560" type="System">
-                                            <param id="0" name="Variable">loss</param>
+                                            <param id="0" name="Variable">cf</param>
                                             <param id="1" name="Value">-10000</param>
                                         </action>
                                     </actions>
@@ -580,12 +740,107 @@
                                             <param id="1" name="Value">25000</param>
                                         </action>
                                         <action id="-9" name="Set value" sid="739415397854934" type="System">
-                                            <param id="0" name="Variable">yeldProfit</param>
+                                            <param id="0" name="Variable">netRevanue</param>
                                             <param id="1" name="Value">14500</param>
                                         </action>
+                                        <action id="-9" name="Set value" sid="738071605304345" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="446085282810309" type="System">
-                                            <param id="0" name="Variable">loss</param>
+                                            <param id="0" name="Variable">cf</param>
                                             <param id="1" name="Value">-10000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="276531266374365">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="645188656439406" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="803555493430617" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="169979572202391" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="110232701439703" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="766059672529106" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="118392474164517" type="System">
+                                    <param id="0" name="Variable">Drought_flood</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="613571426528703">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="500970903181411" type="System">
+                                            <param id="0" name="Variable">basicRisk</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="442285871325420" type="System">
+                                            <param id="0" name="Variable">basicRiskface</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="306905338073214" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">12500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="735178183267248" type="System">
+                                            <param id="0" name="Variable">netRevanue</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="153598523616091" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="321417658101016" type="System">
+                                            <param id="0" name="Variable">cf</param>
+                                            <param id="1" name="Value">9000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="577718853775865">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="639366931179114" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="144594239610382" type="System">
+                                            <param id="0" name="Variable">insuranceclaimed</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="440600961148745" type="System">
+                                            <param id="0" name="Variable">netRevanue</param>
+                                            <param id="1" name="Value">8500</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="142924185751602" type="System">
+                                            <param id="0" name="Variable">yieldProfit</param>
+                                            <param id="1" name="Value">21000</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="555226034781146" type="System">
+                                            <param id="0" name="Variable">cf</param>
+                                            <param id="1" name="Value">9000</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -621,13 +876,17 @@
                                     <param id="0" name="Variable">insuranceclaimed</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="635908264297201" type="System">
+                                    <param id="0" name="Variable">netRevanue</param>
+                                    <param id="1" name="Value">-10000</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="178830007574970" type="System">
-                                    <param id="0" name="Variable">yeldProfit</param>
-                                    <param id="1" name="Value">-2000</param>
+                                    <param id="0" name="Variable">yieldProfit</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="617748077420365" type="System">
-                                    <param id="0" name="Variable">loss</param>
-                                    <param id="1" name="Value">-1500</param>
+                                    <param id="0" name="Variable">cf</param>
+                                    <param id="1" name="Value">14500</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -640,19 +899,47 @@
                                     <param id="0" name="Variable">insuranceclaimed</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="883847148029202" type="System">
+                                    <param id="0" name="Variable">netRevanue</param>
+                                    <param id="1" name="Value">9000</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="865527879103241" type="System">
-                                    <param id="0" name="Variable">yeldProfit</param>
-                                    <param id="1" name="Value">-10000</param>
+                                    <param id="0" name="Variable">yieldProfit</param>
+                                    <param id="1" name="Value">21000</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="690288635061451" type="System">
-                                    <param id="0" name="Variable">loss</param>
-                                    <param id="1" name="Value">-2000</param>
+                                    <param id="0" name="Variable">cf</param>
+                                    <param id="1" name="Value">8500</param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="156585036612367">
+            <conditions>
+                <condition id="3" name="On touched object" sid="695298730994571" type="Touch">
+                    <param id="0" name="Object">nextlayout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="832064199503769" type="nextlayout">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="992491103310771" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="505639950250496" type="System">
+                    <param id="0" name="Layout">Layout 9</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="889437374670327" type="nextlayout">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="17" name="Execute Javascript" sid="409133639186748" type="Browser">
+                    <param id="0" name="Javascript">&quot;sendData(&apos;&quot;&amp; FarmerNumber &amp;&quot;&apos;,&apos;&quot;&amp; FarmerName &amp;&quot;&apos;,&apos;&quot;&amp; FarmerDistrict &amp;&quot;&apos;,&apos;&quot;&amp; FarmerBlock &amp;&quot;&apos;,&apos;&quot;&amp; FarmerGp &amp;&quot;&apos;,&apos;&quot;&amp; gameRound &amp;&quot;&apos;,&apos;&quot;&amp; insuranceCost &amp;&quot;&apos;,&apos;&quot;&amp; schoolingCost &amp;&quot;&apos;,&apos;&quot;&amp; loan &amp;&quot;&apos;, &apos;&quot;&amp; walletTotal &amp;&quot;&apos;,&apos;&quot;&amp; landPreCost &amp;&quot;&apos;,&apos;&quot;&amp;  Harvesting &amp;&quot;&apos;, &apos;&quot;&amp; uriaFertCost  &amp;&quot;&apos;, &apos;&quot;&amp; yieldProfit &amp;&quot;&apos;,  &apos;&quot;&amp; netRevanue &amp;&quot;&apos;,  &apos;&quot;&amp; cf &amp;&quot;&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

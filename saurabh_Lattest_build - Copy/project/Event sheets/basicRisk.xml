@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>basicRisk</name>
+    <events>
+        <event-block sid="686160582979485">
+            <conditions>
+                <condition id="3" name="On touched object" sid="219039241636769" type="Touch">
+                    <param id="0" name="Object">nextlayout</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="952246589532766" type="nextlayout">
+                    <param id="0" name="Opacity">80</param>
+                </action>
+                <action id="-16" name="Wait" sid="676239076581126" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="458898512732411" type="System">
+                    <param id="0" name="Layout">Layout 9</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="405936253328235" type="nextlayout">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

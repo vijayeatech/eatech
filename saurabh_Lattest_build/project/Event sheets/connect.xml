@@ -3,10 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>connect</name>
     <events>
+        <include>sound</include>
         <variable comment="Saurabh" constant="0" name="Drought_flood" sid="908933980072697" static="0" type="number">0</variable>
         <variable constant="0" name="CheckDistSel" sid="796098839041547" static="0" type="number">0</variable>
         <variable comment="Saurabh" constant="0" name="drtFlood" sid="950516685284497" static="0" type="number">0</variable>
-        <variable comment="Saurabh" constant="0" name="loss" sid="891138526178201" static="0" type="number">0</variable>
+        <variable comment="Saurabh" constant="0" name="cf" sid="891138526178201" static="0" type="number">0</variable>
         <variable comment="Saurabh" constant="0" name="Drought_FloodComming" sid="402213936950340" static="0" type="number">0</variable>
         <variable comment="Saurabh" constant="0" name="Low_Fload" sid="187506706349174" static="0" type="number">0</variable>
         <variable comment="Saurabh" constant="0" name="High_Fload" sid="647962396272595" static="0" type="number">0</variable>
@@ -62,7 +63,7 @@
         <comment>layout 7 chart cost </comment>
         <variable constant="0" name="landPreCost" sid="228800702526590" static="0" type="number">0</variable>
         <variable constant="0" name="harvestingCost" sid="872105560355329" static="0" type="number">0</variable>
-        <variable constant="0" name="yeldProfit" sid="157773284099118" static="0" type="number">-21000</variable>
+        <variable constant="0" name="yieldProfit" sid="157773284099118" static="0" type="number">0</variable>
         <variable constant="0" name="uriaFertCost" sid="241065707639839" static="0" type="number">0</variable>
         <comment>layout 7 chart cost </comment>
         <variable constant="0" name="losshight1" sid="186637092793159" static="0" type="number">0</variable>
@@ -1147,7 +1148,7 @@
                                         <action id="-16" name="Wait" sid="403778192026382" type="System">
                                             <param id="0" name="Seconds">0.5</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="613633420121729" type="System">
+                                        <action disabled="1" id="-9" name="Set value" sid="613633420121729" type="System">
                                             <param id="0" name="Variable">CalanderStart</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
@@ -1155,12 +1156,8 @@
                                             <param id="0" name="Variable">Drought_FloodComming</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-16" name="Wait" sid="586654917468078" type="System">
-                                            <param id="0" name="Seconds">0.3</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="408227244907988" type="System">
-                                            <param id="0" name="Variable">Drought_flood</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-2" name="Go to layout" sid="330446693013471" type="System">
+                                            <param id="0" name="Layout">Layout 8</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1456,7 +1453,7 @@
                                             <param id="0" name="Variable">Drought_FloodComming</param>
                                             <param id="1" name="Value">1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="722785396825741" type="System">
+                                        <action disabled="1" id="-9" name="Set value" sid="722785396825741" type="System">
                                             <param id="0" name="Variable">Drought_flood</param>
                                             <param id="1" name="Value">0</param>
                                         </action>
@@ -1867,9 +1864,24 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="226247648201919" type="drt" />
-                                        <action id="-9" name="Set value" sid="677977530794560" type="System">
-                                            <param id="0" name="Variable">Drought_flood</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-16" name="Set opacity" sid="664844275040634" type="popup">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="125044532530028" type="popup">
+                                            <param id="0" name="Frame number">4</param>
+                                        </action>
+                                        <action id="-26" name="Move to layer" sid="759587614603857" type="popup">
+                                            <param id="0" name="Layer">&quot;UI2&quot;</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="313595928847796" type="popup" />
+                                        <action id="-16" name="Wait" sid="205588470980004" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="783239341570511" type="popup">
+                                            <param id="0" name="Opacity">0</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="127552300400310" type="System">
+                                            <param id="0" name="Layout">Layout 8</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1904,6 +1916,22 @@
                                         <action behavior="LiteTween" id="10" name="Start" sid="411575997220534" type="drt">
                                             <param id="0" name="Start Mode">0</param>
                                             <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="402894023825516" type="popup">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="683054756301211" type="popup">
+                                            <param id="0" name="Frame number">4</param>
+                                        </action>
+                                        <action id="-26" name="Move to layer" sid="940727893643101" type="popup">
+                                            <param id="0" name="Layer">&quot;UI2&quot;</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="450683846482984" type="popup" />
+                                        <action id="-16" name="Wait" sid="109528017921931" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="283093859391943" type="popup">
+                                            <param id="0" name="Opacity">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -1964,9 +1992,21 @@
                                             <param id="1" name="Value">1</param>
                                         </action>
                                         <action id="-9" name="Destroy" sid="835186794882704" type="drt" />
-                                        <action id="-9" name="Set value" sid="810152393151844" type="System">
-                                            <param id="0" name="Variable">Drought_flood</param>
-                                            <param id="1" name="Value">0</param>
+                                        <action id="-16" name="Set opacity" sid="213101762674388" type="popup">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="432202896661298" type="popup">
+                                            <param id="0" name="Frame number">4</param>
+                                        </action>
+                                        <action id="-26" name="Move to layer" sid="189195795023437" type="popup">
+                                            <param id="0" name="Layer">&quot;UI2&quot;</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="547083729491893" type="popup" />
+                                        <action id="-16" name="Wait" sid="671275651471089" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="139908711913210" type="popup">
+                                            <param id="0" name="Opacity">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -2000,6 +2040,22 @@
                                         <action behavior="LiteTween" id="10" name="Start" sid="236986009905527" type="drt">
                                             <param id="0" name="Start Mode">0</param>
                                             <param id="1" name="Force use current">1</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="154916621191916" type="popup">
+                                            <param id="0" name="Opacity">100</param>
+                                        </action>
+                                        <action id="5" name="Set frame" sid="400891941678347" type="popup">
+                                            <param id="0" name="Frame number">4</param>
+                                        </action>
+                                        <action id="-26" name="Move to layer" sid="204796945590446" type="popup">
+                                            <param id="0" name="Layer">&quot;UI2&quot;</param>
+                                        </action>
+                                        <action id="-24" name="Move to top" sid="649082265822325" type="popup" />
+                                        <action id="-16" name="Wait" sid="954965306309898" type="System">
+                                            <param id="0" name="Seconds">3</param>
+                                        </action>
+                                        <action id="-16" name="Set opacity" sid="179406256764137" type="popup">
+                                            <param id="0" name="Opacity">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -3841,5 +3897,31 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="476823474822686">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="942930028306661" type="badh">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">70</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="371179114715795" type="popup">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-26" name="Move to layer" sid="900776566436510" type="popup">
+                    <param id="0" name="Layer">&quot;UI2&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="593582114844496" type="popup" />
+                <action id="5" name="Set frame" sid="377538234523871" type="popup">
+                    <param id="0" name="Frame number">5</param>
+                </action>
+                <action id="-16" name="Wait" sid="822781398199516" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="515668190330022" type="popup">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
